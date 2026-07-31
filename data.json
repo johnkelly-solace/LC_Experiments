@@ -1,0 +1,1597 @@
+{
+  "last_synced": "July 22, 2026",
+  "source_db": "https://app.notion.com/p/3589601d59a98000bf9cded9b625f4b4",
+  "results_doc": "https://app.notion.com/p/3949601d59a98087af33e49b0d57f2d8",
+  "experiments": [
+    {
+      "slug": "dq-not-matched-winback-email",
+      "name": "DQ Not Matched Winback Expansion (Email)",
+      "category": "Appointment",
+      "campaign": "PAT_PhysNotMatchedWnb",
+      "result": "Neutral",
+      "start_date": "2026-05-19",
+      "end_date": "2026-06-23",
+      "hypothesis": "Extending the winback flow will increase our booking rates for unmatched patients.",
+      "target_impact": "Boost booking rate post-unmatch from 46% to 70%, attendance from 22.5% to 34%.",
+      "primary_metric": "Booking rate + attendance rate",
+      "impact_summary": "Launching email + SMS at the same time was slightly higher than control, but the lift wasn't large enough to chase further — pausing this thread in favor of a bigger “super test” that combines several ideas at once.",
+      "experiment_summary": "Flow-based test for the email variant of the Not-Matched winback expansion.",
+      "experiment_type": "",
+      "experiment_method": "",
+      "secondary_metrics": "",
+      "experiment_event": "",
+      "experiment_id": "",
+      "cio_link": "https://fly.customer.io/workspaces/129866/journeys/campaigns/690/overview/workflow/actions",
+      "hex_link": "",
+      "figma_link": "",
+      "variant_a_label": "A — Complex flow",
+      "variant_b_label": "B — Simplified flow",
+      "creative_copy": [],
+      "additional_notes": [],
+      "metrics": [
+        {
+          "label": "Attended call rate",
+          "control_name": "A — Complex flow",
+          "control_value": "11.98%",
+          "control_raw": "265 / 2,212",
+          "test_name": "B — Simplified flow",
+          "test_value": "12.54%",
+          "test_raw": "283 / 2,256",
+          "lift": "+4.7% relative",
+          "sig": "Not stat sig"
+        }
+      ],
+      "what_worked": [
+        "Simplifying the flow (removing complexity) trended slightly ahead of the more complex control."
+      ],
+      "what_didnt": [
+        "The lift was too small to justify iterating further on this specific lever alone."
+      ],
+      "follow_up": [
+        "Paused in favor of a consolidated “super test” that bundles multiple winback improvements together."
+      ],
+      "owner_team": "Appointment Lifecycle",
+      "linear_ticket": "https://linear.app/findsolace/issue/LIFE-201/test-or-pat-physnotmatchedwnb-enhancements",
+      "notion_url": "https://app.notion.com/p/3669601d59a98051b2b1f6569b3d570f",
+      "notion_page_id": "3669601d59a98051b2b1f6569b3d570f",
+      "needs_review": false
+    },
+    {
+      "slug": "dq-not-matched-winback-sms",
+      "name": "DQ Not Matched Winback Expansion (SMS)",
+      "category": "Appointment",
+      "campaign": "PAT_PhysNotMatchedWnb",
+      "result": "Neutral",
+      "start_date": "2026-05-19",
+      "end_date": "2026-06-23",
+      "hypothesis": "Extending the winback flow will increase our booking rates for unmatched patients.",
+      "target_impact": "Boost booking rate post-unmatch from 46% to 70%, attendance from 22.5% to 34%.",
+      "primary_metric": "Booking rate + attendance rate",
+      "impact_summary": "Sending the SMS expansion alone was slightly positive versus holdout, but again not enough to warrant continued iteration on its own — paused in favor of a super test.",
+      "experiment_summary": "SMS-only variant of the Not-Matched winback expansion test.",
+      "experiment_type": "",
+      "experiment_method": "",
+      "secondary_metrics": "",
+      "experiment_event": "",
+      "experiment_id": "",
+      "cio_link": "https://fly.customer.io/workspaces/129866/journeys/campaigns/690/overview/tests/27139",
+      "hex_link": "",
+      "figma_link": "",
+      "variant_a_label": "Holdout",
+      "variant_b_label": "SMS Expansion",
+      "creative_copy": [],
+      "additional_notes": [],
+      "metrics": [
+        {
+          "label": "Attended call rate",
+          "control_name": "Holdout",
+          "control_value": "8.03%",
+          "control_raw": "140 / 1,744",
+          "test_name": "SMS Expansion",
+          "test_value": "8.29%",
+          "test_raw": "136 / 1,641",
+          "lift": "+3.3% relative",
+          "sig": "Not stat sig"
+        }
+      ],
+      "what_worked": [
+        "SMS expansion nudged attendance up slightly over holdout."
+      ],
+      "what_didnt": [
+        "Effect size too small on its own to be a standalone win."
+      ],
+      "follow_up": [
+        "Rolled into the same consolidated super test as the email variant."
+      ],
+      "owner_team": "Appointment Lifecycle",
+      "linear_ticket": "https://linear.app/findsolace/issue/LIFE-201/test-or-pat-physnotmatchedwnb-enhancements",
+      "notion_url": "https://app.notion.com/p/3669601d59a9804e81faf693cf6a8413",
+      "notion_page_id": "3669601d59a9804e81faf693cf6a8413",
+      "needs_review": false
+    },
+    {
+      "slug": "physician-intro-4hr-reminder",
+      "name": "Physician Intro 4hr Reminder (Same-Day)",
+      "category": "Appointment",
+      "campaign": "MPAT_PhysIntroCallBooked",
+      "result": "Neutral",
+      "start_date": "2026-05-13",
+      "end_date": "2026-06-16",
+      "hypothesis": "By adding a same-day email touchpoint several hours before the call, we'll give patients an earlier heads-up and more time to prepare or reschedule.",
+      "target_impact": "",
+      "primary_metric": "Intro call attendance rate (show rate)",
+      "impact_summary": "This touchpoint started with a ~15–20% lift but slowly degraded over time, landing virtually flat by the end of the test.",
+      "experiment_summary": "Adds a same-day, 4-hours-out email touchpoint ahead of the physician intro call.",
+      "experiment_type": "",
+      "experiment_method": "",
+      "secondary_metrics": "",
+      "experiment_event": "",
+      "experiment_id": "",
+      "cio_link": "https://fly.customer.io/workspaces/129866/journeys/campaigns/563/overview/tests/26866",
+      "hex_link": "https://hc.hex.tech/solace-health/app/Lifecycle-Campaign-Attribution-Dashboard-0332iEihSu9EhnSo0CEaR7/latest",
+      "figma_link": "",
+      "variant_a_label": "Holdout",
+      "variant_b_label": "4hr Reminder",
+      "creative_copy": [],
+      "additional_notes": [
+        {
+          "author": "",
+          "date": "",
+          "note": "Virtually flat after 4 weeks. Next step: retest individual touchpoints after the appointment “super test” completes."
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Show rate (4 weeks in)",
+          "control_name": "Holdout",
+          "control_value": "57.07%",
+          "control_raw": "670 / 1,174",
+          "test_name": "4hr Reminder",
+          "test_value": "59.24%",
+          "test_raw": "699 / 1,180",
+          "lift": "+3.8% relative",
+          "sig": "Flat by test end"
+        }
+      ],
+      "what_worked": [
+        "Strong early lift (~15–20%) in the first two weeks."
+      ],
+      "what_didnt": [
+        "Lift decayed steadily and was essentially gone by week four — early results overstated the durable effect."
+      ],
+      "follow_up": [
+        "Retest individual touchpoints after the appointment “super test” wraps."
+      ],
+      "owner_team": "Appointment Lifecycle",
+      "linear_ticket": "https://linear.app/findsolace/issue/LIFE-160/new-or-physician-intro-3hr-reminder",
+      "notion_url": "https://app.notion.com/p/35f9601d59a980cfab40fb74f271ba45",
+      "notion_page_id": "35f9601d59a980cfab40fb74f271ba45",
+      "needs_review": false
+    },
+    {
+      "slug": "physician-intro-3hr-reminder",
+      "name": "Physician Intro 3hr Reminder",
+      "category": "Appointment",
+      "campaign": "MPAT_PhysIntroCallBooked",
+      "result": "Neutral",
+      "start_date": "2026-05-12",
+      "end_date": "2026-06-16",
+      "hypothesis": "By adding a 3hr email touchpoint, we'll give patients an earlier heads-up and more time to prepare or reschedule.",
+      "target_impact": "",
+      "primary_metric": "Intro call attendance rate (show rate)",
+      "impact_summary": "Same pattern as its 4hr sibling test: started with a ~15–20% lift that steadily degraded to roughly flat by the end of the test.",
+      "experiment_summary": "Adds a 3-hours-out email touchpoint ahead of the physician intro call — sibling test to the 4hr same-day reminder.",
+      "experiment_type": "",
+      "experiment_method": "",
+      "secondary_metrics": "",
+      "experiment_event": "",
+      "experiment_id": "",
+      "cio_link": "https://fly.customer.io/workspaces/129866/journeys/campaigns/563/overview/tests/26774",
+      "hex_link": "https://hc.hex.tech/solace-health/app/Lifecycle-Campaign-Attribution-Dashboard-0332iEihSu9EhnSo0CEaR7/latest",
+      "figma_link": "",
+      "variant_a_label": "Holdout",
+      "variant_b_label": "3hr Reminder",
+      "creative_copy": [],
+      "additional_notes": [
+        {
+          "author": "",
+          "date": "",
+          "note": "Next step: retest individual touchpoints after the appointment “super test” completes."
+        }
+      ],
+      "metrics": [],
+      "what_worked": [
+        "Early lift matched the 4hr variant's pattern, suggesting the effect is about proximity/urgency generally, not this specific timing."
+      ],
+      "what_didnt": [
+        "Lift faded to flat — same decay pattern as the 4hr reminder."
+      ],
+      "follow_up": [
+        "Retest individual touchpoints after the appointment “super test” wraps."
+      ],
+      "owner_team": "Appointment Lifecycle",
+      "linear_ticket": "https://linear.app/findsolace/issue/LIFE-160/new-or-physician-intro-3hr-reminder",
+      "notion_url": "https://app.notion.com/p/35e9601d59a98037bd50f9ade6994aa0",
+      "notion_page_id": "35e9601d59a98037bd50f9ade6994aa0",
+      "needs_review": false
+    },
+    {
+      "slug": "hoursdriver-mid-month-holdout-active",
+      "name": "PAT_HoursDriver | Mid-Month Holdout — Active Patients",
+      "category": "Patients",
+      "campaign": "PAT_HoursDriver_MidMonthHoldout_Active Patients",
+      "result": "Inconclusive",
+      "start_date": "2026-06-17",
+      "end_date": "2026-06-19",
+      "hypothesis": "If patients at risk of falling short on their monthly hours receive a mid-month reminder to connect with their advocate, they'll be more likely to complete their target hours by month end than patients who don't receive the reminder.",
+      "target_impact": "",
+      "primary_metric": "Active patients / hours completion",
+      "impact_summary": "Directionally positive for the test group (+1.38pp) but not statistically significant — a short read on a promising idea that needs a longer or larger test to confirm.",
+      "experiment_summary": "Following month-end and month-start holdout tests with positive directional lift in conversion, this evaluates whether a mid-month reminder can further increase monthly hour completion among patients who may be at risk of falling behind.",
+      "experiment_type": "Holdout",
+      "experiment_method": "",
+      "secondary_metrics": "",
+      "experiment_event": "",
+      "experiment_id": "",
+      "cio_link": "",
+      "hex_link": "",
+      "figma_link": "",
+      "variant_a_label": "Holdout",
+      "variant_b_label": "Mid-month reminder",
+      "creative_copy": [],
+      "additional_notes": [],
+      "metrics": [
+        {
+          "label": "Conversion rate",
+          "control_name": "Holdout",
+          "control_value": "85.66%",
+          "control_raw": "1,290 / 1,506",
+          "test_name": "Mid-month reminder",
+          "test_value": "87.04%",
+          "test_raw": "1,222 / 1,404",
+          "lift": "+1.38pp",
+          "sig": "z=1.08, p≈0.28 (no)"
+        }
+      ],
+      "what_worked": [
+        "Directionally positive — consistent with the earlier month-start holdout finding."
+      ],
+      "what_didnt": [
+        "Sample/duration wasn't enough to reach significance (p≈0.28)."
+      ],
+      "follow_up": [
+        "Re-run with a larger sample or longer window before drawing conclusions."
+      ],
+      "owner_team": "Patient Engagement",
+      "linear_ticket": "https://linear.app/findsolace/issue/LIFE-286/test-or-pat-hoursdriver-midmonthholdout-active-patients",
+      "notion_url": "https://app.notion.com/p/3819601d59a9817898adee87047c700d",
+      "notion_page_id": "3819601d59a9817898adee87047c700d",
+      "needs_review": false
+    },
+    {
+      "slug": "inactive-hours-driver-ab-holdout",
+      "name": "PAT Inactive Hours Driver | A/B/Holdout",
+      "category": "Patients",
+      "campaign": "PAT_HoursDriver_Holdout_Inactive Patients",
+      "result": "Positive",
+      "start_date": "2026-06-18",
+      "end_date": "2026-06-18",
+      "hypothesis": "If inactive patients receive gentle reminders, it will encourage them to schedule a check-in with their advocate and re-engage.",
+      "target_impact": "Increase patient hours / meetings with advocates.",
+      "primary_metric": "TIME_SPAN_SUBMITTED",
+      "impact_summary": "Emotionally-toned copy drove 44% more conversions than the plain/normal-tone variant (33% higher than holdout), at 92% confidence. Volume was lower than ideal, so treat as a strong early signal rather than a settled result — but it flips the earlier assumption that inactive patients simply don't respond to messaging.",
+      "experiment_summary": "After seeing early wins with beginning-of-month hours drivers for active patients, this tests a similar concept for inactive patients — a 3-way test assessing copy tone. Path A is more direct and succinct, Path B is more emotionally-driven and sensitive, and C is a holdout.",
+      "experiment_type": "A/B/Holdout",
+      "experiment_method": "Random Cohort Branch",
+      "secondary_metrics": "N/A",
+      "experiment_event": "EXPERIMENT_FIRED",
+      "experiment_id": "8",
+      "cio_link": "https://fly.customer.io/workspaces/129866/journeys/campaigns/782/setup/workflow/actions",
+      "hex_link": "https://hc.hex.tech/solace-health/app/0332iEihSu9EhnSo0CEaR7/latest?view=019edb60-84fd-7733-9455-b582f7bcc6bb&preserveAppState=true",
+      "figma_link": "",
+      "variant_a_label": "Normal-tone copy",
+      "variant_b_label": "Emotional copy",
+      "creative_copy": [],
+      "additional_notes": [],
+      "metrics": [
+        {
+          "label": "Conversion rate",
+          "control_name": "Holdout",
+          "control_value": "9.67%",
+          "control_raw": "38 / 393",
+          "test_name": "Normal-tone copy",
+          "test_value": "8.89%",
+          "test_raw": "37 / 416",
+          "lift": "-8.1% relative",
+          "sig": "z=0.38, p≈0.70 (no)"
+        },
+        {
+          "label": "Conversion rate",
+          "control_name": "Holdout",
+          "control_value": "9.67%",
+          "control_raw": "38 / 393",
+          "test_name": "Emotional copy",
+          "test_value": "12.81%",
+          "test_raw": "51 / 398",
+          "lift": "+32.5% relative",
+          "sig": "z=1.40, p≈0.16 (no)"
+        },
+        {
+          "label": "Emotional vs. Normal copy",
+          "control_name": "Normal-tone copy",
+          "control_value": "8.89%",
+          "control_raw": "37 / 416",
+          "test_name": "Emotional copy",
+          "test_value": "12.81%",
+          "test_raw": "51 / 398",
+          "lift": "+44.1% relative",
+          "sig": "z=1.80, p≈0.072 (marginal, 90%)"
+        }
+      ],
+      "what_worked": [
+        "Emotionally-driven, sensitive copy clearly outperformed both the plain “normal” variant and the holdout on conversion."
+      ],
+      "what_didnt": [
+        "Emotional copy drove ~50% less email engagement (opens/clicks) than the normal variant even though it converted better — engagement and conversion didn't move together here."
+      ],
+      "follow_up": [
+        "Re-confirm the emotional-copy effect at larger scale before rolling out broadly."
+      ],
+      "owner_team": "Patient Engagement",
+      "linear_ticket": "https://linear.app/findsolace/issue/LIFE-300/test-or-pat-inactive-hours-driver-or-abholdout",
+      "notion_url": "https://app.notion.com/p/3829601d59a98179a027d623ef004c50",
+      "notion_page_id": "3829601d59a98179a027d623ef004c50",
+      "needs_review": false
+    },
+    {
+      "slug": "hoursdriver-month-start-holdout-active",
+      "name": "PAT_HoursDriver | Month Start Holdout — Active",
+      "category": "Patients",
+      "campaign": "PAT_HoursDriver",
+      "result": "Positive",
+      "start_date": "2026-06-03",
+      "end_date": "2026-06-15",
+      "hypothesis": "If patients receive a beginning-of-month reminder, they'll complete more patient hours during the month than those who don't receive the reminder.",
+      "target_impact": "Increase patient hours.",
+      "primary_metric": "CVR",
+      "impact_summary": "Patients who received the beginning-of-month reminder converted at a higher rate than the holdout group (62.6% vs. 58.3%), a lift of +7.4%. Directionally positive, not stat sig at 95% — worth a larger/longer follow-up.",
+      "experiment_summary": "Two holdout tests measuring the incremental impact of sending a beginning-of-month reminder to patients at risk of falling short on their monthly hours, encouraging them to meet with their advocate and stay on track.",
+      "experiment_type": "A/B Test",
+      "experiment_method": "CIO A/B Holdout Test",
+      "secondary_metrics": "",
+      "experiment_event": "",
+      "experiment_id": "",
+      "cio_link": "https://fly.customer.io/workspaces/129866/journeys/campaigns/780/setup/workflow/actions",
+      "hex_link": "https://hc.hex.tech/solace-health/app/0332iEihSu9EhnSo0CEaR7/latest?view=019ecba6-0309-719d-afa2-39c7d20a338e&preserveAppState=true",
+      "figma_link": "",
+      "variant_a_label": "Holdout",
+      "variant_b_label": "Month-start reminder",
+      "creative_copy": [],
+      "additional_notes": [
+        {
+          "author": "Jessica Ballard",
+          "date": "June 5, 2026",
+          "note": "Active test completed. Inactive test on hold."
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Conversion rate",
+          "control_name": "Holdout",
+          "control_value": "58.3%",
+          "control_raw": "334 / 573",
+          "test_name": "Month-start reminder",
+          "test_value": "62.6%",
+          "test_raw": "333 / 532",
+          "lift": "+7.4% relative",
+          "sig": "Not stat sig at 95%"
+        }
+      ],
+      "what_worked": [
+        "Beginning-of-month reminder drove more conversions than holdout, suggesting it helps motivate at-risk patients to engage with their advocate."
+      ],
+      "what_didnt": [
+        "The lift wasn't statistically significant, so the improvement can't be confidently separated from normal variation yet."
+      ],
+      "follow_up": [
+        "Continue testing with a larger sample size and/or longer duration to increase statistical power.",
+        "Test alternative copy, timing, or audience segments to find where reminders have the most impact."
+      ],
+      "owner_team": "Patient Engagement",
+      "linear_ticket": "https://linear.app/findsolace/issue/LIFE-244/test-or-pat-hoursdriver-or-month-start-holdout-active",
+      "notion_url": "https://app.notion.com/p/3809601d59a981c2a466cb95b6161945",
+      "notion_page_id": "3809601d59a981c2a466cb95b6161945",
+      "needs_review": false
+    },
+    {
+      "slug": "improved-winback-flow",
+      "name": "MPAT_PhysIntroCallNoShowWnb | Improved Winback Flow",
+      "category": "Appointment",
+      "campaign": "MPAT_PhysIntroCallNoShowWnb",
+      "result": "Positive",
+      "start_date": "2026-05-29",
+      "end_date": "2026-06-15",
+      "hypothesis": "The current flow is too long and doesn't engage patients well enough in the initial touchpoints. By introducing more engaging touchpoints with better channel orchestration and cadence, we'll improve winback of no-show patients.",
+      "target_impact": "+50% improved attendance rate for no-show patients.",
+      "primary_metric": "Patient attendance for physician call",
+      "impact_summary": "+27% relative lift in attendance for the optimized flow. Hit stat significance quickly and held over 2+ weeks with decent volume — the strongest, most durable win in the Appointment category.",
+      "experiment_summary": "Restructuring the follow-up cadence and frequency to improve short-term connection rates for no-show patients.",
+      "experiment_type": "Flow based",
+      "experiment_method": "Flow based tests",
+      "secondary_metrics": "Intro call booked (after campaign); Unsubscribes",
+      "experiment_event": "",
+      "experiment_id": "2",
+      "cio_link": "https://fly.customer.io/workspaces/129866/journeys/campaigns/586/overview/workflow/actions",
+      "hex_link": "",
+      "figma_link": "",
+      "variant_a_label": "Control (A)",
+      "variant_b_label": "Improved Flow (B)",
+      "creative_copy": [],
+      "additional_notes": [
+        {
+          "author": "",
+          "date": "",
+          "note": "Variants: A — Control, B — Improved Flow (Exp ID 2)."
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Attendance rate (final read, 6/15)",
+          "control_name": "Control (A)",
+          "control_value": "7.30%",
+          "control_raw": "152 / 2,081",
+          "test_name": "Improved Flow (B)",
+          "test_value": "9.24%",
+          "test_raw": "195 / 2,110",
+          "lift": "+26.5% relative (+1.94pp)",
+          "sig": "z=2.28, p=0.023 (97.7% confidence)"
+        }
+      ],
+      "what_worked": [
+        "Combining multiple flow elements (more engaging touchpoints + better channel orchestration/cadence) jumped the baseline enough to unlock more nuanced follow-up testing.",
+        "Prioritizing SMS over simultaneous email+SMS boosted SMS conversion, at some cost to email conversion — net positive."
+      ],
+      "what_didnt": [],
+      "follow_up": [
+        "Adopt these winback strategies across other flows (cancellation / unmatched / etc.)",
+        "Run more nuanced testing on top of this new, higher baseline."
+      ],
+      "owner_team": "Appointment Lifecycle",
+      "linear_ticket": "https://linear.app/findsolace/issue/LIFE-231/test-or-mpat-physintrocallnoshowwnb-or-improved-winback-flow",
+      "notion_url": "https://app.notion.com/p/36d9601d59a981e397ece92ccc0a430e",
+      "notion_page_id": "36d9601d59a981e397ece92ccc0a430e",
+      "needs_review": false
+    },
+    {
+      "slug": "progress-bar-commercial-reminders",
+      "name": "Progress Bar in Commercial Appt Reminders",
+      "category": "Appointment",
+      "campaign": "CPAT_PhysIntroCallBooked",
+      "result": "Neutral",
+      "start_date": "2026-04-15",
+      "end_date": "2026-06-12",
+      "hypothesis": "By adding a progress bar, we'll show patients how close they are to matching with an advocate and increase intent to attend these calls.",
+      "target_impact": "5% lift in show rate.",
+      "primary_metric": "Show rate",
+      "impact_summary": "Slight gains from the progress bar, but likely needs better visual execution to unlock more impact — calling this test until the visual can be improved.",
+      "experiment_summary": "Adds a visual progress bar to commercial appointment reminders, showing patients how close they are to matching with an advocate.",
+      "experiment_type": "",
+      "experiment_method": "",
+      "secondary_metrics": "",
+      "experiment_event": "",
+      "experiment_id": "",
+      "cio_link": "https://fly.customer.io/workspaces/129866/journeys/campaigns/728/overview?channels=email-twilio-webhook-slack-in_app-inbox",
+      "hex_link": "",
+      "figma_link": "",
+      "variant_a_label": "A — Progress bar",
+      "variant_b_label": "B — No progress bar",
+      "creative_copy": [],
+      "additional_notes": [
+        {
+          "author": "",
+          "date": "",
+          "note": "Calling this test until the visual execution can be improved."
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Attendance rate",
+          "control_name": "B — No progress bar",
+          "control_value": "39.57%",
+          "control_raw": "364 / 920",
+          "test_name": "A — Progress bar",
+          "test_value": "41.75%",
+          "test_raw": "367 / 879",
+          "lift": "+5.5% relative",
+          "sig": "Not stat sig"
+        }
+      ],
+      "what_worked": [
+        "Directionally positive — the concept (showing proximity to matching) seems sound."
+      ],
+      "what_didnt": [
+        "Didn't reach the 5% target impact with confidence; execution/visual design likely limited the effect."
+      ],
+      "follow_up": [
+        "Revisit with an improved visual treatment before retesting."
+      ],
+      "owner_team": "Appointment Lifecycle",
+      "linear_ticket": "",
+      "notion_url": "https://app.notion.com/p/37d9601d59a980deac38f07037e138c3",
+      "notion_page_id": "37d9601d59a980deac38f07037e138c3",
+      "needs_review": false
+    },
+    {
+      "slug": "abandon-cart-cadence-timing",
+      "name": "PAT_AbandonCartUnverified | Cadence & Timing",
+      "category": "Early Lifecycle",
+      "campaign": "PAT_AbandonCartUnverified",
+      "result": "Positive",
+      "start_date": "2026-05-13",
+      "end_date": "2026-06-10",
+      "hypothesis": "Capitalizing on recency with a shorter, more aggressive outreach cadence (10 days vs. the current 21 days) will improve CVR and engagement metrics in the abandon-cart series.",
+      "target_impact": "Produce a statistically significant increase to cohort engagement metrics (OR, CTR, CTO) and CVR metrics (eligibility checks, bookings, funnel returns).",
+      "primary_metric": "Cohort engagement + CVR (multiple)",
+      "impact_summary": "A compressed 10-day cadence outperformed the existing 21-day sequence across most key metrics. Engagement (clickers, click-to-open, funnel re-entry) hit statistical significance; downstream conversion (eligibility checks, bookings) trended positive but didn't reach significance. Cadence and timing are now considered optimized — future testing shifts to subject line, messaging, and content.",
+      "experiment_summary": "The unverified abandon-cart campaign runs on an extended 21-day cadence that may leave conversion opportunity on the table. This test evaluates whether a shorter, more aggressive 10-day cadence improves CVR and engagement. Only timing/cadence changed — creative, channel mix, and touchpoint sequence stayed the same. Analyzed at 28 days to give the control cohort's full CVR window time to mature.",
+      "experiment_type": "Cadence / timing",
+      "experiment_method": "Random Cohort Branch w/ CIO segments for cohort analysis",
+      "secondary_metrics": "",
+      "experiment_event": "N/A — executed via segments",
+      "experiment_id": "N/A — segment based",
+      "cio_link": "https://fly.customer.io/workspaces/129866/journeys/campaigns/598",
+      "hex_link": "https://hc.hex.tech/solace-health/app/Lifecycle-Campaign-Attribution-Dashboard-0332iEihSu9EhnSo0CEaR7/latest?view=019e2cc8-bf51-7000-8292-39b37154b795",
+      "figma_link": "",
+      "variant_a_label": "A — 21-day (CTRL)",
+      "variant_b_label": "B — 10-day (TEST)",
+      "creative_copy": [],
+      "additional_notes": [
+        {
+          "author": "Leah Sternberger",
+          "date": "May 12, 2026",
+          "note": "Test created and sent live on 5/12/26. Ended on 6/10."
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Funnel re-entry CVR",
+          "control_name": "A — 21-day (CTRL)",
+          "control_value": "2.16%",
+          "control_raw": "729 / 33,753",
+          "test_name": "B — 10-day",
+          "test_value": "2.60%",
+          "test_raw": "881 / 33,924",
+          "lift": "+20.2% relative",
+          "sig": "Stat sig increase"
+        },
+        {
+          "label": "Unique clickers",
+          "control_name": "A — 21-day (CTRL)",
+          "control_value": "4.03%",
+          "control_raw": "1,361 / 33,753",
+          "test_name": "B — 10-day",
+          "test_value": "4.77%",
+          "test_raw": "1,619 / 33,924",
+          "lift": "+18.4% relative",
+          "sig": "Stat sig increase"
+        },
+        {
+          "label": "Eligibility check CVR",
+          "control_name": "A — 21-day (CTRL)",
+          "control_value": "2.93%",
+          "control_raw": "1,022 / 34,877",
+          "test_name": "B — 10-day",
+          "test_value": "3.07%",
+          "test_raw": "1,076 / 35,050",
+          "lift": "+4.8% relative",
+          "sig": "Not stat sig"
+        },
+        {
+          "label": "Physician intake booked CVR",
+          "control_name": "A — 21-day (CTRL)",
+          "control_value": "1.76%",
+          "control_raw": "615 / 34,877",
+          "test_name": "B — 10-day",
+          "test_value": "1.89%",
+          "test_raw": "664 / 35,050",
+          "lift": "+7.4% relative",
+          "sig": "Not stat sig"
+        }
+      ],
+      "what_worked": [
+        "Shortened cadence drove stat-sig lifts in openers, clickers, multi-clickers, click-to-open rate, and funnel re-entry — recency and urgency meaningfully increased engagement and action.",
+        "CTR and CTO improved at every touchpoint despite open rates staying flat, meaning condensed timing converts already-engaged users better without needing more opens."
+      ],
+      "what_didnt": [
+        "Downstream CVR (eligibility checks, bookings) trended positive but didn't reach significance, possibly due to attribution lag.",
+        "Open rates were unchanged — cadence alone doesn't grow top-of-funnel awareness."
+      ],
+      "follow_up": [
+        "Roll the 10-day cadence into the abandoned-cart series as the new standard.",
+        "Shift testing focus to subject line / preview header optimization — open rate is the next lever.",
+        "Test copy, CTA, and creative variation now that timing is set."
+      ],
+      "owner_team": "Early Lifecycle",
+      "linear_ticket": "https://linear.app/findsolace/issue/LIFE-159/test-or-pat-abandoncartunverified-or-cadence-and-timing",
+      "notion_url": "https://app.notion.com/p/3679601d59a98118b075c5226a9dffb0",
+      "notion_page_id": "3679601d59a98118b075c5226a9dffb0",
+      "needs_review": false
+    },
+    {
+      "slug": "offwaitlist-speed-vs-free",
+      "name": "CPAT_OFFWaitlist | Speed vs. Free",
+      "category": "Early Lifecycle",
+      "campaign": "CPAT_OFFWaitlist",
+      "result": "Neutral",
+      "start_date": "2026-05-13",
+      "end_date": "2026-06-10",
+      "hypothesis": "Messaging that checking eligibility is free will improve engagement over a “speed” value prop.",
+      "target_impact": "Statistically significant impact to CTR.",
+      "primary_metric": "CTR",
+      "impact_summary": "“Free” beat “speed” messaging by +2.11% CTR at >90% confidence (not yet 95%). Bookings trended +84% higher for “free” (non-sig, small sample). Moving forward with “free” for additional waitlist removals; recommend further iteration to confirm at 95%.",
+      "experiment_summary": "Tests, via SMS, whether messaging that checking eligibility is free improves engagement (CTR) over a “speed” value prop.",
+      "experiment_type": "Copy / Value Prop",
+      "experiment_method": "CIO A/B Test Feature",
+      "secondary_metrics": "",
+      "experiment_event": "N/A",
+      "experiment_id": "N/A",
+      "cio_link": "https://fly.customer.io/workspaces/129866/journeys/campaigns/706",
+      "hex_link": "",
+      "figma_link": "",
+      "variant_a_label": "A — “Speed”",
+      "variant_b_label": "B — “Free”",
+      "creative_copy": [
+        {
+          "label": "A — “Speed”",
+          "text": "It only takes a moment to check if you qualify for a Solace healthcare advocate"
+        },
+        {
+          "label": "B — “Free”",
+          "text": "It's free to check if you qualify for a Solace healthcare advocate"
+        }
+      ],
+      "additional_notes": [
+        {
+          "author": "Leah Sternberger",
+          "date": "May 13, 2026",
+          "note": "Test launched 5/13."
+        },
+        {
+          "author": "Leah Sternberger",
+          "date": "June 10, 2026",
+          "note": "CONCLUSION 6/10 — see impact summary above."
+        }
+      ],
+      "metrics": [
+        {
+          "label": "CTR",
+          "control_name": "A — “Speed”",
+          "control_value": "44.55%",
+          "control_raw": "4,126 / 9,262",
+          "test_name": "B — “Free”",
+          "test_value": "45.49%",
+          "test_raw": "4,292 / 9,436",
+          "lift": "+2.1% relative",
+          "sig": "Directional (>90%, not 95%)"
+        },
+        {
+          "label": "Eligibility check completed",
+          "control_name": "A — “Speed”",
+          "control_value": "0.24%",
+          "control_raw": "22 / 9,262",
+          "test_name": "B — “Free”",
+          "test_value": "0.22%",
+          "test_raw": "21 / 9,436",
+          "lift": "Flat",
+          "sig": "Not stat sig"
+        }
+      ],
+      "what_worked": [
+        "“Free” produced a directional lift over “speed” at >90% confidence."
+      ],
+      "what_didnt": [
+        "Limited audience (batched send capped both variants at ~9.3K) plus lower-than-expected SMS availability/delivery limited statistical power.",
+        "Eligibility checks completed stayed flat between variants."
+      ],
+      "follow_up": [
+        "Move forward with “free” for additional waitlist removals.",
+        "Run iteration tests in other unverified prospect campaigns to confirm at 95% confidence.",
+        "Evaluate secondary CVR metrics (funnel re-entry, eligibility check starts) once available in HEX."
+      ],
+      "owner_team": "Early Lifecycle",
+      "linear_ticket": "https://linear.app/findsolace/issue/LIFE-162/test-or-cpat-offwaitlist-or-speed-vs-free",
+      "notion_url": "https://app.notion.com/p/3679601d59a981b481bfeb5bc84db018",
+      "notion_page_id": "3679601d59a981b481bfeb5bc84db018",
+      "needs_review": false
+    },
+    {
+      "slug": "hoursdriver-may-holdout-active",
+      "name": "PAT_HoursDriver | May Holdout — Active Patients",
+      "category": "Patients",
+      "campaign": "PAT_HoursDriver",
+      "result": "Positive",
+      "start_date": "2026-05-22",
+      "end_date": "2026-06-02",
+      "hypothesis": "Sending a month-end email to low-engagement active patients will increase appointment bookings and re-engagement.",
+      "target_impact": "",
+      "primary_metric": "CVR — driving hours",
+      "impact_summary": "Outreach increased conversion versus holdout (final read: 90.7% vs. 85.5%), suggesting messaging drives incremental conversions for this segment. Small sample, but directionally clear.",
+      "experiment_summary": "Sends an email to low-hours active patients before month-end encouraging them to schedule time with their advocate.",
+      "experiment_type": "Holdout",
+      "experiment_method": "Holdout — A: new email, B: no email",
+      "secondary_metrics": "",
+      "experiment_event": "TIME_SPAN_SUBMITTED",
+      "experiment_id": "5",
+      "cio_link": "",
+      "hex_link": "https://hc.hex.tech/solace-health/app/0332iEihSu9EhnSo0CEaR7/latest?view=019e83cd-382d-7356-93bc-5e02590fa64b&preserveAppState=true",
+      "figma_link": "",
+      "variant_a_label": "Test (email)",
+      "variant_b_label": "Holdout",
+      "creative_copy": [],
+      "additional_notes": [],
+      "metrics": [
+        {
+          "label": "Conversion rate (final, 6/2)",
+          "control_name": "Holdout",
+          "control_value": "85.5%",
+          "control_raw": "213 / 249",
+          "test_name": "Month-end email",
+          "test_value": "90.7%",
+          "test_raw": "225 / 248",
+          "lift": "+6.1% relative",
+          "sig": "Directionally positive"
+        }
+      ],
+      "what_worked": [
+        "Active patients with a portal account responded to the reminder with a meaningfully higher conversion rate."
+      ],
+      "what_didnt": [
+        "Sample size is small — treat as directional rather than conclusive."
+      ],
+      "follow_up": [
+        "Combine learnings with the month-start holdout test to standardize a recurring active-patient nudge."
+      ],
+      "owner_team": "Patient Engagement",
+      "linear_ticket": "https://linear.app/findsolace/issue/LIFE-214/test-or-pat-hoursdriver-or-may-holdout-active-patients",
+      "notion_url": "https://app.notion.com/p/3689601d59a9813cb7b4ddaa38fb7a51",
+      "notion_page_id": "3689601d59a9813cb7b4ddaa38fb7a51",
+      "needs_review": false
+    },
+    {
+      "slug": "hoursdriver-14d-no-message",
+      "name": "Driving Patient Hours | 14D No-Message Test",
+      "category": "Patients",
+      "campaign": "PAT_HoursDriver_14DNoMessage",
+      "result": "Neutral",
+      "start_date": "2026-05-19",
+      "end_date": "2026-06-01",
+      "hypothesis": "Patients behind on their monthly hours who haven't received a message in the last 14 days will engage more when they receive an automated email reminder.",
+      "target_impact": "",
+      "primary_metric": "CVR — hours submitted within 2 weeks",
+      "impact_summary": "Ended slightly positive after the 14-day maturation window. Stronger significance showed up on engagement (attended call) than on the primary CVR metric — a possible engagement driver worth revisiting.",
+      "experiment_summary": "",
+      "experiment_type": "",
+      "experiment_method": "",
+      "secondary_metrics": "",
+      "experiment_event": "",
+      "experiment_id": "",
+      "cio_link": "",
+      "hex_link": "",
+      "figma_link": "",
+      "variant_a_label": "Holdout",
+      "variant_b_label": "14D reminder",
+      "creative_copy": [],
+      "additional_notes": [],
+      "metrics": [
+        {
+          "label": "Hours submitted",
+          "control_name": "Holdout",
+          "control_value": "91.9%",
+          "control_raw": "114 / 124",
+          "test_name": "14D reminder",
+          "test_value": "92.5%",
+          "test_raw": "99 / 107",
+          "lift": "+0.6pp",
+          "sig": "Roughly flat"
+        },
+        {
+          "label": "Attended call",
+          "control_name": "Holdout",
+          "control_value": "46.8%",
+          "control_raw": "58 / 124",
+          "test_name": "14D reminder",
+          "test_value": "57.0%",
+          "test_raw": "61 / 107",
+          "lift": "+21.8% relative",
+          "sig": "Higher significance"
+        }
+      ],
+      "what_worked": [
+        "Engagement (attended call) showed a clearer lift than the primary conversion metric."
+      ],
+      "what_didnt": [
+        "Primary CVR metric (hours submitted) landed close to flat."
+      ],
+      "follow_up": [
+        "Revisit as a potential engagement driver rather than a pure conversion play."
+      ],
+      "owner_team": "Patient Engagement",
+      "linear_ticket": "https://linear.app/findsolace/issue/LIFE-193/test-or-driving-patient-hours-or-14d-no-message",
+      "notion_url": "https://app.notion.com/p/3659601d59a9805cabaaec7d7006a46e",
+      "notion_page_id": "3659601d59a9805cabaaec7d7006a46e",
+      "needs_review": false
+    },
+    {
+      "slug": "edu-whats-next-vs-still-struggling",
+      "name": "EDU “What's Next” PHYS Intake Content vs. “Still Struggling”",
+      "category": "Early Lifecycle",
+      "campaign": "MPAT_AbandonCartVerified",
+      "result": "Positive",
+      "start_date": "2026-04-22",
+      "end_date": "2026-05-29",
+      "hypothesis": "If we replace the underperforming mid-series “still struggling?” email with educational content addressing what patients can expect from the physician intake call, we'll reduce hesitancy and improve engagement and CVR (bookings).",
+      "target_impact": "",
+      "primary_metric": "OR, CTR, CVR (physician intro call booked)",
+      "impact_summary": "Educational “what's next” content significantly outperformed control across every metric — all statistically significant. Meeting patients with clear immediate next steps beat selling long-term benefits or naming the overwhelm directly.",
+      "experiment_summary": "",
+      "experiment_type": "",
+      "experiment_method": "",
+      "secondary_metrics": "",
+      "experiment_event": "",
+      "experiment_id": "",
+      "cio_link": "",
+      "hex_link": "",
+      "figma_link": "",
+      "variant_a_label": "Control — “Still struggling?”",
+      "variant_b_label": "Test — “What's next”",
+      "creative_copy": [],
+      "additional_notes": [],
+      "metrics": [
+        {
+          "label": "Open rate",
+          "control_name": "Control — “Still struggling?”",
+          "control_value": "22.56%",
+          "control_raw": "",
+          "test_name": "Test — “What's next”",
+          "test_value": "28.84%",
+          "test_raw": "",
+          "lift": "+27.9% relative",
+          "sig": "Stat sig"
+        },
+        {
+          "label": "CTR",
+          "control_name": "Control — “Still struggling?”",
+          "control_value": "0.23%",
+          "control_raw": "",
+          "test_name": "Test — “What's next”",
+          "test_value": "0.76%",
+          "test_raw": "",
+          "lift": "+229.7% relative",
+          "sig": "Stat sig"
+        },
+        {
+          "label": "CVR (call booked)",
+          "control_name": "Control — “Still struggling?”",
+          "control_value": "0.33%",
+          "control_raw": "",
+          "test_name": "Test — “What's next”",
+          "test_value": "0.85%",
+          "test_raw": "",
+          "lift": "+159.7% relative",
+          "sig": "Stat sig"
+        }
+      ],
+      "what_worked": [
+        "Educational “what's next” content resonated far better than overwhelm-focused messaging.",
+        "A name-first subject line (“[Name], you're approved — here's what's next”) likely contributed to the open-rate lift.",
+        "Meeting patients where they are (immediate next steps) proved more relevant than selling end benefits."
+      ],
+      "what_didnt": [],
+      "follow_up": [
+        "Extend the “what's next” framing to other mid-series touchpoints across lifecycle stages."
+      ],
+      "owner_team": "Early Lifecycle",
+      "linear_ticket": "N/A",
+      "notion_url": "https://app.notion.com/p/35d9601d59a980fab1dbc7ce568deda8",
+      "notion_page_id": "35d9601d59a980fab1dbc7ce568deda8",
+      "needs_review": false
+    },
+    {
+      "slug": "hoursdriver-may-holdout-inactive",
+      "name": "PAT_HoursDriver | May Holdout — Inactive Patients",
+      "category": "Patients",
+      "campaign": "PAT_HoursDriver",
+      "result": "Neutral",
+      "start_date": "2026-05-22",
+      "end_date": "2026-05-28",
+      "hypothesis": "Sending a month-end email to inactive patients will increase appointment bookings and re-engagement.",
+      "target_impact": "",
+      "primary_metric": "CVR — driving hours",
+      "impact_summary": "Ran for 6 days; treatment performed slightly worse than holdout, essentially flat. For relatively active users without a portal account, this outreach had no measurable impact — these users likely convert regardless of messaging.",
+      "experiment_summary": "Sends an email to low-hours inactive patients before month-end encouraging them to schedule time with their advocate.",
+      "experiment_type": "Holdout",
+      "experiment_method": "Holdout — A: email, B: no email",
+      "secondary_metrics": "",
+      "experiment_event": "TIME_SPAN_SUBMITTED",
+      "experiment_id": "4",
+      "cio_link": "",
+      "hex_link": "https://hc.hex.tech/solace-health/app/0332iEihSu9EhnSo0CEaR7/latest?view=019e83c2-9088-72cf-9e7f-2818c832c416&preserveAppState=true",
+      "figma_link": "",
+      "variant_a_label": "Test (email)",
+      "variant_b_label": "Holdout",
+      "creative_copy": [],
+      "additional_notes": [],
+      "metrics": [
+        {
+          "label": "Conversion rate",
+          "control_name": "Holdout",
+          "control_value": "79.0%",
+          "control_raw": "",
+          "test_name": "Month-end email",
+          "test_value": "78.1%",
+          "test_raw": "",
+          "lift": "-1.1% relative",
+          "sig": "Not stat sig, short test"
+        }
+      ],
+      "what_worked": [],
+      "what_didnt": [
+        "No measurable lift for this segment — nearly identical conversion with or without the message."
+      ],
+      "follow_up": [
+        "Don't treat this as proof inactive patients can't be moved — see the later Inactive Hours Driver A/B/Holdout test, where emotional copy did move this audience."
+      ],
+      "owner_team": "Patient Engagement",
+      "linear_ticket": "https://linear.app/findsolace/issue/LIFE-215/test-or-pat-hoursdriver-or-may-holdout-inactive-patients",
+      "notion_url": "https://app.notion.com/p/3729601d59a98169861ee2dca9ee8df5",
+      "notion_page_id": "3729601d59a98169861ee2dca9ee8df5",
+      "needs_review": false
+    },
+    {
+      "slug": "offwaitlist-tasks-vs-personas",
+      "name": "CPAT_OFFWaitlist | Tasks vs. Personas — Advocate EDU",
+      "category": "Early Lifecycle",
+      "campaign": "CPAT_OFFWaitlist",
+      "result": "Positive",
+      "start_date": "2026-05-13",
+      "end_date": "2026-05-26",
+      "hypothesis": "Using slightly more playful copy around advocate “personas” for advocate education will improve engagement (CTR) compared to more traditional, straightforward “tasks” copy.",
+      "target_impact": "Statistically significant increase in CTR.",
+      "primary_metric": "CTR",
+      "impact_summary": "Variant B (personas) produced a statistically significant +29.5% increase in CTR over Variant A (tasks) — suggesting playful copy can outperform straightforward messaging even with a commercial audience typically treated like the more conservative Medicare audience.",
+      "experiment_summary": "Frames advocate capabilities as slightly more playful “personas” vs. more traditional, straightforward “tasks” copy in advocate education content.",
+      "experiment_type": "Copy / Value Prop",
+      "experiment_method": "CIO A/B Test Feature",
+      "secondary_metrics": "",
+      "experiment_event": "N/A",
+      "experiment_id": "N/A",
+      "cio_link": "https://fly.customer.io/workspaces/129866/journeys/campaigns/706/overview/tests/25263",
+      "hex_link": "",
+      "figma_link": "",
+      "variant_a_label": "A — Tasks",
+      "variant_b_label": "B — Personas",
+      "creative_copy": [],
+      "additional_notes": [
+        {
+          "author": "",
+          "date": "",
+          "note": "Concluding the test and rolling out Variant B (personas) to 100% of the audience."
+        }
+      ],
+      "metrics": [
+        {
+          "label": "CTR",
+          "control_name": "A — Tasks",
+          "control_value": "0.5%",
+          "control_raw": "",
+          "test_name": "B — Personas",
+          "test_value": "0.7%",
+          "test_raw": "",
+          "lift": "+29.5% relative",
+          "sig": "Stat sig"
+        }
+      ],
+      "what_worked": [
+        "Playful “personas” framing beat straightforward “tasks” framing for advocate capability education."
+      ],
+      "what_didnt": [],
+      "follow_up": [
+        "Roll out Variant B (personas) to 100% of this audience.",
+        "Develop additional playful copy variants to keep testing with commercial audiences."
+      ],
+      "owner_team": "Early Lifecycle",
+      "linear_ticket": "https://linear.app/findsolace/issue/LIFE-164/test-or-cpat-offwaitlist-or-tasks-vs-personas-advocate-edu",
+      "notion_url": "https://app.notion.com/p/3679601d59a9815d8b86f7bc816b18e2",
+      "notion_page_id": "3679601d59a9815d8b86f7bc816b18e2",
+      "needs_review": false
+    },
+    {
+      "slug": "confirmation-sms-reschedule",
+      "name": "Confirmation SMS Reschedule",
+      "category": "Appointment",
+      "campaign": "PAT_CallConfirmationFlowSMS",
+      "result": "Positive",
+      "start_date": "2026-02-26",
+      "end_date": "2026-05-12",
+      "hypothesis": "By providing a reschedule option in the confirmation message, we might avoid pure cancellations without a reschedule.",
+      "target_impact": "",
+      "primary_metric": "Intro call attendance rate (show rate)",
+      "impact_summary": "Adding a reschedule option lifted attendance +4-4.5% across both the follow-up call confirmation and the SMS1 confirmation touchpoints — likely by capturing patients who would otherwise have just cancelled outright.",
+      "experiment_summary": "Adds a reschedule option/link to the appointment confirmation flow (follow-up call confirmation + SMS1) to reduce pure cancellations.",
+      "experiment_type": "",
+      "experiment_method": "",
+      "secondary_metrics": "",
+      "experiment_event": "",
+      "experiment_id": "",
+      "cio_link": "https://fly.customer.io/workspaces/129866/journeys/campaigns/115/overview/tests/1495",
+      "hex_link": "https://hc.hex.tech/solace-health/app/Lifecycle-Campaign-Attribution-Dashboard-0332iEihSu9EhnSo0CEaR7/latest",
+      "figma_link": "",
+      "variant_a_label": "Control",
+      "variant_b_label": "+ Reschedule option",
+      "creative_copy": [],
+      "additional_notes": [
+        {
+          "author": "",
+          "date": "",
+          "note": "95% confidence on the follow-up variant, 99% confidence on the SMS1 variant. Closing both out."
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Follow-up call confirmation",
+          "control_name": "Control",
+          "control_value": "46.9%",
+          "control_raw": "2,096 / 4,471",
+          "test_name": "+ Reschedule option",
+          "test_value": "49.0%",
+          "test_raw": "2,134 / 4,356",
+          "lift": "+4.5% relative",
+          "sig": "95% confidence"
+        },
+        {
+          "label": "SMS1 call confirmation",
+          "control_name": "Control",
+          "control_value": "54.1%",
+          "control_raw": "4,784 / 8,844",
+          "test_name": "+ Reschedule link",
+          "test_value": "56.2%",
+          "test_raw": "4,848 / 8,624",
+          "lift": "+3.9% relative",
+          "sig": "99% confidence"
+        }
+      ],
+      "what_worked": [
+        "Adding a reschedule option lifted attendance across both touchpoints tested, with high confidence."
+      ],
+      "what_didnt": [],
+      "follow_up": [
+        "Closed out both tests and banked the change; moved on to the next appointment-flow test."
+      ],
+      "owner_team": "Appointment Lifecycle",
+      "linear_ticket": "",
+      "notion_url": "https://app.notion.com/p/35e9601d59a98044accfe660407b909d",
+      "notion_page_id": "35e9601d59a98044accfe660407b909d",
+      "needs_review": false
+    },
+    {
+      "slug": "dq-sms-window-copy",
+      "name": "DQ SMS “Window” Copy",
+      "category": "Appointment",
+      "campaign": "PAT_PhysReadyCheck",
+      "result": "Positive",
+      "start_date": "2026-05-06",
+      "end_date": "2026-05-12",
+      "hypothesis": "Leveraging ‘window’ terminology will set patient expectations better and reduce the number of upset patients coming into their physician call, without hurting show rates.",
+      "target_impact": "",
+      "primary_metric": "Show rate",
+      "impact_summary": "Swapping “your appointment is starting soon” for “your appointment window is coming up” improved attendance, with performance ranging +5% to +19% across reads (stat sig) and a headline lift of about +6%.",
+      "experiment_summary": "Swaps “your appointment is starting soon” language for “window” framing in the physician-ready-check SMS, to set better expectations without hurting show rates.",
+      "experiment_type": "",
+      "experiment_method": "",
+      "secondary_metrics": "",
+      "experiment_event": "",
+      "experiment_id": "",
+      "cio_link": "https://fly.customer.io/workspaces/129866/journeys/campaigns/696/overview/tests/24462",
+      "hex_link": "",
+      "figma_link": "",
+      "variant_a_label": "A — Original",
+      "variant_b_label": "B — “Window” copy",
+      "creative_copy": [
+        {
+          "label": "Original (A)",
+          "text": "Hi {{customer.first_name | titlecase}}, your Solace appointment is starting soon! Your physician is wrapping up with another patient and will join your virtual visit shortly / call you in about 10 minutes from (877) 730-3653."
+        },
+        {
+          "label": "Window Test (B)",
+          "text": "Hi {{customer.first_name | capitalize}}, your Solace appointment window is coming up! Your physician is wrapping up with another patient and will join your virtual visit shortly / call you in about 10 minutes from (877) 730-3653."
+        }
+      ],
+      "additional_notes": [
+        {
+          "author": "",
+          "date": "",
+          "note": "Performance ranged +5% to +19% (stat sig) across reads. Closing out the ticket to bank the boost."
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Show rate",
+          "control_name": "A — “Starting soon”",
+          "control_value": "Baseline",
+          "control_raw": "",
+          "test_name": "B — “Window” language",
+          "test_value": "+5% to +19%",
+          "test_raw": "",
+          "lift": "+6% headline",
+          "sig": "Stat sig"
+        }
+      ],
+      "what_worked": [
+        "“Window” language set better expectations and improved show rates without any downside to attendance."
+      ],
+      "what_didnt": [],
+      "follow_up": [
+        "Closed out the ticket and banked the performance boost; rolled “window” language into other agnostic booking touchpoints."
+      ],
+      "owner_team": "Appointment Lifecycle",
+      "linear_ticket": "https://linear.app/findsolace/issue/LIFE-120/update-or-pat-physreadycheck-update-to-copy",
+      "notion_url": "https://app.notion.com/p/3589601d59a98003beacff49350967a8",
+      "notion_page_id": "3589601d59a98003beacff49350967a8",
+      "needs_review": false
+    },
+    {
+      "slug": "text-vs-button-cta",
+      "name": "Text vs. Button CTA",
+      "category": "Early Lifecycle",
+      "campaign": "PAT_AbandonCartUnverified",
+      "result": "Positive",
+      "start_date": "2026-04-22",
+      "end_date": "2026-04-29",
+      "hypothesis": "Replacing text-based CTAs with button-based CTAs will improve engagement.",
+      "target_impact": "",
+      "primary_metric": "CTR",
+      "impact_summary": "Button CTA's CTR (2.1%) was +42.6% higher than the text/copy CTA (1.4%), statistically significant. One of the simplest, most replicable wins in the whole program.",
+      "experiment_summary": "",
+      "experiment_type": "",
+      "experiment_method": "",
+      "secondary_metrics": "",
+      "experiment_event": "",
+      "experiment_id": "",
+      "cio_link": "",
+      "hex_link": "",
+      "figma_link": "",
+      "variant_a_label": "A — Text CTA",
+      "variant_b_label": "B — Button CTA",
+      "creative_copy": [],
+      "additional_notes": [],
+      "metrics": [
+        {
+          "label": "CTR",
+          "control_name": "A — Text CTA",
+          "control_value": "1.4%",
+          "control_raw": "",
+          "test_name": "B — Button CTA",
+          "test_value": "2.1%",
+          "test_raw": "",
+          "lift": "+42.6% relative",
+          "sig": "Stat sig"
+        }
+      ],
+      "what_worked": [
+        "Button CTAs meaningfully outperform text links — low-effort, high-confidence, broadly applicable."
+      ],
+      "what_didnt": [],
+      "follow_up": [
+        "Audit other flows for remaining text-link CTAs and convert them to buttons."
+      ],
+      "owner_team": "Early Lifecycle",
+      "linear_ticket": "N/A",
+      "notion_url": "https://app.notion.com/p/35d9601d59a9800996acc6d9ad3466de",
+      "notion_page_id": "35d9601d59a9800996acc6d9ad3466de",
+      "needs_review": false
+    },
+    {
+      "slug": "advocate-june-toggle-campaign",
+      "name": "Advocate June Toggle Campaign",
+      "category": "Advocate",
+      "campaign": "ADV_JuneToggle",
+      "result": "Positive",
+      "start_date": "2026-06-18",
+      "end_date": "2026-06-25",
+      "hypothesis": "Advocates who receive email comms will be more likely to toggle their availability back on than those who don't. Highly-engaged advocates will be more likely to take action than medium- or low-engaged advocates.",
+      "target_impact": "",
+      "primary_metric": "ADVOCATE_TOGGLED_AVAILABILITY (listing_status = unpaused)",
+      "impact_summary": "The single biggest win in this dataset: a simple reactivation email drove advocates to unpause at 3–5.7x the rate of holdout, highly statistically significant in both reads. Note: this result lives in the experiment page's write-up but hadn't been copied into the database's Result/Impact Summary fields — worth fixing in Notion so this doesn't get missed.",
+      "experiment_summary": "Targets a list of advocates to test whether email communications have a positive effect on getting advocates to toggle their availability back on (“unpause”), and whether engagement level moderates the effect.",
+      "experiment_type": "A/B Test",
+      "experiment_method": "Random Cohort Branch — experiment tracker only",
+      "secondary_metrics": "",
+      "experiment_event": "EXPERIMENT_FIRED",
+      "experiment_id": "7",
+      "cio_link": "https://fly.customer.io/workspaces/129866/journeys/campaigns/807/setup/workflow/actions",
+      "hex_link": "",
+      "figma_link": "",
+      "variant_a_label": "Holdout",
+      "variant_b_label": "Received email",
+      "creative_copy": [],
+      "additional_notes": [
+        {
+          "author": "",
+          "date": "",
+          "note": "Couldn't compare high/medium/low engagement tiers this round — the upload list had bounces/suppressions that broke segmentation. Good candidate for a follow-up test."
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Unpause rate — June 18 read",
+          "control_name": "Holdout",
+          "control_value": "7.00%",
+          "control_raw": "63 / 900",
+          "test_name": "Received email",
+          "test_value": "23.44%",
+          "test_raw": "206 / 879",
+          "lift": "+235% relative (+16.4pp)",
+          "sig": "p < 0.0000000001"
+        },
+        {
+          "label": "Unpause rate — June 25 read",
+          "control_name": "Holdout",
+          "control_value": "15.38%",
+          "control_raw": "48 / 312",
+          "test_name": "Received email",
+          "test_value": "33.83%",
+          "test_raw": "451 / 1,333",
+          "lift": "+120% relative (+18.5pp)",
+          "sig": "p < 0.0000000001"
+        }
+      ],
+      "what_worked": [
+        "A simple reactivation email drove a massive, highly significant increase in advocates unpausing their availability across two separate reads."
+      ],
+      "what_didnt": [
+        "Couldn't compare high vs. medium vs. low engagement segments — the upload list had bounces/suppressions that broke the segmentation."
+      ],
+      "follow_up": [
+        "Run a proper engagement-tier test (high/medium/low) to see if the effect concentrates in any one group.",
+        "Update the Notion database Result/Impact Summary fields for this experiment — currently blank despite a strong, well-documented result on the page itself."
+      ],
+      "owner_team": "Advocate Lifecycle",
+      "linear_ticket": "https://linear.app/findsolace/issue/LIFE-302/test-or-advocate-june-toggle-campaign",
+      "notion_url": "https://app.notion.com/p/3829601d59a9810dbddef80365e645b0",
+      "notion_page_id": "3829601d59a9810dbddef80365e645b0",
+      "needs_review": false
+    },
+    {
+      "slug": "abandon-cart-super-test",
+      "name": "PAT_AbandonCartUnverified | Super Test",
+      "category": "Early Lifecycle",
+      "campaign": "PAT_AbandonCartUnverified",
+      "result": "Positive",
+      "start_date": "2026-06-16",
+      "end_date": "2026-07-10",
+      "hypothesis": "H1: Cohort B (new series) will achieve a higher CVR than Cohort A (legacy series). H2: Cohort B will achieve higher engagement metrics (OR, CTR, CTO).",
+      "target_impact": "15%+ increase to CVR and engagement metrics (OR, CTR, CTO).",
+      "primary_metric": "CVR (Started/Completed Eligibility Check, Physician Intake Booked), OR, CTR, CTO",
+      "impact_summary": "The redesigned Super Test series (Variant B) set a new performance baseline, with statistically significant improvements across every primary conversion metric — Started Eligibility Check (+23.9%), Completed Eligibility Check (+19.4%), and Physician Intake Booked (+23.4%) — all while sending one fewer email. Engagement also improved significantly (clicks +28.8%, CTO +27.6%) despite open rate staying essentially flat. Variant B becomes the new baseline going forward.",
+      "experiment_summary": "Abandon-cart campaigns had gone stale — dated, text-based, repetitive messaging. Following the earlier cadence test and the rollout of the content flywheel, this Super Test resets the baseline entirely: a fully redesigned series goes head-to-head against the legacy series before returning to incremental A/B testing. What changed all at once: text-based templates → designed templates; 15-minute trigger → 8-minute trigger (closer to the 5.3-minute median time-to-convert); “Jamie” sender → “Solace Health” sender; 5 emails + 2 SMS → 4 emails + 2 SMS; simultaneous email/SMS sends → staggered sends; softer messaging → direct, CVR-focused messaging.",
+      "experiment_type": "Super Test — old vs. new series",
+      "experiment_method": "Random Cohort Branch → Super Test events",
+      "secondary_metrics": "CVR (Physician Intake Booked); series engagement — OR, CTR, CTO, unsubscribes",
+      "experiment_event": "EXPERIMENT_FIRED",
+      "experiment_id": "5",
+      "cio_link": "https://fly.customer.io/workspaces/129866/journeys/campaigns/598",
+      "hex_link": "https://hc.hex.tech/solace-health/app/Lifecycle-Campaign-Attribution-Dashboard-0332iEihSu9EhnSo0CEaR7/latest?view=019ed221-a23e-7339-9583-eeaa8e0bf81b",
+      "figma_link": "",
+      "variant_a_label": "A — Old series (legacy)",
+      "variant_b_label": "B — New series (redesigned)",
+      "creative_copy": [],
+      "additional_notes": [
+        {
+          "author": "",
+          "date": "",
+          "note": "This test's control (Cohort A) is itself the 10-day cadence that won the earlier Cadence & Timing test — this Super Test redesigns creative, sender, trigger timing, and cadence on top of that win. Full progression on Eligibility Check CVR: 2.93% (original 21-day series) → 3.07% (10-day cadence) → 4.49% (this redesigned series) — each step compounding on the last."
+        }
+      ],
+      "metrics": [
+        {
+          "label": "CVR: Started Eligibility Check",
+          "control_name": "A — Old series",
+          "control_value": "6.31%",
+          "control_raw": "2,023 / 32,036",
+          "test_name": "B — New series",
+          "test_value": "7.82%",
+          "test_raw": "2,419 / 30,917",
+          "lift": "+23.9% relative",
+          "sig": "Stat sig increase"
+        },
+        {
+          "label": "CVR: Completed Eligibility Check",
+          "control_name": "A — Old series",
+          "control_value": "3.76%",
+          "control_raw": "1,205 / 32,036",
+          "test_name": "B — New series",
+          "test_value": "4.49%",
+          "test_raw": "1,388 / 30,917",
+          "lift": "+19.4% relative",
+          "sig": "Stat sig increase"
+        },
+        {
+          "label": "CVR: Physician Intake Booked",
+          "control_name": "A — Old series",
+          "control_value": "2.01%",
+          "control_raw": "643 / 32,036",
+          "test_name": "B — New series",
+          "test_value": "2.48%",
+          "test_raw": "766 / 30,917",
+          "lift": "+23.4% relative",
+          "sig": "Stat sig increase"
+        },
+        {
+          "label": "Clicks (total, all touchpoints)",
+          "control_name": "A — Old series",
+          "control_value": "1.27%",
+          "control_raw": "2,048 / 161,082",
+          "test_name": "B — New series",
+          "test_value": "1.64%",
+          "test_raw": "1,682 / 95,252",
+          "lift": "+28.8% relative",
+          "sig": "Stat sig increase"
+        },
+        {
+          "label": "Click-to-open rate (CTO)",
+          "control_name": "A — Old series",
+          "control_value": "4.89%",
+          "control_raw": "",
+          "test_name": "B — New series",
+          "test_value": "6.24%",
+          "test_raw": "",
+          "lift": "+27.6% relative",
+          "sig": "Stat sig increase"
+        },
+        {
+          "label": "Opens (total, all touchpoints)",
+          "control_name": "A — Old series",
+          "control_value": "26.0%",
+          "control_raw": "41,880 / 161,082",
+          "test_name": "B — New series",
+          "test_value": "26.65%",
+          "test_raw": "29,775 / 95,252",
+          "lift": "+0.95% relative",
+          "sig": "Not stat sig (flat)"
+        },
+        {
+          "label": "Unsubscribes (total, all touchpoints)",
+          "control_name": "A — Old series",
+          "control_value": "0.15%",
+          "control_raw": "245 / 161,082",
+          "test_name": "B — New series",
+          "test_value": "0.14%",
+          "test_raw": "134 / 95,252",
+          "lift": "-7.5% relative",
+          "sig": "Not stat sig (directionally lower)"
+        }
+      ],
+      "what_worked": [
+        "The new series established a clear new baseline — Cohort B beat the legacy series on every primary conversion metric (Eligibility Check Starts +23.9%, Completions +19.4%, Physician Intake Bookings +23.4%), also validated directionally in Customer.io.",
+        "Modernized creative and more direct, CVR-focused messaging increased engagement — CTR and CTO both improved significantly even though opens stayed essentially flat, meaning the new content converted better once it was opened.",
+        "The redesigned journey did more with less — one fewer email, staggered sends, and still substantially higher downstream conversion.",
+        "Earlier trigger timing (8 min vs. 15 min, closer to the 5.3-minute median time-to-convert) is directionally promising, though it can't be isolated from the other simultaneous changes.",
+        "This compounds directly on the earlier Cadence & Timing win: Eligibility Check CVR climbed 2.93% → 3.07% → 4.49% across the original series, the 10-day cadence, and now this redesign."
+      ],
+      "what_didnt": [
+        "Open rate stayed largely unchanged — sender name, subject line, and visual redesign didn't meaningfully move opens, so future optimization should target click behavior and conversion rather than top-of-funnel engagement.",
+        "This was a Super Test, not a single-variable A/B test — timing, creative, messaging, sender, cadence, and sequencing all changed at once, so no individual change can be credited for the lift on its own.",
+        "Later touchpoints still show engagement decay — CTR and CTO decline across later emails, the same pattern seen before."
+      ],
+      "follow_up": [
+        "Roll out the new series as the permanent baseline for the unverified abandon-cart journey.",
+        "Shift from Super Tests back to incremental A/B tests to isolate individual variables: creative/design, messaging/value prop, trigger timing (8 vs. 15 min), sender name, cadence/touchpoint count, and email/SMS sequencing.",
+        "Evaluate permanently removing the fifth email given equal-or-better performance with fewer sends.",
+        "Keep optimizing click-to-conversion rather than open rate, since post-open engagement is the main driver of the lift.",
+        "Apply the same creative/messaging framework to other upper-funnel abandonment journeys to see if it generalizes."
+      ],
+      "owner_team": "Early Lifecycle",
+      "linear_ticket": "https://linear.app/findsolace/issue/LIFE-283/test-or-pat-abandoncartunverifiedor-super-test",
+      "notion_url": "https://app.notion.com/p/3809601d59a9818f926feaa05ef72be7",
+      "notion_page_id": "3809601d59a9818f926feaa05ef72be7",
+      "needs_review": false
+    },
+    {
+      "slug": "physintrocallbooked-super-test",
+      "name": "PAT_PhysIntroCallBooked Super Test",
+      "category": "Appointment",
+      "campaign": "PAT_PhysIntroCallBooked",
+      "result": "Positive",
+      "start_date": "2026-06-16",
+      "end_date": "2026-07-21",
+      "hypothesis": "By improving copy, touchpoint interactions, templates, and messaging, engagement and attendance can be improved more quickly before reverting back to single variant tests.",
+      "target_impact": "Improve attendance rates by 10%.",
+      "primary_metric": "Attendance rate",
+      "impact_summary": "Flat immediate show-rate impact, but a 42% increase in reschedule rate — netting out to roughly a +2% boost in overall attendance once rescheduled patients are counted. The test had to be restarted mid-way (7/6) after rescheduling bugs affected the initial period.",
+      "experiment_summary": "Establishes a new baseline for PAT_PhysIntroCallBooked by changing copy, touchpoint interactions, templates, and messaging all at once, before reverting to single-variable tests. Had to restart the experiment on 7/6 after the test branch drove a large amount of reschedule volume and hit some rescheduling bugs during the initial period.",
+      "experiment_type": "A/B Flow",
+      "experiment_method": "Random Cohort Branch — experiment tracker only",
+      "secondary_metrics": "Reschedule / reschedule attendance; reduced no-shows",
+      "experiment_event": "EXPERIMENT_FIRED",
+      "experiment_id": "4",
+      "cio_link": "https://fly.customer.io/workspaces/129866/journeys/campaigns/563/overview/workflow/actions",
+      "hex_link": "",
+      "figma_link": "",
+      "variant_a_label": "Control",
+      "variant_b_label": "Test (redesigned)",
+      "creative_copy": [],
+      "additional_notes": [
+        {
+          "author": "",
+          "date": "",
+          "note": "Test was restarted on 7/6 after the test branch drove a significant amount of reschedule volume and hit rescheduling bugs during the initial period — results reflect the post-restart read."
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Attend rate (first attempt)",
+          "control_name": "Control",
+          "control_value": "48.12%",
+          "control_raw": "2,844 / 5,910",
+          "test_name": "Test",
+          "test_value": "47.95%",
+          "test_raw": "2,741 / 5,718",
+          "lift": "-0.35% relative",
+          "sig": "z=0.18, p≈0.86 (not sig — flat)"
+        },
+        {
+          "label": "No-post reschedule rate",
+          "control_name": "Control",
+          "control_value": "8.77%",
+          "control_raw": "313 / 3,570",
+          "test_name": "Test",
+          "test_value": "12.44%",
+          "test_raw": "444 / 3,568",
+          "lift": "+41.8% relative (+3.68pp)",
+          "sig": "z=5.05, p<0.0001 (stat sig)"
+        }
+      ],
+      "what_worked": [
+        "The reschedule mechanism worked dramatically — a +3.68pp (+42% relative) jump in reschedule rate, highly stat sig (p<0.0001), which alone nets out to an estimated +2% lift in overall attendance.",
+        "The redesigned branch runs on more efficient comms infrastructure, which should make it easier to build on going forward."
+      ],
+      "what_didnt": [
+        "Immediate show rate on the first attempt was flat to slightly down (48.12% → 47.95%, not stat sig) — the win here is entirely in capturing people who would've otherwise been lost, not in getting more people to show up the first time.",
+        "Had to restart mid-test after rescheduling bugs distorted the early read — worth sanity-checking infrastructure before trusting early Super Test numbers."
+      ],
+      "follow_up": [
+        "Push the test branch to 100% and finish the appointment ecosystem cleanup.",
+        "Move on to match-rate improvement concepts next."
+      ],
+      "owner_team": "Appointment Lifecycle",
+      "linear_ticket": "https://linear.app/findsolace/issue/LIFE-296/test-or-pat-physintrocallbooked-super-test",
+      "notion_url": "https://app.notion.com/p/3829601d59a981fda837d131ad16e394",
+      "notion_page_id": "3829601d59a981fda837d131ad16e394",
+      "needs_review": false
+    },
+    {
+      "slug": "abandon-cart-verified-super-test",
+      "name": "PAT_AbandonCartVerified | Super Test",
+      "category": "Early Lifecycle",
+      "campaign": "MPAT_AbandonCartVerified",
+      "result": "Positive",
+      "start_date": "2026-06-17",
+      "end_date": "2026-07-21",
+      "hypothesis": "H1: Cohort B (new series) will achieve a higher conversion rate than Cohort A (legacy series). H2: Cohort B (new series) will achieve higher campaign engagement metrics than Cohort A (legacy series).",
+      "target_impact": "15%+ increase to CVR and to engagement metrics (OR, CTR, CTO).",
+      "primary_metric": "CVR (CHW_INTRO_CALL_BOOKED), CVR (PATIENT_ATTENDED_CALL), OR, CTR, CTO",
+      "impact_summary": "Super Test B (New) beat A (Old) decisively on both hypotheses, clearing the 15% target on every primary and engagement metric while running a shorter, leaner series: CHW_INTRO_CALL_BOOKED CVR +34.6%, PATIENT_ATTENDED_CALL CVR +39.5%, OR +7.3%, CTR +29.6%, CTO +20.8% (all stat sig). Unsub rate also rose (+23.9%, stat sig) — small in absolute terms but worth tracking.",
+      "experiment_summary": "Abandon-cart campaigns had gone stale — dated, text-based, repetitive messaging. Following the cadence tests on the Unverified flow and the rollout of the content flywheel, this is the “Verified” sibling of that same overhaul: a fully redesigned series goes head-to-head against the legacy series in a Super Test to establish a new baseline, before returning to incremental A/B optimization. What changed all at once: text-based templates → designed templates; 15-min trigger → 8-min trigger (closer to the 5.3-min median time-to-convert); “Jamie” sender → “Solace Health” sender; 5 emails + 3 SMS → 4 emails + 2 SMS; 21-day series → 10-day series; simultaneous email/SMS sends → staggered sends; soft messaging → CVR-focused messaging; SMS send-window loosened from weekdays-only to every day, 9:45am–6pm.",
+      "experiment_type": "Super Test — old vs. new series",
+      "experiment_method": "Random Cohort Branch → Super Test events",
+      "secondary_metrics": "Unsubscribe %",
+      "experiment_event": "EXPERIMENT_FIRED",
+      "experiment_id": "6",
+      "cio_link": "https://fly.customer.io/workspaces/129866/journeys/campaigns/597",
+      "hex_link": "https://hc.hex.tech/solace-health/app/Lifecycle-Campaign-Attribution-Dashboard-0332iEihSu9EhnSo0CEaR7/latest?view=019edb31-994f-775b-b979-f70517adfb35",
+      "figma_link": "https://www.figma.com/design/zWqDlqf6hSYowZfJK4VmBJ/Lifecycle-Test-Documentation---LS?node-id=4-121&t=2z00xHCmEurrnnsd-4",
+      "variant_a_label": "A — Old series (legacy)",
+      "variant_b_label": "B — New series (redesigned)",
+      "creative_copy": [],
+      "additional_notes": [
+        {
+          "author": "Leah Sternberger",
+          "date": "July 21, 2026",
+          "note": "Re-checked whether B's win was just the faster T1 trigger by measuring booked-to-human-open ratio instead of booked-to-sent. B still converted engaged opens into bookings at a significantly higher rate than A, both across the full series (11.88% vs. 9.32%, +27.5%) and even with T1 excluded entirely (7.49% vs. 6.51%, +15.1%) — confirming the content/design changes drive real lift independent of the timing head start."
+        }
+      ],
+      "metrics": [
+        {
+          "label": "CVR: CHW_INTRO_CALL_BOOKED",
+          "control_name": "A — Old series",
+          "control_value": "8.37%",
+          "control_raw": "1,953 / 23,327",
+          "test_name": "B — New series",
+          "test_value": "11.11%",
+          "test_raw": "2,629 / 23,674",
+          "lift": "+34.6% relative",
+          "sig": "✅ Stat sig increase"
+        },
+        {
+          "label": "CVR: PATIENT_ATTENDED_CALL",
+          "control_name": "A — Old series",
+          "control_value": "3.64%",
+          "control_raw": "848 / 23,327",
+          "test_name": "B — New series",
+          "test_value": "5.07%",
+          "test_raw": "1,201 / 23,674",
+          "lift": "+39.5% relative",
+          "sig": "✅ Stat sig increase"
+        },
+        {
+          "label": "Open rate (all touchpoints)",
+          "control_name": "A — Old series",
+          "control_value": "33.69%",
+          "control_raw": "42,860 / 127,230",
+          "test_name": "B — New series",
+          "test_value": "36.15%",
+          "test_raw": "27,338 / 75,631",
+          "lift": "+7.3% relative",
+          "sig": "✅ Stat sig increase"
+        },
+        {
+          "label": "Click rate (all touchpoints)",
+          "control_name": "A — Old series",
+          "control_value": "1.64%",
+          "control_raw": "2,092 / 127,230",
+          "test_name": "B — New series",
+          "test_value": "2.13%",
+          "test_raw": "1,612 / 75,631",
+          "lift": "+29.6% relative",
+          "sig": "✅ Stat sig increase"
+        },
+        {
+          "label": "Click-to-open rate (CTO)",
+          "control_name": "A — Old series",
+          "control_value": "4.88%",
+          "control_raw": "",
+          "test_name": "B — New series",
+          "test_value": "5.90%",
+          "test_raw": "",
+          "lift": "+20.8% relative",
+          "sig": "✅ Stat sig increase"
+        },
+        {
+          "label": "Unsubscribe rate (all touchpoints)",
+          "control_name": "A — Old series",
+          "control_value": "0.16%",
+          "control_raw": "205 / 127,230",
+          "test_name": "B — New series",
+          "test_value": "0.20%",
+          "test_raw": "151 / 75,631",
+          "lift": "+23.9% relative",
+          "sig": "⚠️ Stat sig increase — undesirable direction, small in absolute terms"
+        }
+      ],
+      "what_worked": [
+        "The new series won broadly even accounting for the faster T1 trigger — excluding T1 entirely, B still beat A by +15% aggregate CVR across the remaining touchpoints, confirming the redesign drives real lift, not just faster timing.",
+        "It's not just speed — B's T1 click-to-open rate was +13% higher than A's, meaning the new creative and CTA engaged people more effectively once they opened it.",
+        "The redesigned EM2 (new subject line/timing) was a standout, with open rate +7.2% over control.",
+        "SMS2 converted better (+2% CVR) with cleaner deliverability than control.",
+        "A follow-up analysis (booked-to-human-open instead of booked-to-sent) confirmed the lift holds even isolating for engaged users only and excluding T1's timing advantage entirely (+15.1% higher booking rate on EM2–EM4 opens alone) — a genuine content/design win, not just a timing artifact.",
+        "This mirrors the Unverified flow's own Super Test (same redesign playbook, run on the sibling campaign) — both landed decisively positive, so this playbook (modern templates, faster trigger, staggered sends, direct CVR-focused copy) generalizes across the verified/unverified abandon-cart split, not just one campaign."
+      ],
+      "what_didnt": [
+        "EM3's open rate dropped sharply (-7.56% vs. control) — since its click-to-open was actually better, this looks like a subject-line or cadence-gap issue rather than a content problem.",
+        "SMS1 underperformed control on both CTR (-4.02%) and CVR (-2.12%) — the weakest touchpoint in the new series.",
+        "Unsubscribe rate rose +23.9% (stat sig) — still small in absolute terms (0.20% vs. 0.16%), but worth monitoring at scale."
+      ],
+      "follow_up": [
+        "Promote the Super Test path to the default, retire the legacy series, and shift to targeted A/B tests on EM3 and SMS1 specifically.",
+        "Test subject lines for EM3 and evaluate whether the EM2→EM3 cadence gap needs adjusting.",
+        "Rework SMS1 copy/CTA via an A/B test against the current control.",
+        "Add subject-line and content (video/education) A/B tests to keep optimizing engagement."
+      ],
+      "owner_team": "Early Lifecycle",
+      "linear_ticket": "https://linear.app/findsolace/issue/LIFE-284/test-or-pat-abandoncartverifiedor-super-test",
+      "notion_url": "https://app.notion.com/p/3809601d59a98191abccc519f5582e45",
+      "notion_page_id": "3809601d59a98191abccc519f5582e45",
+      "needs_review": false
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Lifecycle Experiment Results</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+
+</head>
+<body>
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <div class="brand">Lifecycle Experiment Results<span class="sub">Solace Health · Growth &amp; Lifecycle</span></div>
+    <div class="topnav">
+      <a href="https://app.notion.com/p/3589601d59a98000bf9cded9b625f4b4" target="_blank" rel="noopener">Source database ↗</a>
+      <a href="https://app.notion.com/p/3949601d59a98087af33e49b0d57f2d8" target="_blank" rel="noopener">Notion writeup ↗</a>
+    </div>
+  </div>
+  <div class="wrap sync-note">Last synced July 22, 2026 · 23 completed experiments</div>
+</div>
+
+<div class="wrap">
+  <div class="stat-strip">
+    <div class="stat-cell"><div class="stat-num">23</div><div class="stat-label">Completed experiments</div></div>
+    <div class="stat-cell"><div class="stat-num pos">14</div><div class="stat-label">Positive results</div></div>
+    <div class="stat-cell"><div class="stat-num neg">0</div><div class="stat-label">Negative results</div></div>
+    <div class="stat-cell"><div class="stat-num">9</div><div class="stat-label">Neutral / mixed / inconclusive</div></div>
+    <div class="stat-cell"><div class="stat-num">61%</div><div class="stat-label">Win rate</div></div>
+  </div>
+
+  <div class="filters">
+    <label>Category</label>
+    <div class="chip-group"><span class="chip active" data-cat="All">All categories</span><span class="chip cat-early-lifecycle" data-cat="Early Lifecycle">Early Lifecycle</span><span class="chip cat-appointment" data-cat="Appointment">Appointment</span><span class="chip cat-patients" data-cat="Patients">Patients</span><span class="chip cat-advocate" data-cat="Advocate">Advocate</span></div>
+    <label style="margin-left:14px;">Result</label>
+    <div class="chip-group"><span class="chip active" data-res="All">All results</span><span class="chip" data-res="Positive">Positive</span><span class="chip" data-res="Neutral">Neutral</span><span class="chip" data-res="Inconclusive">Inconclusive</span></div>
+    <input id="search-input" type="text" placeholder="Search experiments…" style="margin-left:auto;">
+  </div>
+
+  <div class="table-wrap">
+    <table class="exp-table">
+      <thead>
+        <tr>
+          <th data-sort="name">Experiment</th>
+          <th>Category</th>
+          <th>Result</th>
+          <th>Primary metric</th>
+          <th>Key finding</th>
+          <th data-sort="enddate">Ended</th>
+        </tr>
+      </thead>
+      <tbody id="exp-tbody">
+        
+        <tr data-cat="Appointment" data-res="Positive"
+            data-search="pat_physintrocallbooked super test appointment pat_physintrocallbooked by improving copy, touchpoint interactions, templates, and messaging, engagement and attendance can be improved more quickly before reverting back to single variant tests. flat immediate show-rate impact, but a 42% increase in reschedule rate — netting out to roughly a +2% boost in overall attendance once rescheduled patients are counted. the test had to be restarted mid-way (7/6) after rescheduling bugs affected the initial period." data-href="experiments/physintrocallbooked-super-test.html"
+            data-name="PAT_PhysIntroCallBooked Super Test" data-enddate="2026-07-21">
+          <td class="col-name">PAT_PhysIntroCallBooked Super Test<span class="campaign">PAT_PhysIntroCallBooked</span></td>
+          <td><span class="cat-chip cat-appointment">Appointment</span></td>
+          <td><span class="tag positive">Positive</span></td>
+          <td class="col-metric">Attendance rate</td>
+          <td class="col-summary">Flat immediate show-rate impact, but a 42% increase in reschedule rate — netting out to roughly a +2% boost in overall attendance once rescheduled patients are …</td>
+          <td class="col-date">2026-07-21</td>
+        </tr>
+        <tr data-cat="Early Lifecycle" data-res="Positive"
+            data-search="pat_abandoncartverified | super test early lifecycle mpat_abandoncartverified h1: cohort b (new series) will achieve a higher conversion rate than cohort a (legacy series). h2: cohort b (new series) will achieve higher campaign engagement metrics than cohort a (legacy series). super test b (new) beat a (old) decisively on both hypotheses, clearing the 15% target on every primary and engagement metric while running a shorter, leaner series: chw_intro_call_booked cvr +34.6%, patient_attended_call cvr +39.5%, or +7.3%, ctr +29.6%, cto +20.8% (all stat sig). unsub rate also rose (+23.9%, stat sig) — small in absolute terms but worth tracking." data-href="experiments/abandon-cart-verified-super-test.html"
+            data-name="PAT_AbandonCartVerified | Super Test" data-enddate="2026-07-21">
+          <td class="col-name">PAT_AbandonCartVerified | Super Test<span class="campaign">MPAT_AbandonCartVerified</span></td>
+          <td><span class="cat-chip cat-early-lifecycle">Early Lifecycle</span></td>
+          <td><span class="tag positive">Positive</span></td>
+          <td class="col-metric">CVR (CHW_INTRO_CALL_BOOKED), CVR (PATIENT_ATTENDED_CALL), OR, CTR, CTO</td>
+          <td class="col-summary">Super Test B (New) beat A (Old) decisively on both hypotheses, clearing the 15% target on every primary and engagement metric while running a shorter, leaner se…</td>
+          <td class="col-date">2026-07-21</td>
+        </tr>
+        <tr data-cat="Early Lifecycle" data-res="Positive"
+            data-search="pat_abandoncartunverified | super test early lifecycle pat_abandoncartunverified h1: cohort b (new series) will achieve a higher cvr than cohort a (legacy series). h2: cohort b will achieve higher engagement metrics (or, ctr, cto). the redesigned super test series (variant b) set a new performance baseline, with statistically significant improvements across every primary conversion metric — started eligibility check (+23.9%), completed eligibility check (+19.4%), and physician intake booked (+23.4%) — all while sending one fewer email. engagement also improved significantly (clicks +28.8%, cto +27.6%) despite open rate staying essentially flat. variant b becomes the new baseline going forward." data-href="experiments/abandon-cart-super-test.html"
+            data-name="PAT_AbandonCartUnverified | Super Test" data-enddate="2026-07-10">
+          <td class="col-name">PAT_AbandonCartUnverified | Super Test<span class="campaign">PAT_AbandonCartUnverified</span></td>
+          <td><span class="cat-chip cat-early-lifecycle">Early Lifecycle</span></td>
+          <td><span class="tag positive">Positive</span></td>
+          <td class="col-metric">CVR (Started/Completed Eligibility Check, Physician Intake Booked), OR, CTR, CTO</td>
+          <td class="col-summary">The redesigned Super Test series (Variant B) set a new performance baseline, with statistically significant improvements across every primary conversion metric …</td>
+          <td class="col-date">2026-07-10</td>
+        </tr>
+        <tr data-cat="Advocate" data-res="Positive"
+            data-search="advocate june toggle campaign advocate adv_junetoggle advocates who receive email comms will be more likely to toggle their availability back on than those who don&#x27;t. highly-engaged advocates will be more likely to take action than medium- or low-engaged advocates. the single biggest win in this dataset: a simple reactivation email drove advocates to unpause at 3–5.7x the rate of holdout, highly statistically significant in both reads. note: this result lives in the experiment page&#x27;s write-up but hadn&#x27;t been copied into the database&#x27;s result/impact summary fields — worth fixing in notion so this doesn&#x27;t get missed." data-href="experiments/advocate-june-toggle-campaign.html"
+            data-name="Advocate June Toggle Campaign" data-enddate="2026-06-25">
+          <td class="col-name">Advocate June Toggle Campaign<span class="campaign">ADV_JuneToggle</span></td>
+          <td><span class="cat-chip cat-advocate">Advocate</span></td>
+          <td><span class="tag positive">Positive</span></td>
+          <td class="col-metric">ADVOCATE_TOGGLED_AVAILABILITY (listing_status = unpaused)</td>
+          <td class="col-summary">The single biggest win in this dataset: a simple reactivation email drove advocates to unpause at 3–5.7x the rate of holdout, highly statistically significant i…</td>
+          <td class="col-date">2026-06-25</td>
+        </tr>
+        <tr data-cat="Appointment" data-res="Neutral"
+            data-search="dq not matched winback expansion (email) appointment pat_physnotmatchedwnb extending the winback flow will increase our booking rates for unmatched patients. launching email + sms at the same time was slightly higher than control, but the lift wasn&#x27;t large enough to chase further — pausing this thread in favor of a bigger “super test” that combines several ideas at once." data-href="experiments/dq-not-matched-winback-email.html"
+            data-name="DQ Not Matched Winback Expansion (Email)" data-enddate="2026-06-23">
+          <td class="col-name">DQ Not Matched Winback Expansion (Email)<span class="campaign">PAT_PhysNotMatchedWnb</span></td>
+          <td><span class="cat-chip cat-appointment">Appointment</span></td>
+          <td><span class="tag neutral">Neutral</span></td>
+          <td class="col-metric">Booking rate + attendance rate</td>
+          <td class="col-summary">Launching email + SMS at the same time was slightly higher than control, but the lift wasn&#x27;t large enough to chase further — pausing this thread in favor of a b…</td>
+          <td class="col-date">2026-06-23</td>
+        </tr>
+        <tr data-cat="Appointment" data-res="Neutral"
+            data-search="dq not matched winback expansion (sms) appointment pat_physnotmatchedwnb extending the winback flow will increase our booking rates for unmatched patients. sending the sms expansion alone was slightly positive versus holdout, but again not enough to warrant continued iteration on its own — paused in favor of a super test." data-href="experiments/dq-not-matched-winback-sms.html"
+            data-name="DQ Not Matched Winback Expansion (SMS)" data-enddate="2026-06-23">
+          <td class="col-name">DQ Not Matched Winback Expansion (SMS)<span class="campaign">PAT_PhysNotMatchedWnb</span></td>
+          <td><span class="cat-chip cat-appointment">Appointment</span></td>
+          <td><span class="tag neutral">Neutral</span></td>
+          <td class="col-metric">Booking rate + attendance rate</td>
+          <td class="col-summary">Sending the SMS expansion alone was slightly positive versus holdout, but again not enough to warrant continued iteration on its own — paused in favor of a supe…</td>
+          <td class="col-date">2026-06-23</td>
+        </tr>
+        <tr data-cat="Patients" data-res="Inconclusive"
+            data-search="pat_hoursdriver | mid-month holdout — active patients patients pat_hoursdriver_midmonthholdout_active patients if patients at risk of falling short on their monthly hours receive a mid-month reminder to connect with their advocate, they&#x27;ll be more likely to complete their target hours by month end than patients who don&#x27;t receive the reminder. directionally positive for the test group (+1.38pp) but not statistically significant — a short read on a promising idea that needs a longer or larger test to confirm." data-href="experiments/hoursdriver-mid-month-holdout-active.html"
+            data-name="PAT_HoursDriver | Mid-Month Holdout — Active Patients" data-enddate="2026-06-19">
+          <td class="col-name">PAT_HoursDriver | Mid-Month Holdout — Active Patients<span class="campaign">PAT_HoursDriver_MidMonthHoldout_Active Patients</span></td>
+          <td><span class="cat-chip cat-patients">Patients</span></td>
+          <td><span class="tag inconclusive">Inconclusive</span></td>
+          <td class="col-metric">Active patients / hours completion</td>
+          <td class="col-summary">Directionally positive for the test group (+1.38pp) but not statistically significant — a short read on a promising idea that needs a longer or larger test to c…</td>
+          <td class="col-date">2026-06-19</td>
+        </tr>
+        <tr data-cat="Patients" data-res="Positive"
+            data-search="pat inactive hours driver | a/b/holdout patients pat_hoursdriver_holdout_inactive patients if inactive patients receive gentle reminders, it will encourage them to schedule a check-in with their advocate and re-engage. emotionally-toned copy drove 44% more conversions than the plain/normal-tone variant (33% higher than holdout), at 92% confidence. volume was lower than ideal, so treat as a strong early signal rather than a settled result — but it flips the earlier assumption that inactive patients simply don&#x27;t respond to messaging." data-href="experiments/inactive-hours-driver-ab-holdout.html"
+            data-name="PAT Inactive Hours Driver | A/B/Holdout" data-enddate="2026-06-18">
+          <td class="col-name">PAT Inactive Hours Driver | A/B/Holdout<span class="campaign">PAT_HoursDriver_Holdout_Inactive Patients</span></td>
+          <td><span class="cat-chip cat-patients">Patients</span></td>
+          <td><span class="tag positive">Positive</span></td>
+          <td class="col-metric">TIME_SPAN_SUBMITTED</td>
+          <td class="col-summary">Emotionally-toned copy drove 44% more conversions than the plain/normal-tone variant (33% higher than holdout), at 92% confidence. Volume was lower than ideal, …</td>
+          <td class="col-date">2026-06-18</td>
+        </tr>
+        <tr data-cat="Appointment" data-res="Neutral"
+            data-search="physician intro 4hr reminder (same-day) appointment mpat_physintrocallbooked by adding a same-day email touchpoint several hours before the call, we&#x27;ll give patients an earlier heads-up and more time to prepare or reschedule. this touchpoint started with a ~15–20% lift but slowly degraded over time, landing virtually flat by the end of the test." data-href="experiments/physician-intro-4hr-reminder.html"
+            data-name="Physician Intro 4hr Reminder (Same-Day)" data-enddate="2026-06-16">
+          <td class="col-name">Physician Intro 4hr Reminder (Same-Day)<span class="campaign">MPAT_PhysIntroCallBooked</span></td>
+          <td><span class="cat-chip cat-appointment">Appointment</span></td>
+          <td><span class="tag neutral">Neutral</span></td>
+          <td class="col-metric">Intro call attendance rate (show rate)</td>
+          <td class="col-summary">This touchpoint started with a ~15–20% lift but slowly degraded over time, landing virtually flat by the end of the test.</td>
+          <td class="col-date">2026-06-16</td>
+        </tr>
+        <tr data-cat="Appointment" data-res="Neutral"
+            data-search="physician intro 3hr reminder appointment mpat_physintrocallbooked by adding a 3hr email touchpoint, we&#x27;ll give patients an earlier heads-up and more time to prepare or reschedule. same pattern as its 4hr sibling test: started with a ~15–20% lift that steadily degraded to roughly flat by the end of the test." data-href="experiments/physician-intro-3hr-reminder.html"
+            data-name="Physician Intro 3hr Reminder" data-enddate="2026-06-16">
+          <td class="col-name">Physician Intro 3hr Reminder<span class="campaign">MPAT_PhysIntroCallBooked</span></td>
+          <td><span class="cat-chip cat-appointment">Appointment</span></td>
+          <td><span class="tag neutral">Neutral</span></td>
+          <td class="col-metric">Intro call attendance rate (show rate)</td>
+          <td class="col-summary">Same pattern as its 4hr sibling test: started with a ~15–20% lift that steadily degraded to roughly flat by the end of the test.</td>
+          <td class="col-date">2026-06-16</td>
+        </tr>
+        <tr data-cat="Patients" data-res="Positive"
+            data-search="pat_hoursdriver | month start holdout — active patients pat_hoursdriver if patients receive a beginning-of-month reminder, they&#x27;ll complete more patient hours during the month than those who don&#x27;t receive the reminder. patients who received the beginning-of-month reminder converted at a higher rate than the holdout group (62.6% vs. 58.3%), a lift of +7.4%. directionally positive, not stat sig at 95% — worth a larger/longer follow-up." data-href="experiments/hoursdriver-month-start-holdout-active.html"
+            data-name="PAT_HoursDriver | Month Start Holdout — Active" data-enddate="2026-06-15">
+          <td class="col-name">PAT_HoursDriver | Month Start Holdout — Active<span class="campaign">PAT_HoursDriver</span></td>
+          <td><span class="cat-chip cat-patients">Patients</span></td>
+          <td><span class="tag positive">Positive</span></td>
+          <td class="col-metric">CVR</td>
+          <td class="col-summary">Patients who received the beginning-of-month reminder converted at a higher rate than the holdout group (62.6% vs. 58.3%), a lift of +7.4%. Directionally positi…</td>
+          <td class="col-date">2026-06-15</td>
+        </tr>
+        <tr data-cat="Appointment" data-res="Positive"
+            data-search="mpat_physintrocallnoshowwnb | improved winback flow appointment mpat_physintrocallnoshowwnb the current flow is too long and doesn&#x27;t engage patients well enough in the initial touchpoints. by introducing more engaging touchpoints with better channel orchestration and cadence, we&#x27;ll improve winback of no-show patients. +27% relative lift in attendance for the optimized flow. hit stat significance quickly and held over 2+ weeks with decent volume — the strongest, most durable win in the appointment category." data-href="experiments/improved-winback-flow.html"
+            data-name="MPAT_PhysIntroCallNoShowWnb | Improved Winback Flow" data-enddate="2026-06-15">
+          <td class="col-name">MPAT_PhysIntroCallNoShowWnb | Improved Winback Flow<span class="campaign">MPAT_PhysIntroCallNoShowWnb</span></td>
+          <td><span class="cat-chip cat-appointment">Appointment</span></td>
+          <td><span class="tag positive">Positive</span></td>
+          <td class="col-metric">Patient attendance for physician call</td>
+          <td class="col-summary">+27% relative lift in attendance for the optimized flow. Hit stat significance quickly and held over 2+ weeks with decent volume — the strongest, most durable w…</td>
+          <td class="col-date">2026-06-15</td>
+        </tr>
+        <tr data-cat="Appointment" data-res="Neutral"
+            data-search="progress bar in commercial appt reminders appointment cpat_physintrocallbooked by adding a progress bar, we&#x27;ll show patients how close they are to matching with an advocate and increase intent to attend these calls. slight gains from the progress bar, but likely needs better visual execution to unlock more impact — calling this test until the visual can be improved." data-href="experiments/progress-bar-commercial-reminders.html"
+            data-name="Progress Bar in Commercial Appt Reminders" data-enddate="2026-06-12">
+          <td class="col-name">Progress Bar in Commercial Appt Reminders<span class="campaign">CPAT_PhysIntroCallBooked</span></td>
+          <td><span class="cat-chip cat-appointment">Appointment</span></td>
+          <td><span class="tag neutral">Neutral</span></td>
+          <td class="col-metric">Show rate</td>
+          <td class="col-summary">Slight gains from the progress bar, but likely needs better visual execution to unlock more impact — calling this test until the visual can be improved.</td>
+          <td class="col-date">2026-06-12</td>
+        </tr>
+        <tr data-cat="Early Lifecycle" data-res="Positive"
+            data-search="pat_abandoncartunverified | cadence &amp; timing early lifecycle pat_abandoncartunverified capitalizing on recency with a shorter, more aggressive outreach cadence (10 days vs. the current 21 days) will improve cvr and engagement metrics in the abandon-cart series. a compressed 10-day cadence outperformed the existing 21-day sequence across most key metrics. engagement (clickers, click-to-open, funnel re-entry) hit statistical significance; downstream conversion (eligibility checks, bookings) trended positive but didn&#x27;t reach significance. cadence and timing are now considered optimized — future testing shifts to subject line, messaging, and content." data-href="experiments/abandon-cart-cadence-timing.html"
+            data-name="PAT_AbandonCartUnverified | Cadence &amp; Timing" data-enddate="2026-06-10">
+          <td class="col-name">PAT_AbandonCartUnverified | Cadence &amp; Timing<span class="campaign">PAT_AbandonCartUnverified</span></td>
+          <td><span class="cat-chip cat-early-lifecycle">Early Lifecycle</span></td>
+          <td><span class="tag positive">Positive</span></td>
+          <td class="col-metric">Cohort engagement + CVR (multiple)</td>
+          <td class="col-summary">A compressed 10-day cadence outperformed the existing 21-day sequence across most key metrics. Engagement (clickers, click-to-open, funnel re-entry) hit statist…</td>
+          <td class="col-date">2026-06-10</td>
+        </tr>
+        <tr data-cat="Early Lifecycle" data-res="Neutral"
+            data-search="cpat_offwaitlist | speed vs. free early lifecycle cpat_offwaitlist messaging that checking eligibility is free will improve engagement over a “speed” value prop. “free” beat “speed” messaging by +2.11% ctr at &gt;90% confidence (not yet 95%). bookings trended +84% higher for “free” (non-sig, small sample). moving forward with “free” for additional waitlist removals; recommend further iteration to confirm at 95%." data-href="experiments/offwaitlist-speed-vs-free.html"
+            data-name="CPAT_OFFWaitlist | Speed vs. Free" data-enddate="2026-06-10">
+          <td class="col-name">CPAT_OFFWaitlist | Speed vs. Free<span class="campaign">CPAT_OFFWaitlist</span></td>
+          <td><span class="cat-chip cat-early-lifecycle">Early Lifecycle</span></td>
+          <td><span class="tag neutral">Neutral</span></td>
+          <td class="col-metric">CTR</td>
+          <td class="col-summary">“Free” beat “speed” messaging by +2.11% CTR at &gt;90% confidence (not yet 95%). Bookings trended +84% higher for “free” (non-sig, small sample). Moving forward wi…</td>
+          <td class="col-date">2026-06-10</td>
+        </tr>
+        <tr data-cat="Patients" data-res="Positive"
+            data-search="pat_hoursdriver | may holdout — active patients patients pat_hoursdriver sending a month-end email to low-engagement active patients will increase appointment bookings and re-engagement. outreach increased conversion versus holdout (final read: 90.7% vs. 85.5%), suggesting messaging drives incremental conversions for this segment. small sample, but directionally clear." data-href="experiments/hoursdriver-may-holdout-active.html"
+            data-name="PAT_HoursDriver | May Holdout — Active Patients" data-enddate="2026-06-02">
+          <td class="col-name">PAT_HoursDriver | May Holdout — Active Patients<span class="campaign">PAT_HoursDriver</span></td>
+          <td><span class="cat-chip cat-patients">Patients</span></td>
+          <td><span class="tag positive">Positive</span></td>
+          <td class="col-metric">CVR — driving hours</td>
+          <td class="col-summary">Outreach increased conversion versus holdout (final read: 90.7% vs. 85.5%), suggesting messaging drives incremental conversions for this segment. Small sample, …</td>
+          <td class="col-date">2026-06-02</td>
+        </tr>
+        <tr data-cat="Patients" data-res="Neutral"
+            data-search="driving patient hours | 14d no-message test patients pat_hoursdriver_14dnomessage patients behind on their monthly hours who haven&#x27;t received a message in the last 14 days will engage more when they receive an automated email reminder. ended slightly positive after the 14-day maturation window. stronger significance showed up on engagement (attended call) than on the primary cvr metric — a possible engagement driver worth revisiting." data-href="experiments/hoursdriver-14d-no-message.html"
+            data-name="Driving Patient Hours | 14D No-Message Test" data-enddate="2026-06-01">
+          <td class="col-name">Driving Patient Hours | 14D No-Message Test<span class="campaign">PAT_HoursDriver_14DNoMessage</span></td>
+          <td><span class="cat-chip cat-patients">Patients</span></td>
+          <td><span class="tag neutral">Neutral</span></td>
+          <td class="col-metric">CVR — hours submitted within 2 weeks</td>
+          <td class="col-summary">Ended slightly positive after the 14-day maturation window. Stronger significance showed up on engagement (attended call) than on the primary CVR metric — a pos…</td>
+          <td class="col-date">2026-06-01</td>
+        </tr>
+        <tr data-cat="Early Lifecycle" data-res="Positive"
+            data-search="edu “what&#x27;s next” phys intake content vs. “still struggling” early lifecycle mpat_abandoncartverified if we replace the underperforming mid-series “still struggling?” email with educational content addressing what patients can expect from the physician intake call, we&#x27;ll reduce hesitancy and improve engagement and cvr (bookings). educational “what&#x27;s next” content significantly outperformed control across every metric — all statistically significant. meeting patients with clear immediate next steps beat selling long-term benefits or naming the overwhelm directly." data-href="experiments/edu-whats-next-vs-still-struggling.html"
+            data-name="EDU “What&#x27;s Next” PHYS Intake Content vs. “Still Struggling”" data-enddate="2026-05-29">
+          <td class="col-name">EDU “What&#x27;s Next” PHYS Intake Content vs. “Still Struggling”<span class="campaign">MPAT_AbandonCartVerified</span></td>
+          <td><span class="cat-chip cat-early-lifecycle">Early Lifecycle</span></td>
+          <td><span class="tag positive">Positive</span></td>
+          <td class="col-metric">OR, CTR, CVR (physician intro call booked)</td>
+          <td class="col-summary">Educational “what&#x27;s next” content significantly outperformed control across every metric — all statistically significant. Meeting patients with clear immediate …</td>
+          <td class="col-date">2026-05-29</td>
+        </tr>
+        <tr data-cat="Patients" data-res="Neutral"
+            data-search="pat_hoursdriver | may holdout — inactive patients patients pat_hoursdriver sending a month-end email to inactive patients will increase appointment bookings and re-engagement. ran for 6 days; treatment performed slightly worse than holdout, essentially flat. for relatively active users without a portal account, this outreach had no measurable impact — these users likely convert regardless of messaging." data-href="experiments/hoursdriver-may-holdout-inactive.html"
+            data-name="PAT_HoursDriver | May Holdout — Inactive Patients" data-enddate="2026-05-28">
+          <td class="col-name">PAT_HoursDriver | May Holdout — Inactive Patients<span class="campaign">PAT_HoursDriver</span></td>
+          <td><span class="cat-chip cat-patients">Patients</span></td>
+          <td><span class="tag neutral">Neutral</span></td>
+          <td class="col-metric">CVR — driving hours</td>
+          <td class="col-summary">Ran for 6 days; treatment performed slightly worse than holdout, essentially flat. For relatively active users without a portal account, this outreach had no me…</td>
+          <td class="col-date">2026-05-28</td>
+        </tr>
+        <tr data-cat="Early Lifecycle" data-res="Positive"
+            data-search="cpat_offwaitlist | tasks vs. personas — advocate edu early lifecycle cpat_offwaitlist using slightly more playful copy around advocate “personas” for advocate education will improve engagement (ctr) compared to more traditional, straightforward “tasks” copy. variant b (personas) produced a statistically significant +29.5% increase in ctr over variant a (tasks) — suggesting playful copy can outperform straightforward messaging even with a commercial audience typically treated like the more conservative medicare audience." data-href="experiments/offwaitlist-tasks-vs-personas.html"
+            data-name="CPAT_OFFWaitlist | Tasks vs. Personas — Advocate EDU" data-enddate="2026-05-26">
+          <td class="col-name">CPAT_OFFWaitlist | Tasks vs. Personas — Advocate EDU<span class="campaign">CPAT_OFFWaitlist</span></td>
+          <td><span class="cat-chip cat-early-lifecycle">Early Lifecycle</span></td>
+          <td><span class="tag positive">Positive</span></td>
+          <td class="col-metric">CTR</td>
+          <td class="col-summary">Variant B (personas) produced a statistically significant +29.5% increase in CTR over Variant A (tasks) — suggesting playful copy can outperform straightforward…</td>
+          <td class="col-date">2026-05-26</td>
+        </tr>
+        <tr data-cat="Appointment" data-res="Positive"
+            data-search="confirmation sms reschedule appointment pat_callconfirmationflowsms by providing a reschedule option in the confirmation message, we might avoid pure cancellations without a reschedule. adding a reschedule option lifted attendance +4-4.5% across both the follow-up call confirmation and the sms1 confirmation touchpoints — likely by capturing patients who would otherwise have just cancelled outright." data-href="experiments/confirmation-sms-reschedule.html"
+            data-name="Confirmation SMS Reschedule" data-enddate="2026-05-12">
+          <td class="col-name">Confirmation SMS Reschedule<span class="campaign">PAT_CallConfirmationFlowSMS</span></td>
+          <td><span class="cat-chip cat-appointment">Appointment</span></td>
+          <td><span class="tag positive">Positive</span></td>
+          <td class="col-metric">Intro call attendance rate (show rate)</td>
+          <td class="col-summary">Adding a reschedule option lifted attendance +4-4.5% across both the follow-up call confirmation and the SMS1 confirmation touchpoints — likely by capturing pat…</td>
+          <td class="col-date">2026-05-12</td>
+        </tr>
+        <tr data-cat="Appointment" data-res="Positive"
+            data-search="dq sms “window” copy appointment pat_physreadycheck leveraging ‘window’ terminology will set patient expectations better and reduce the number of upset patients coming into their physician call, without hurting show rates. swapping “your appointment is starting soon” for “your appointment window is coming up” improved attendance, with performance ranging +5% to +19% across reads (stat sig) and a headline lift of about +6%." data-href="experiments/dq-sms-window-copy.html"
+            data-name="DQ SMS “Window” Copy" data-enddate="2026-05-12">
+          <td class="col-name">DQ SMS “Window” Copy<span class="campaign">PAT_PhysReadyCheck</span></td>
+          <td><span class="cat-chip cat-appointment">Appointment</span></td>
+          <td><span class="tag positive">Positive</span></td>
+          <td class="col-metric">Show rate</td>
+          <td class="col-summary">Swapping “your appointment is starting soon” for “your appointment window is coming up” improved attendance, with performance ranging +5% to +19% across reads (…</td>
+          <td class="col-date">2026-05-12</td>
+        </tr>
+        <tr data-cat="Early Lifecycle" data-res="Positive"
+            data-search="text vs. button cta early lifecycle pat_abandoncartunverified replacing text-based ctas with button-based ctas will improve engagement. button cta&#x27;s ctr (2.1%) was +42.6% higher than the text/copy cta (1.4%), statistically significant. one of the simplest, most replicable wins in the whole program." data-href="experiments/text-vs-button-cta.html"
+            data-name="Text vs. Button CTA" data-enddate="2026-04-29">
+          <td class="col-name">Text vs. Button CTA<span class="campaign">PAT_AbandonCartUnverified</span></td>
+          <td><span class="cat-chip cat-early-lifecycle">Early Lifecycle</span></td>
+          <td><span class="tag positive">Positive</span></td>
+          <td class="col-metric">CTR</td>
+          <td class="col-summary">Button CTA&#x27;s CTR (2.1%) was +42.6% higher than the text/copy CTA (1.4%), statistically significant. One of the simplest, most replicable wins in the whole progr…</td>
+          <td class="col-date">2026-04-29</td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="empty-state" class="empty-state" style="display:none;">No experiments match these filters.</div>
+  </div>
+</div>
+
+<footer class="site-footer">Click any row to open the full experiment report · Generated from the Lifecycle Experiments Notion database · Re-run generate.py after editing data.json</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

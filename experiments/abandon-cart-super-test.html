@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>PAT_AbandonCartUnverified | Super Test — Lifecycle Experiment Results</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+
+</head>
+<body>
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <div class="brand">Lifecycle Experiment Results<span class="sub">Solace Health · Growth &amp; Lifecycle</span></div>
+    <div class="topnav"><a href="../index.html">← All experiments</a></div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="detail-header">
+    <div class="detail-breadcrumb">
+      <span class="cat-chip cat-early-lifecycle">Early Lifecycle</span> · PAT_AbandonCartUnverified
+    </div>
+    <div class="detail-title-row">
+      <div>
+        <h1 class="detail-title">PAT_AbandonCartUnverified | Super Test</h1>
+        <div class="detail-meta">
+          <span><strong>Owner team:</strong> Early Lifecycle</span>
+          <span><strong>Ran:</strong> 2026-06-16 → 2026-07-10</span>
+          <span><strong>Primary metric:</strong> CVR (Started/Completed Eligibility Check, Physician Intake Booked), OR, CTR, CTO</span>
+        </div>
+      </div>
+      <span class="stamp positive">POSITIVE</span>
+    </div>
+  </div>
+  
+
+  <div class="section">
+    <h2>Hypothesis</h2>
+    <div class="hypothesis-block">H1: Cohort B (new series) will achieve a higher CVR than Cohort A (legacy series). H2: Cohort B will achieve higher engagement metrics (OR, CTR, CTO).</div>
+    <div class="target-impact"><strong>Target impact:</strong> 15%+ increase to CVR and engagement metrics (OR, CTR, CTO).</div>
+  </div>
+
+  <div class="section">
+    <h2>Experiment Details</h2>
+    <p class="summary-text">Abandon-cart campaigns had gone stale — dated, text-based, repetitive messaging. Following the earlier cadence test and the rollout of the content flywheel, this Super Test resets the baseline entirely: a fully redesigned series goes head-to-head against the legacy series before returning to incremental A/B testing. What changed all at once: text-based templates → designed templates; 15-minute trigger → 8-minute trigger (closer to the 5.3-minute median time-to-convert); “Jamie” sender → “Solace Health” sender; 5 emails + 2 SMS → 4 emails + 2 SMS; simultaneous email/SMS sends → staggered sends; softer messaging → direct, CVR-focused messaging.</p><div class="details-grid"><div class="dg-item"><span class="dg-label">Experiment type</span><span class="dg-value">Super Test — old vs. new series</span></div><div class="dg-item"><span class="dg-label">Method</span><span class="dg-value">Random Cohort Branch → Super Test events</span></div><div class="dg-item"><span class="dg-label">Secondary metrics</span><span class="dg-value">CVR (Physician Intake Booked); series engagement — OR, CTR, CTO, unsubscribes</span></div><div class="dg-item"><span class="dg-label">Experiment event</span><span class="dg-value">EXPERIMENT_FIRED</span></div><div class="dg-item"><span class="dg-label">Experiment ID</span><span class="dg-value">5</span></div></div>
+  </div>
+
+  <div class="section">
+    <h2>Reference Links</h2>
+    <table class="ref-links-table"><tbody><tr><td>Linear ticket</td><td><a href="https://linear.app/findsolace/issue/LIFE-283/test-or-pat-abandoncartunverifiedor-super-test" target="_blank" rel="noopener">https://linear.app/findsolace/issue/LIFE-283/test-or-pat-abandoncartunverifiedor-super-test ↗</a></td></tr>
+<tr><td>CIO experiment</td><td><a href="https://fly.customer.io/workspaces/129866/journeys/campaigns/598" target="_blank" rel="noopener">https://fly.customer.io/workspaces/129866/journeys/campaigns/598 ↗</a></td></tr>
+<tr><td>HEX dashboard</td><td><a href="https://hc.hex.tech/solace-health/app/Lifecycle-Campaign-Attribution-Dashboard-0332iEihSu9EhnSo0CEaR7/latest?view=019ed221-a23e-7339-9583-eeaa8e0bf81b" target="_blank" rel="noopener">https://hc.hex.tech/solace-health/app/Lifecycle-Campaign-Attribution-Dashboard-0332iEihSu9EhnSo0CEaR7/latest?view=019ed221-a23e-7339-9583-eeaa8e0bf81b ↗</a></td></tr></tbody></table>
+  </div>
+
+  <div class="section">
+    <h2>Screenshots &amp; Creative</h2>
+    
+    
+    <div class="shot-subhead">Variant comparison — side by side</div>
+    <div class="shot-compare">
+      <div class="shot-slot" id="shot-slot-a"><span class="shot-label">A — Old series (legacy)</span></div>
+      <div class="shot-slot" id="shot-slot-b"><span class="shot-label">B — New series (redesigned)</span></div>
+    </div>
+
+    <div class="shot-subhead">Additional screenshots — HEX, CIO, creative, anything else</div>
+    <div class="shot-gallery" id="shot-gallery"></div>
+    <button class="btn-add-shot" id="add-shot-btn" type="button">+ Add screenshot</button>
+    <div class="add-shot-form" id="add-shot-form">
+      <label class="file-label" id="add-shot-file-label">Choose file…
+        <input type="file" accept="image/*" id="add-shot-file" hidden>
+      </label>
+      <select id="add-shot-source"><option value="HEX">HEX</option><option value="CIO">CIO</option><option value="Creative">Creative</option><option value="Figma">Figma</option><option value="Other">Other</option></select>
+      <input type="text" id="add-shot-caption" placeholder="Caption (optional) — e.g. &quot;HEX funnel re-entry, 6/10 read&quot;">
+      <button id="add-shot-save" type="button">Save</button>
+      <button id="add-shot-cancel" type="button">Cancel</button>
+    </div>
+
+    <p class="shot-note">Screenshots are stored locally in this browser (IndexedDB) — no backend, so this works straight from a static site. That also means they're only visible on this device/browser, not synced to teammates opening the same page elsewhere. Use Export/Import to move a set of screenshots to another machine.</p>
+    <div class="shot-io-row">
+      <button id="export-shots-btn" type="button">Export screenshots (.json)</button>
+      <label class="import-label">Import screenshots (.json)<input type="file" accept="application/json" id="import-shots-input" hidden></label>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Results — control vs. test</h2>
+    
+    <table class="metric-table">
+      <thead>
+        <tr>
+          <th>Metric</th>
+          <th>Control</th>
+          <th>Control value</th>
+          <th>Test</th>
+          <th>Test value</th>
+          <th>Lift / significance</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>CVR: Started Eligibility Check</td>
+        <td>A — Old series<br><span class="mraw">2,023 / 32,036</span></td>
+        <td class="mval">6.31%</td>
+        <td>B — New series<br><span class="mraw">2,419 / 30,917</span></td>
+        <td class="mval">7.82%</td>
+        <td>
+          <span class="delta up">▲ +23.9% relative</span>
+          <span class="sig-note">Stat sig increase</span>
+        </td>
+      </tr>
+      <tr>
+        <td>CVR: Completed Eligibility Check</td>
+        <td>A — Old series<br><span class="mraw">1,205 / 32,036</span></td>
+        <td class="mval">3.76%</td>
+        <td>B — New series<br><span class="mraw">1,388 / 30,917</span></td>
+        <td class="mval">4.49%</td>
+        <td>
+          <span class="delta up">▲ +19.4% relative</span>
+          <span class="sig-note">Stat sig increase</span>
+        </td>
+      </tr>
+      <tr>
+        <td>CVR: Physician Intake Booked</td>
+        <td>A — Old series<br><span class="mraw">643 / 32,036</span></td>
+        <td class="mval">2.01%</td>
+        <td>B — New series<br><span class="mraw">766 / 30,917</span></td>
+        <td class="mval">2.48%</td>
+        <td>
+          <span class="delta up">▲ +23.4% relative</span>
+          <span class="sig-note">Stat sig increase</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Clicks (total, all touchpoints)</td>
+        <td>A — Old series<br><span class="mraw">2,048 / 161,082</span></td>
+        <td class="mval">1.27%</td>
+        <td>B — New series<br><span class="mraw">1,682 / 95,252</span></td>
+        <td class="mval">1.64%</td>
+        <td>
+          <span class="delta up">▲ +28.8% relative</span>
+          <span class="sig-note">Stat sig increase</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Click-to-open rate (CTO)</td>
+        <td>A — Old series<br></td>
+        <td class="mval">4.89%</td>
+        <td>B — New series<br></td>
+        <td class="mval">6.24%</td>
+        <td>
+          <span class="delta up">▲ +27.6% relative</span>
+          <span class="sig-note">Stat sig increase</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Opens (total, all touchpoints)</td>
+        <td>A — Old series<br><span class="mraw">41,880 / 161,082</span></td>
+        <td class="mval">26.0%</td>
+        <td>B — New series<br><span class="mraw">29,775 / 95,252</span></td>
+        <td class="mval">26.65%</td>
+        <td>
+          <span class="delta up">▲ +0.95% relative</span>
+          <span class="sig-note">Not stat sig (flat)</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Unsubscribes (total, all touchpoints)</td>
+        <td>A — Old series<br><span class="mraw">245 / 161,082</span></td>
+        <td class="mval">0.15%</td>
+        <td>B — New series<br><span class="mraw">134 / 95,252</span></td>
+        <td class="mval">0.14%</td>
+        <td>
+          <span class="delta down">▼ -7.5% relative</span>
+          <span class="sig-note">Not stat sig (directionally lower)</span>
+        </td>
+      </tr></tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Impact summary</h2>
+    <p class="impact-text">The redesigned Super Test series (Variant B) set a new performance baseline, with statistically significant improvements across every primary conversion metric — Started Eligibility Check (+23.9%), Completed Eligibility Check (+19.4%), and Physician Intake Booked (+23.4%) — all while sending one fewer email. Engagement also improved significantly (clicks +28.8%, CTO +27.6%) despite open rate staying essentially flat. Variant B becomes the new baseline going forward.</p>
+  </div>
+
+  <div class="section">
+    <h2>Learnings</h2>
+    <div class="two-col">
+      <div class="list-block worked">
+        <h3>What worked</h3>
+        <ul class="plain"><li>The new series established a clear new baseline — Cohort B beat the legacy series on every primary conversion metric (Eligibility Check Starts +23.9%, Completions +19.4%, Physician Intake Bookings +23.4%), also validated directionally in Customer.io.</li>
+<li>Modernized creative and more direct, CVR-focused messaging increased engagement — CTR and CTO both improved significantly even though opens stayed essentially flat, meaning the new content converted better once it was opened.</li>
+<li>The redesigned journey did more with less — one fewer email, staggered sends, and still substantially higher downstream conversion.</li>
+<li>Earlier trigger timing (8 min vs. 15 min, closer to the 5.3-minute median time-to-convert) is directionally promising, though it can&#x27;t be isolated from the other simultaneous changes.</li>
+<li>This compounds directly on the earlier Cadence &amp; Timing win: Eligibility Check CVR climbed 2.93% → 3.07% → 4.49% across the original series, the 10-day cadence, and now this redesign.</li></ul>
+      </div>
+      <div class="list-block didnt">
+        <h3>What didn't</h3>
+        <ul class="plain"><li>Open rate stayed largely unchanged — sender name, subject line, and visual redesign didn&#x27;t meaningfully move opens, so future optimization should target click behavior and conversion rather than top-of-funnel engagement.</li>
+<li>This was a Super Test, not a single-variable A/B test — timing, creative, messaging, sender, cadence, and sequencing all changed at once, so no individual change can be credited for the lift on its own.</li>
+<li>Later touchpoints still show engagement decay — CTR and CTO decline across later emails, the same pattern seen before.</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Follow-up actions</h2>
+    <ol class="followup-list"><li>Roll out the new series as the permanent baseline for the unverified abandon-cart journey.</li>
+<li>Shift from Super Tests back to incremental A/B tests to isolate individual variables: creative/design, messaging/value prop, trigger timing (8 vs. 15 min), sender name, cadence/touchpoint count, and email/SMS sequencing.</li>
+<li>Evaluate permanently removing the fifth email given equal-or-better performance with fewer sends.</li>
+<li>Keep optimizing click-to-conversion rather than open rate, since post-open engagement is the main driver of the lift.</li>
+<li>Apply the same creative/messaging framework to other upper-funnel abandonment journeys to see if it generalizes.</li></ol>
+  </div>
+
+  <div class="section" style="border-bottom:none;">
+    <h2>Additional notes</h2>
+    <ul class="notes-list"><li>This test&#x27;s control (Cohort A) is itself the 10-day cadence that won the earlier Cadence &amp; Timing test — this Super Test redesigns creative, sender, trigger timing, and cadence on top of that win. Full progression on Eligibility Check CVR: 2.93% (original 21-day series) → 3.07% (10-day cadence) → 4.49% (this redesigned series) — each step compounding on the last.</li></ul>
+    <p class="screenshot-note" style="margin-top:18px;"><a href="https://app.notion.com/p/3809601d59a9818f926feaa05ef72be7" target="_blank" rel="noopener">Open the full Notion page ↗</a> for the raw HEX/CIO exports and complete history.</p>
+  </div>
+
+  <div class="detail-nav">
+    <div><a href="abandon-cart-verified-super-test.html">← PAT_AbandonCartVerified | Super Test</a></div>
+    <div class="center-link"><a href="../index.html">All experiments</a></div>
+    <div><a href="advocate-june-toggle-campaign.html">Advocate June Toggle Campaign →</a></div>
+  </div>
+</div>
+
+<script src="../assets/screenshots.js"></script>
+<script>
+  ScreenshotUI.init({
+    slug: "abandon-cart-super-test",
+    variantALabel: "A \u2014 Old series (legacy)",
+    variantBLabel: "B \u2014 New series (redesigned)"
+  });
+</script>
+</body>
+</html>

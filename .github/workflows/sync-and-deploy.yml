@@ -1,0 +1,49 @@
+name: Sync Notion & Rebuild Dashboard
+
+# This assumes GitHub Pages is set up the standard way: Settings → Pages →
+# Source: "Deploy from a branch" → Branch: main, folder: / (root). With
+# that setting, Pages watches this branch and redeploys automatically
+# whenever it changes — this workflow's only job is to keep main up to
+# date with Notion, nothing more.
+
+on:
+  schedule:
+    # 8:00 AM UTC every day. Cron is always UTC — crontab.guru helps
+    # converting to your team's local time. Change the cadence here.
+    - cron: "0 8 * * *"
+  workflow_dispatch: {}   # adds a manual "Run workflow" button in the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  sync-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Sync completed experiments from Notion
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        run: python3 scripts/sync_notion.py
+
+      - name: Rebuild site from data.json
+        run: python3 generate.py
+
+      - name: Commit and push if anything changed
+        run: |
+          git config user.name "lifecycle-dashboard-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data.json index.html experiments/
+          if git diff --cached --quiet; then
+            echo "No changes from Notion — nothing to commit."
+          else
+            git commit -m "Auto-sync: update experiments from Notion"
+            git push
+          fi

@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Physician Intro 4hr Reminder (Same-Day) — Lifecycle Experiment Results</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+
+</head>
+<body>
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <div class="brand">Lifecycle Experiment Results<span class="sub">Solace Health · Growth &amp; Lifecycle</span></div>
+    <div class="topnav"><a href="../index.html">← All experiments</a></div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="detail-header">
+    <div class="detail-breadcrumb">
+      <span class="cat-chip cat-appointment">Appointment</span> · MPAT_PhysIntroCallBooked
+    </div>
+    <div class="detail-title-row">
+      <div>
+        <h1 class="detail-title">Physician Intro 4hr Reminder (Same-Day)</h1>
+        <div class="detail-meta">
+          <span><strong>Owner team:</strong> Appointment Lifecycle</span>
+          <span><strong>Ran:</strong> 2026-05-13 → 2026-06-16</span>
+          <span><strong>Primary metric:</strong> Intro call attendance rate (show rate)</span>
+        </div>
+      </div>
+      <span class="stamp neutral">NEUTRAL</span>
+    </div>
+  </div>
+  
+
+  <div class="section">
+    <h2>Hypothesis</h2>
+    <div class="hypothesis-block">By adding a same-day email touchpoint several hours before the call, we&#x27;ll give patients an earlier heads-up and more time to prepare or reschedule.</div>
+    
+  </div>
+
+  <div class="section">
+    <h2>Experiment Details</h2>
+    <p class="summary-text">Adds a same-day, 4-hours-out email touchpoint ahead of the physician intro call.</p>
+  </div>
+
+  <div class="section">
+    <h2>Reference Links</h2>
+    <table class="ref-links-table"><tbody><tr><td>Linear ticket</td><td><a href="https://linear.app/findsolace/issue/LIFE-160/new-or-physician-intro-3hr-reminder" target="_blank" rel="noopener">https://linear.app/findsolace/issue/LIFE-160/new-or-physician-intro-3hr-reminder ↗</a></td></tr>
+<tr><td>CIO experiment</td><td><a href="https://fly.customer.io/workspaces/129866/journeys/campaigns/563/overview/tests/26866" target="_blank" rel="noopener">https://fly.customer.io/workspaces/129866/journeys/campaigns/563/overview/tests/26866 ↗</a></td></tr>
+<tr><td>HEX dashboard</td><td><a href="https://hc.hex.tech/solace-health/app/Lifecycle-Campaign-Attribution-Dashboard-0332iEihSu9EhnSo0CEaR7/latest" target="_blank" rel="noopener">https://hc.hex.tech/solace-health/app/Lifecycle-Campaign-Attribution-Dashboard-0332iEihSu9EhnSo0CEaR7/latest ↗</a></td></tr></tbody></table>
+  </div>
+
+  <div class="section">
+    <h2>Screenshots &amp; Creative</h2>
+    
+    
+    <div class="shot-subhead">Variant comparison — side by side</div>
+    <div class="shot-compare">
+      <div class="shot-slot" id="shot-slot-a"><span class="shot-label">Holdout</span></div>
+      <div class="shot-slot" id="shot-slot-b"><span class="shot-label">4hr Reminder</span></div>
+    </div>
+
+    <div class="shot-subhead">Additional screenshots — HEX, CIO, creative, anything else</div>
+    <div class="shot-gallery" id="shot-gallery"></div>
+    <button class="btn-add-shot" id="add-shot-btn" type="button">+ Add screenshot</button>
+    <div class="add-shot-form" id="add-shot-form">
+      <label class="file-label" id="add-shot-file-label">Choose file…
+        <input type="file" accept="image/*" id="add-shot-file" hidden>
+      </label>
+      <select id="add-shot-source"><option value="HEX">HEX</option><option value="CIO">CIO</option><option value="Creative">Creative</option><option value="Figma">Figma</option><option value="Other">Other</option></select>
+      <input type="text" id="add-shot-caption" placeholder="Caption (optional) — e.g. &quot;HEX funnel re-entry, 6/10 read&quot;">
+      <button id="add-shot-save" type="button">Save</button>
+      <button id="add-shot-cancel" type="button">Cancel</button>
+    </div>
+
+    <p class="shot-note">Screenshots are stored locally in this browser (IndexedDB) — no backend, so this works straight from a static site. That also means they're only visible on this device/browser, not synced to teammates opening the same page elsewhere. Use Export/Import to move a set of screenshots to another machine.</p>
+    <div class="shot-io-row">
+      <button id="export-shots-btn" type="button">Export screenshots (.json)</button>
+      <label class="import-label">Import screenshots (.json)<input type="file" accept="application/json" id="import-shots-input" hidden></label>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Results — control vs. test</h2>
+    
+    <table class="metric-table">
+      <thead>
+        <tr>
+          <th>Metric</th>
+          <th>Control</th>
+          <th>Control value</th>
+          <th>Test</th>
+          <th>Test value</th>
+          <th>Lift / significance</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Show rate (4 weeks in)</td>
+        <td>Holdout<br><span class="mraw">670 / 1,174</span></td>
+        <td class="mval">57.07%</td>
+        <td>4hr Reminder<br><span class="mraw">699 / 1,180</span></td>
+        <td class="mval">59.24%</td>
+        <td>
+          <span class="delta up">▲ +3.8% relative</span>
+          <span class="sig-note">Flat by test end</span>
+        </td>
+      </tr></tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Impact summary</h2>
+    <p class="impact-text">This touchpoint started with a ~15–20% lift but slowly degraded over time, landing virtually flat by the end of the test.</p>
+  </div>
+
+  <div class="section">
+    <h2>Learnings</h2>
+    <div class="two-col">
+      <div class="list-block worked">
+        <h3>What worked</h3>
+        <ul class="plain"><li>Strong early lift (~15–20%) in the first two weeks.</li></ul>
+      </div>
+      <div class="list-block didnt">
+        <h3>What didn't</h3>
+        <ul class="plain"><li>Lift decayed steadily and was essentially gone by week four — early results overstated the durable effect.</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Follow-up actions</h2>
+    <ol class="followup-list"><li>Retest individual touchpoints after the appointment “super test” wraps.</li></ol>
+  </div>
+
+  <div class="section" style="border-bottom:none;">
+    <h2>Additional notes</h2>
+    <ul class="notes-list"><li>Virtually flat after 4 weeks. Next step: retest individual touchpoints after the appointment “super test” completes.</li></ul>
+    <p class="screenshot-note" style="margin-top:18px;"><a href="https://app.notion.com/p/35f9601d59a980cfab40fb74f271ba45" target="_blank" rel="noopener">Open the full Notion page ↗</a> for the raw HEX/CIO exports and complete history.</p>
+  </div>
+
+  <div class="detail-nav">
+    <div><a href="inactive-hours-driver-ab-holdout.html">← PAT Inactive Hours Driver | A/B/Holdout</a></div>
+    <div class="center-link"><a href="../index.html">All experiments</a></div>
+    <div><a href="physician-intro-3hr-reminder.html">Physician Intro 3hr Reminder →</a></div>
+  </div>
+</div>
+
+<script src="../assets/screenshots.js"></script>
+<script>
+  ScreenshotUI.init({
+    slug: "physician-intro-4hr-reminder",
+    variantALabel: "Holdout",
+    variantBLabel: "4hr Reminder"
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>MPAT_PhysIntroCallNoShowWnb | Improved Winback Flow — Lifecycle Experiment Results</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+
+</head>
+<body>
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <div class="brand">Lifecycle Experiment Results<span class="sub">Solace Health · Growth &amp; Lifecycle</span></div>
+    <div class="topnav"><a href="../index.html">← All experiments</a></div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="detail-header">
+    <div class="detail-breadcrumb">
+      <span class="cat-chip cat-appointment">Appointment</span> · MPAT_PhysIntroCallNoShowWnb
+    </div>
+    <div class="detail-title-row">
+      <div>
+        <h1 class="detail-title">MPAT_PhysIntroCallNoShowWnb | Improved Winback Flow</h1>
+        <div class="detail-meta">
+          <span><strong>Owner team:</strong> Appointment Lifecycle</span>
+          <span><strong>Ran:</strong> 2026-05-29 → 2026-06-15</span>
+          <span><strong>Primary metric:</strong> Patient attendance for physician call</span>
+        </div>
+      </div>
+      <span class="stamp positive">POSITIVE</span>
+    </div>
+  </div>
+  
+
+  <div class="section">
+    <h2>Hypothesis</h2>
+    <div class="hypothesis-block">The current flow is too long and doesn&#x27;t engage patients well enough in the initial touchpoints. By introducing more engaging touchpoints with better channel orchestration and cadence, we&#x27;ll improve winback of no-show patients.</div>
+    <div class="target-impact"><strong>Target impact:</strong> +50% improved attendance rate for no-show patients.</div>
+  </div>
+
+  <div class="section">
+    <h2>Experiment Details</h2>
+    <p class="summary-text">Restructuring the follow-up cadence and frequency to improve short-term connection rates for no-show patients.</p><div class="details-grid"><div class="dg-item"><span class="dg-label">Experiment type</span><span class="dg-value">Flow based</span></div><div class="dg-item"><span class="dg-label">Method</span><span class="dg-value">Flow based tests</span></div><div class="dg-item"><span class="dg-label">Secondary metrics</span><span class="dg-value">Intro call booked (after campaign); Unsubscribes</span></div><div class="dg-item"><span class="dg-label">Experiment ID</span><span class="dg-value">2</span></div></div>
+  </div>
+
+  <div class="section">
+    <h2>Reference Links</h2>
+    <table class="ref-links-table"><tbody><tr><td>Linear ticket</td><td><a href="https://linear.app/findsolace/issue/LIFE-231/test-or-mpat-physintrocallnoshowwnb-or-improved-winback-flow" target="_blank" rel="noopener">https://linear.app/findsolace/issue/LIFE-231/test-or-mpat-physintrocallnoshowwnb-or-improved-winback-flow ↗</a></td></tr>
+<tr><td>CIO experiment</td><td><a href="https://fly.customer.io/workspaces/129866/journeys/campaigns/586/overview/workflow/actions" target="_blank" rel="noopener">https://fly.customer.io/workspaces/129866/journeys/campaigns/586/overview/workflow/actions ↗</a></td></tr></tbody></table>
+  </div>
+
+  <div class="section">
+    <h2>Screenshots &amp; Creative</h2>
+    
+    
+    <div class="shot-subhead">Variant comparison — side by side</div>
+    <div class="shot-compare">
+      <div class="shot-slot" id="shot-slot-a"><span class="shot-label">Control (A)</span></div>
+      <div class="shot-slot" id="shot-slot-b"><span class="shot-label">Improved Flow (B)</span></div>
+    </div>
+
+    <div class="shot-subhead">Additional screenshots — HEX, CIO, creative, anything else</div>
+    <div class="shot-gallery" id="shot-gallery"></div>
+    <button class="btn-add-shot" id="add-shot-btn" type="button">+ Add screenshot</button>
+    <div class="add-shot-form" id="add-shot-form">
+      <label class="file-label" id="add-shot-file-label">Choose file…
+        <input type="file" accept="image/*" id="add-shot-file" hidden>
+      </label>
+      <select id="add-shot-source"><option value="HEX">HEX</option><option value="CIO">CIO</option><option value="Creative">Creative</option><option value="Figma">Figma</option><option value="Other">Other</option></select>
+      <input type="text" id="add-shot-caption" placeholder="Caption (optional) — e.g. &quot;HEX funnel re-entry, 6/10 read&quot;">
+      <button id="add-shot-save" type="button">Save</button>
+      <button id="add-shot-cancel" type="button">Cancel</button>
+    </div>
+
+    <p class="shot-note">Screenshots are stored locally in this browser (IndexedDB) — no backend, so this works straight from a static site. That also means they're only visible on this device/browser, not synced to teammates opening the same page elsewhere. Use Export/Import to move a set of screenshots to another machine.</p>
+    <div class="shot-io-row">
+      <button id="export-shots-btn" type="button">Export screenshots (.json)</button>
+      <label class="import-label">Import screenshots (.json)<input type="file" accept="application/json" id="import-shots-input" hidden></label>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Results — control vs. test</h2>
+    
+    <table class="metric-table">
+      <thead>
+        <tr>
+          <th>Metric</th>
+          <th>Control</th>
+          <th>Control value</th>
+          <th>Test</th>
+          <th>Test value</th>
+          <th>Lift / significance</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Attendance rate (final read, 6/15)</td>
+        <td>Control (A)<br><span class="mraw">152 / 2,081</span></td>
+        <td class="mval">7.30%</td>
+        <td>Improved Flow (B)<br><span class="mraw">195 / 2,110</span></td>
+        <td class="mval">9.24%</td>
+        <td>
+          <span class="delta up">▲ +26.5% relative (+1.94pp)</span>
+          <span class="sig-note">z=2.28, p=0.023 (97.7% confidence)</span>
+        </td>
+      </tr></tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Impact summary</h2>
+    <p class="impact-text">+27% relative lift in attendance for the optimized flow. Hit stat significance quickly and held over 2+ weeks with decent volume — the strongest, most durable win in the Appointment category.</p>
+  </div>
+
+  <div class="section">
+    <h2>Learnings</h2>
+    <div class="two-col">
+      <div class="list-block worked">
+        <h3>What worked</h3>
+        <ul class="plain"><li>Combining multiple flow elements (more engaging touchpoints + better channel orchestration/cadence) jumped the baseline enough to unlock more nuanced follow-up testing.</li>
+<li>Prioritizing SMS over simultaneous email+SMS boosted SMS conversion, at some cost to email conversion — net positive.</li></ul>
+      </div>
+      <div class="list-block didnt">
+        <h3>What didn't</h3>
+        <ul class="plain empty"><li>No notable misses.</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Follow-up actions</h2>
+    <ol class="followup-list"><li>Adopt these winback strategies across other flows (cancellation / unmatched / etc.)</li>
+<li>Run more nuanced testing on top of this new, higher baseline.</li></ol>
+  </div>
+
+  <div class="section" style="border-bottom:none;">
+    <h2>Additional notes</h2>
+    <ul class="notes-list"><li>Variants: A — Control, B — Improved Flow (Exp ID 2).</li></ul>
+    <p class="screenshot-note" style="margin-top:18px;"><a href="https://app.notion.com/p/36d9601d59a981e397ece92ccc0a430e" target="_blank" rel="noopener">Open the full Notion page ↗</a> for the raw HEX/CIO exports and complete history.</p>
+  </div>
+
+  <div class="detail-nav">
+    <div><a href="hoursdriver-month-start-holdout-active.html">← PAT_HoursDriver | Month Start Holdout — Active</a></div>
+    <div class="center-link"><a href="../index.html">All experiments</a></div>
+    <div><a href="progress-bar-commercial-reminders.html">Progress Bar in Commercial Appt Reminders →</a></div>
+  </div>
+</div>
+
+<script src="../assets/screenshots.js"></script>
+<script>
+  ScreenshotUI.init({
+    slug: "improved-winback-flow",
+    variantALabel: "Control (A)",
+    variantBLabel: "Improved Flow (B)"
+  });
+</script>
+</body>
+</html>

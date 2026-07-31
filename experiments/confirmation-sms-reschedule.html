@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Confirmation SMS Reschedule — Lifecycle Experiment Results</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+
+</head>
+<body>
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <div class="brand">Lifecycle Experiment Results<span class="sub">Solace Health · Growth &amp; Lifecycle</span></div>
+    <div class="topnav"><a href="../index.html">← All experiments</a></div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="detail-header">
+    <div class="detail-breadcrumb">
+      <span class="cat-chip cat-appointment">Appointment</span> · PAT_CallConfirmationFlowSMS
+    </div>
+    <div class="detail-title-row">
+      <div>
+        <h1 class="detail-title">Confirmation SMS Reschedule</h1>
+        <div class="detail-meta">
+          <span><strong>Owner team:</strong> Appointment Lifecycle</span>
+          <span><strong>Ran:</strong> 2026-02-26 → 2026-05-12</span>
+          <span><strong>Primary metric:</strong> Intro call attendance rate (show rate)</span>
+        </div>
+      </div>
+      <span class="stamp positive">POSITIVE</span>
+    </div>
+  </div>
+  
+
+  <div class="section">
+    <h2>Hypothesis</h2>
+    <div class="hypothesis-block">By providing a reschedule option in the confirmation message, we might avoid pure cancellations without a reschedule.</div>
+    
+  </div>
+
+  <div class="section">
+    <h2>Experiment Details</h2>
+    <p class="summary-text">Adds a reschedule option/link to the appointment confirmation flow (follow-up call confirmation + SMS1) to reduce pure cancellations.</p>
+  </div>
+
+  <div class="section">
+    <h2>Reference Links</h2>
+    <table class="ref-links-table"><tbody><tr><td>CIO experiment</td><td><a href="https://fly.customer.io/workspaces/129866/journeys/campaigns/115/overview/tests/1495" target="_blank" rel="noopener">https://fly.customer.io/workspaces/129866/journeys/campaigns/115/overview/tests/1495 ↗</a></td></tr>
+<tr><td>HEX dashboard</td><td><a href="https://hc.hex.tech/solace-health/app/Lifecycle-Campaign-Attribution-Dashboard-0332iEihSu9EhnSo0CEaR7/latest" target="_blank" rel="noopener">https://hc.hex.tech/solace-health/app/Lifecycle-Campaign-Attribution-Dashboard-0332iEihSu9EhnSo0CEaR7/latest ↗</a></td></tr></tbody></table>
+  </div>
+
+  <div class="section">
+    <h2>Screenshots &amp; Creative</h2>
+    
+    
+    <div class="shot-subhead">Variant comparison — side by side</div>
+    <div class="shot-compare">
+      <div class="shot-slot" id="shot-slot-a"><span class="shot-label">Control</span></div>
+      <div class="shot-slot" id="shot-slot-b"><span class="shot-label">+ Reschedule option</span></div>
+    </div>
+
+    <div class="shot-subhead">Additional screenshots — HEX, CIO, creative, anything else</div>
+    <div class="shot-gallery" id="shot-gallery"></div>
+    <button class="btn-add-shot" id="add-shot-btn" type="button">+ Add screenshot</button>
+    <div class="add-shot-form" id="add-shot-form">
+      <label class="file-label" id="add-shot-file-label">Choose file…
+        <input type="file" accept="image/*" id="add-shot-file" hidden>
+      </label>
+      <select id="add-shot-source"><option value="HEX">HEX</option><option value="CIO">CIO</option><option value="Creative">Creative</option><option value="Figma">Figma</option><option value="Other">Other</option></select>
+      <input type="text" id="add-shot-caption" placeholder="Caption (optional) — e.g. &quot;HEX funnel re-entry, 6/10 read&quot;">
+      <button id="add-shot-save" type="button">Save</button>
+      <button id="add-shot-cancel" type="button">Cancel</button>
+    </div>
+
+    <p class="shot-note">Screenshots are stored locally in this browser (IndexedDB) — no backend, so this works straight from a static site. That also means they're only visible on this device/browser, not synced to teammates opening the same page elsewhere. Use Export/Import to move a set of screenshots to another machine.</p>
+    <div class="shot-io-row">
+      <button id="export-shots-btn" type="button">Export screenshots (.json)</button>
+      <label class="import-label">Import screenshots (.json)<input type="file" accept="application/json" id="import-shots-input" hidden></label>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Results — control vs. test</h2>
+    
+    <table class="metric-table">
+      <thead>
+        <tr>
+          <th>Metric</th>
+          <th>Control</th>
+          <th>Control value</th>
+          <th>Test</th>
+          <th>Test value</th>
+          <th>Lift / significance</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Follow-up call confirmation</td>
+        <td>Control<br><span class="mraw">2,096 / 4,471</span></td>
+        <td class="mval">46.9%</td>
+        <td>+ Reschedule option<br><span class="mraw">2,134 / 4,356</span></td>
+        <td class="mval">49.0%</td>
+        <td>
+          <span class="delta up">▲ +4.5% relative</span>
+          <span class="sig-note">95% confidence</span>
+        </td>
+      </tr>
+      <tr>
+        <td>SMS1 call confirmation</td>
+        <td>Control<br><span class="mraw">4,784 / 8,844</span></td>
+        <td class="mval">54.1%</td>
+        <td>+ Reschedule link<br><span class="mraw">4,848 / 8,624</span></td>
+        <td class="mval">56.2%</td>
+        <td>
+          <span class="delta up">▲ +3.9% relative</span>
+          <span class="sig-note">99% confidence</span>
+        </td>
+      </tr></tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Impact summary</h2>
+    <p class="impact-text">Adding a reschedule option lifted attendance +4-4.5% across both the follow-up call confirmation and the SMS1 confirmation touchpoints — likely by capturing patients who would otherwise have just cancelled outright.</p>
+  </div>
+
+  <div class="section">
+    <h2>Learnings</h2>
+    <div class="two-col">
+      <div class="list-block worked">
+        <h3>What worked</h3>
+        <ul class="plain"><li>Adding a reschedule option lifted attendance across both touchpoints tested, with high confidence.</li></ul>
+      </div>
+      <div class="list-block didnt">
+        <h3>What didn't</h3>
+        <ul class="plain empty"><li>No notable misses.</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Follow-up actions</h2>
+    <ol class="followup-list"><li>Closed out both tests and banked the change; moved on to the next appointment-flow test.</li></ol>
+  </div>
+
+  <div class="section" style="border-bottom:none;">
+    <h2>Additional notes</h2>
+    <ul class="notes-list"><li>95% confidence on the follow-up variant, 99% confidence on the SMS1 variant. Closing both out.</li></ul>
+    <p class="screenshot-note" style="margin-top:18px;"><a href="https://app.notion.com/p/35e9601d59a98044accfe660407b909d" target="_blank" rel="noopener">Open the full Notion page ↗</a> for the raw HEX/CIO exports and complete history.</p>
+  </div>
+
+  <div class="detail-nav">
+    <div><a href="offwaitlist-tasks-vs-personas.html">← CPAT_OFFWaitlist | Tasks vs. Personas — Advocate EDU</a></div>
+    <div class="center-link"><a href="../index.html">All experiments</a></div>
+    <div><a href="dq-sms-window-copy.html">DQ SMS “Window” Copy →</a></div>
+  </div>
+</div>
+
+<script src="../assets/screenshots.js"></script>
+<script>
+  ScreenshotUI.init({
+    slug: "confirmation-sms-reschedule",
+    variantALabel: "Control",
+    variantBLabel: "+ Reschedule option"
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Progress Bar in Commercial Appt Reminders — Lifecycle Experiment Results</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+
+</head>
+<body>
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <div class="brand">Lifecycle Experiment Results<span class="sub">Solace Health · Growth &amp; Lifecycle</span></div>
+    <div class="topnav"><a href="../index.html">← All experiments</a></div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="detail-header">
+    <div class="detail-breadcrumb">
+      <span class="cat-chip cat-appointment">Appointment</span> · CPAT_PhysIntroCallBooked
+    </div>
+    <div class="detail-title-row">
+      <div>
+        <h1 class="detail-title">Progress Bar in Commercial Appt Reminders</h1>
+        <div class="detail-meta">
+          <span><strong>Owner team:</strong> Appointment Lifecycle</span>
+          <span><strong>Ran:</strong> 2026-04-15 → 2026-06-12</span>
+          <span><strong>Primary metric:</strong> Show rate</span>
+        </div>
+      </div>
+      <span class="stamp neutral">NEUTRAL</span>
+    </div>
+  </div>
+  
+
+  <div class="section">
+    <h2>Hypothesis</h2>
+    <div class="hypothesis-block">By adding a progress bar, we&#x27;ll show patients how close they are to matching with an advocate and increase intent to attend these calls.</div>
+    <div class="target-impact"><strong>Target impact:</strong> 5% lift in show rate.</div>
+  </div>
+
+  <div class="section">
+    <h2>Experiment Details</h2>
+    <p class="summary-text">Adds a visual progress bar to commercial appointment reminders, showing patients how close they are to matching with an advocate.</p>
+  </div>
+
+  <div class="section">
+    <h2>Reference Links</h2>
+    <table class="ref-links-table"><tbody><tr><td>CIO experiment</td><td><a href="https://fly.customer.io/workspaces/129866/journeys/campaigns/728/overview?channels=email-twilio-webhook-slack-in_app-inbox" target="_blank" rel="noopener">https://fly.customer.io/workspaces/129866/journeys/campaigns/728/overview?channels=email-twilio-webhook-slack-in_app-inbox ↗</a></td></tr></tbody></table>
+  </div>
+
+  <div class="section">
+    <h2>Screenshots &amp; Creative</h2>
+    
+    
+    <div class="shot-subhead">Variant comparison — side by side</div>
+    <div class="shot-compare">
+      <div class="shot-slot" id="shot-slot-a"><span class="shot-label">A — Progress bar</span></div>
+      <div class="shot-slot" id="shot-slot-b"><span class="shot-label">B — No progress bar</span></div>
+    </div>
+
+    <div class="shot-subhead">Additional screenshots — HEX, CIO, creative, anything else</div>
+    <div class="shot-gallery" id="shot-gallery"></div>
+    <button class="btn-add-shot" id="add-shot-btn" type="button">+ Add screenshot</button>
+    <div class="add-shot-form" id="add-shot-form">
+      <label class="file-label" id="add-shot-file-label">Choose file…
+        <input type="file" accept="image/*" id="add-shot-file" hidden>
+      </label>
+      <select id="add-shot-source"><option value="HEX">HEX</option><option value="CIO">CIO</option><option value="Creative">Creative</option><option value="Figma">Figma</option><option value="Other">Other</option></select>
+      <input type="text" id="add-shot-caption" placeholder="Caption (optional) — e.g. &quot;HEX funnel re-entry, 6/10 read&quot;">
+      <button id="add-shot-save" type="button">Save</button>
+      <button id="add-shot-cancel" type="button">Cancel</button>
+    </div>
+
+    <p class="shot-note">Screenshots are stored locally in this browser (IndexedDB) — no backend, so this works straight from a static site. That also means they're only visible on this device/browser, not synced to teammates opening the same page elsewhere. Use Export/Import to move a set of screenshots to another machine.</p>
+    <div class="shot-io-row">
+      <button id="export-shots-btn" type="button">Export screenshots (.json)</button>
+      <label class="import-label">Import screenshots (.json)<input type="file" accept="application/json" id="import-shots-input" hidden></label>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Results — control vs. test</h2>
+    
+    <table class="metric-table">
+      <thead>
+        <tr>
+          <th>Metric</th>
+          <th>Control</th>
+          <th>Control value</th>
+          <th>Test</th>
+          <th>Test value</th>
+          <th>Lift / significance</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Attendance rate</td>
+        <td>B — No progress bar<br><span class="mraw">364 / 920</span></td>
+        <td class="mval">39.57%</td>
+        <td>A — Progress bar<br><span class="mraw">367 / 879</span></td>
+        <td class="mval">41.75%</td>
+        <td>
+          <span class="delta up">▲ +5.5% relative</span>
+          <span class="sig-note">Not stat sig</span>
+        </td>
+      </tr></tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Impact summary</h2>
+    <p class="impact-text">Slight gains from the progress bar, but likely needs better visual execution to unlock more impact — calling this test until the visual can be improved.</p>
+  </div>
+
+  <div class="section">
+    <h2>Learnings</h2>
+    <div class="two-col">
+      <div class="list-block worked">
+        <h3>What worked</h3>
+        <ul class="plain"><li>Directionally positive — the concept (showing proximity to matching) seems sound.</li></ul>
+      </div>
+      <div class="list-block didnt">
+        <h3>What didn't</h3>
+        <ul class="plain"><li>Didn&#x27;t reach the 5% target impact with confidence; execution/visual design likely limited the effect.</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Follow-up actions</h2>
+    <ol class="followup-list"><li>Revisit with an improved visual treatment before retesting.</li></ol>
+  </div>
+
+  <div class="section" style="border-bottom:none;">
+    <h2>Additional notes</h2>
+    <ul class="notes-list"><li>Calling this test until the visual execution can be improved.</li></ul>
+    <p class="screenshot-note" style="margin-top:18px;"><a href="https://app.notion.com/p/37d9601d59a980deac38f07037e138c3" target="_blank" rel="noopener">Open the full Notion page ↗</a> for the raw HEX/CIO exports and complete history.</p>
+  </div>
+
+  <div class="detail-nav">
+    <div><a href="improved-winback-flow.html">← MPAT_PhysIntroCallNoShowWnb | Improved Winback Flow</a></div>
+    <div class="center-link"><a href="../index.html">All experiments</a></div>
+    <div><a href="abandon-cart-cadence-timing.html">PAT_AbandonCartUnverified | Cadence &amp; Timing →</a></div>
+  </div>
+</div>
+
+<script src="../assets/screenshots.js"></script>
+<script>
+  ScreenshotUI.init({
+    slug: "progress-bar-commercial-reminders",
+    variantALabel: "A \u2014 Progress bar",
+    variantBLabel: "B \u2014 No progress bar"
+  });
+</script>
+</body>
+</html>

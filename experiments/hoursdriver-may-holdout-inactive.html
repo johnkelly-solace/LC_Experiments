@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>PAT_HoursDriver | May Holdout — Inactive Patients — Lifecycle Experiment Results</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+
+</head>
+<body>
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <div class="brand">Lifecycle Experiment Results<span class="sub">Solace Health · Growth &amp; Lifecycle</span></div>
+    <div class="topnav"><a href="../index.html">← All experiments</a></div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="detail-header">
+    <div class="detail-breadcrumb">
+      <span class="cat-chip cat-patients">Patients</span> · PAT_HoursDriver
+    </div>
+    <div class="detail-title-row">
+      <div>
+        <h1 class="detail-title">PAT_HoursDriver | May Holdout — Inactive Patients</h1>
+        <div class="detail-meta">
+          <span><strong>Owner team:</strong> Patient Engagement</span>
+          <span><strong>Ran:</strong> 2026-05-22 → 2026-05-28</span>
+          <span><strong>Primary metric:</strong> CVR — driving hours</span>
+        </div>
+      </div>
+      <span class="stamp neutral">NEUTRAL</span>
+    </div>
+  </div>
+  
+
+  <div class="section">
+    <h2>Hypothesis</h2>
+    <div class="hypothesis-block">Sending a month-end email to inactive patients will increase appointment bookings and re-engagement.</div>
+    
+  </div>
+
+  <div class="section">
+    <h2>Experiment Details</h2>
+    <p class="summary-text">Sends an email to low-hours inactive patients before month-end encouraging them to schedule time with their advocate.</p><div class="details-grid"><div class="dg-item"><span class="dg-label">Experiment type</span><span class="dg-value">Holdout</span></div><div class="dg-item"><span class="dg-label">Method</span><span class="dg-value">Holdout — A: email, B: no email</span></div><div class="dg-item"><span class="dg-label">Experiment event</span><span class="dg-value">TIME_SPAN_SUBMITTED</span></div><div class="dg-item"><span class="dg-label">Experiment ID</span><span class="dg-value">4</span></div></div>
+  </div>
+
+  <div class="section">
+    <h2>Reference Links</h2>
+    <table class="ref-links-table"><tbody><tr><td>Linear ticket</td><td><a href="https://linear.app/findsolace/issue/LIFE-215/test-or-pat-hoursdriver-or-may-holdout-inactive-patients" target="_blank" rel="noopener">https://linear.app/findsolace/issue/LIFE-215/test-or-pat-hoursdriver-or-may-holdout-inactive-patients ↗</a></td></tr>
+<tr><td>HEX dashboard</td><td><a href="https://hc.hex.tech/solace-health/app/0332iEihSu9EhnSo0CEaR7/latest?view=019e83c2-9088-72cf-9e7f-2818c832c416&amp;preserveAppState=true" target="_blank" rel="noopener">https://hc.hex.tech/solace-health/app/0332iEihSu9EhnSo0CEaR7/latest?view=019e83c2-9088-72cf-9e7f-2818c832c416&amp;preserveAppState=true ↗</a></td></tr></tbody></table>
+  </div>
+
+  <div class="section">
+    <h2>Screenshots &amp; Creative</h2>
+    
+    
+    <div class="shot-subhead">Variant comparison — side by side</div>
+    <div class="shot-compare">
+      <div class="shot-slot" id="shot-slot-a"><span class="shot-label">Test (email)</span></div>
+      <div class="shot-slot" id="shot-slot-b"><span class="shot-label">Holdout</span></div>
+    </div>
+
+    <div class="shot-subhead">Additional screenshots — HEX, CIO, creative, anything else</div>
+    <div class="shot-gallery" id="shot-gallery"></div>
+    <button class="btn-add-shot" id="add-shot-btn" type="button">+ Add screenshot</button>
+    <div class="add-shot-form" id="add-shot-form">
+      <label class="file-label" id="add-shot-file-label">Choose file…
+        <input type="file" accept="image/*" id="add-shot-file" hidden>
+      </label>
+      <select id="add-shot-source"><option value="HEX">HEX</option><option value="CIO">CIO</option><option value="Creative">Creative</option><option value="Figma">Figma</option><option value="Other">Other</option></select>
+      <input type="text" id="add-shot-caption" placeholder="Caption (optional) — e.g. &quot;HEX funnel re-entry, 6/10 read&quot;">
+      <button id="add-shot-save" type="button">Save</button>
+      <button id="add-shot-cancel" type="button">Cancel</button>
+    </div>
+
+    <p class="shot-note">Screenshots are stored locally in this browser (IndexedDB) — no backend, so this works straight from a static site. That also means they're only visible on this device/browser, not synced to teammates opening the same page elsewhere. Use Export/Import to move a set of screenshots to another machine.</p>
+    <div class="shot-io-row">
+      <button id="export-shots-btn" type="button">Export screenshots (.json)</button>
+      <label class="import-label">Import screenshots (.json)<input type="file" accept="application/json" id="import-shots-input" hidden></label>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Results — control vs. test</h2>
+    
+    <table class="metric-table">
+      <thead>
+        <tr>
+          <th>Metric</th>
+          <th>Control</th>
+          <th>Control value</th>
+          <th>Test</th>
+          <th>Test value</th>
+          <th>Lift / significance</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Conversion rate</td>
+        <td>Holdout<br></td>
+        <td class="mval">79.0%</td>
+        <td>Month-end email<br></td>
+        <td class="mval">78.1%</td>
+        <td>
+          <span class="delta down">▼ -1.1% relative</span>
+          <span class="sig-note">Not stat sig, short test</span>
+        </td>
+      </tr></tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Impact summary</h2>
+    <p class="impact-text">Ran for 6 days; treatment performed slightly worse than holdout, essentially flat. For relatively active users without a portal account, this outreach had no measurable impact — these users likely convert regardless of messaging.</p>
+  </div>
+
+  <div class="section">
+    <h2>Learnings</h2>
+    <div class="two-col">
+      <div class="list-block worked">
+        <h3>What worked</h3>
+        <ul class="plain empty"><li>Nothing notable worked here.</li></ul>
+      </div>
+      <div class="list-block didnt">
+        <h3>What didn't</h3>
+        <ul class="plain"><li>No measurable lift for this segment — nearly identical conversion with or without the message.</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Follow-up actions</h2>
+    <ol class="followup-list"><li>Don&#x27;t treat this as proof inactive patients can&#x27;t be moved — see the later Inactive Hours Driver A/B/Holdout test, where emotional copy did move this audience.</li></ol>
+  </div>
+
+  <div class="section" style="border-bottom:none;">
+    <h2>Additional notes</h2>
+    <p class="section-empty-note">No additional notes logged.</p>
+    <p class="screenshot-note" style="margin-top:18px;"><a href="https://app.notion.com/p/3729601d59a98169861ee2dca9ee8df5" target="_blank" rel="noopener">Open the full Notion page ↗</a> for the raw HEX/CIO exports and complete history.</p>
+  </div>
+
+  <div class="detail-nav">
+    <div><a href="edu-whats-next-vs-still-struggling.html">← EDU “What&#x27;s Next” PHYS Intake Content vs. “Still Struggling”</a></div>
+    <div class="center-link"><a href="../index.html">All experiments</a></div>
+    <div><a href="offwaitlist-tasks-vs-personas.html">CPAT_OFFWaitlist | Tasks vs. Personas — Advocate EDU →</a></div>
+  </div>
+</div>
+
+<script src="../assets/screenshots.js"></script>
+<script>
+  ScreenshotUI.init({
+    slug: "hoursdriver-may-holdout-inactive",
+    variantALabel: "Test (email)",
+    variantBLabel: "Holdout"
+  });
+</script>
+</body>
+</html>
