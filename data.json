@@ -1,5 +1,5 @@
 {
-  "last_synced": "July 22, 2026",
+  "last_synced": "July 31, 2026",
   "source_db": "https://app.notion.com/p/3589601d59a98000bf9cded9b625f4b4",
   "results_doc": "https://app.notion.com/p/3949601d59a98087af33e49b0d57f2d8",
   "experiments": [
@@ -1591,6 +1591,68 @@
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-284/test-or-pat-abandoncartverifiedor-super-test",
       "notion_url": "https://app.notion.com/p/3809601d59a98191abccc519f5582e45",
       "notion_page_id": "3809601d59a98191abccc519f5582e45",
+      "needs_review": false
+    },
+    {
+      "slug": "physintrocallrescheduled-super-test",
+      "name": "PAT_PhysIntroCallRescheduled | Super Test",
+      "category": "Appointment",
+      "campaign": "PAT_PhysIntroCallRescheduled",
+      "result": "Neutral",
+      "start_date": "2026-06-18",
+      "end_date": "2026-07-28",
+      "hypothesis": "By combining multiple variants into a single test, we can improve our baselines faster than running single variant tests one at a time.",
+      "target_impact": "Improve show rates by 10%.",
+      "primary_metric": "Attendance / show rates",
+      "impact_summary": "Performance came back flat — attended rate barely moved (41.11% control vs. 41.54% improved flow, +1% relative, not a meaningful lift) — but the patient experience is better with the cleaned-up flow. Moving forward with the improved flow anyway and shifting focus to match-rate testing next.",
+      "experiment_summary": "Cleans up the reschedule flow to improve the impact of each touchpoint and improve attendance, combining multiple variants into one test to move faster than running them one at a time.",
+      "experiment_type": "A/B Test",
+      "experiment_method": "Random Cohort Branch — experiment tracker only",
+      "secondary_metrics": "Bookings; No-show rate",
+      "experiment_event": "EXPERIMENT_FIRED",
+      "experiment_id": "9",
+      "cio_link": "https://fly.customer.io/workspaces/129866/journeys/campaigns/565/overview/workflow/actions",
+      "hex_link": "",
+      "figma_link": "",
+      "variant_a_label": "Control (B)",
+      "variant_b_label": "Improved Flow (A)",
+      "creative_copy": [],
+      "additional_notes": [
+        {
+          "author": "",
+          "date": "July 2, 2026, ~12pm PST",
+          "note": "Pushed some optimizations into the test branch to minimize bug impact."
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Attendance rate",
+          "control_name": "Control (B)",
+          "control_value": "41.11%",
+          "control_raw": "580 / 1,411",
+          "test_name": "Improved Flow (A)",
+          "test_value": "41.54%",
+          "test_raw": "584 / 1,406",
+          "lift": "+1.05% relative",
+          "sig": "Flat — not a meaningful difference"
+        }
+      ],
+      "what_worked": [
+        "The improved flow delivers a better patient experience (cleaner touchpoints) without hurting attendance — a safe upgrade even without a measurable show-rate lift.",
+        "Combining multiple variants into one test kept the pace of iteration up on this flow, matching the same ‘bigger swing’ instinct used on the Booked and Cadence super tests."
+      ],
+      "what_didnt": [
+        "Didn't hit the 10% show-rate lift target — performance came back essentially flat (41.11% vs. 41.54%), unlike the Booked flow's Super Test where reschedule capture drove a real (if modest) attendance gain.",
+        "A mid-test bug required pushing optimizations into the test branch (7/2) to limit the impact — worth factoring into how much confidence to put in the early read."
+      ],
+      "follow_up": [
+        "Roll forward with the improved flow (better experience, no downside) and move on to match-rate testing.",
+        "Continue optimizing for the second time through the reschedule ecosystem."
+      ],
+      "owner_team": "Appointment Lifecycle",
+      "linear_ticket": "https://linear.app/findsolace/issue/LIFE-313/test-or-pat-physintrocallrescheduled-or-super-test",
+      "notion_url": "https://app.notion.com/p/3849601d59a981f0a551e7b36c76649a",
+      "notion_page_id": "3849601d59a981f0a551e7b36c76649a",
       "needs_review": false
     }
   ]
