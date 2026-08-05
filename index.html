@@ -19,23 +19,23 @@
       <a href="https://app.notion.com/p/3949601d59a98087af33e49b0d57f2d8" target="_blank" rel="noopener">Notion writeup ↗</a>
     </div>
   </div>
-  <div class="wrap sync-note">Last synced July 31, 2026 · 24 completed experiments</div>
+  <div class="wrap sync-note">Last synced August 5, 2026 · 24 completed experiments</div>
 </div>
 
 <div class="wrap">
   <div class="stat-strip">
     <div class="stat-cell"><div class="stat-num">24</div><div class="stat-label">Completed experiments</div></div>
-    <div class="stat-cell"><div class="stat-num pos">14</div><div class="stat-label">Positive results</div></div>
+    <div class="stat-cell"><div class="stat-num pos">15</div><div class="stat-label">Positive results</div></div>
     <div class="stat-cell"><div class="stat-num neg">0</div><div class="stat-label">Negative results</div></div>
-    <div class="stat-cell"><div class="stat-num">10</div><div class="stat-label">Neutral / mixed / inconclusive</div></div>
-    <div class="stat-cell"><div class="stat-num">58%</div><div class="stat-label">Win rate</div></div>
+    <div class="stat-cell"><div class="stat-num">9</div><div class="stat-label">Neutral / mixed / inconclusive</div></div>
+    <div class="stat-cell"><div class="stat-num">62%</div><div class="stat-label">Win rate</div></div>
   </div>
 
   <div class="filters">
     <label>Category</label>
     <div class="chip-group"><span class="chip active" data-cat="All">All categories</span><span class="chip cat-early-lifecycle" data-cat="Early Lifecycle">Early Lifecycle</span><span class="chip cat-appointment" data-cat="Appointment">Appointment</span><span class="chip cat-patients" data-cat="Patients">Patients</span><span class="chip cat-advocate" data-cat="Advocate">Advocate</span></div>
     <label style="margin-left:14px;">Result</label>
-    <div class="chip-group"><span class="chip active" data-res="All">All results</span><span class="chip" data-res="Positive">Positive</span><span class="chip" data-res="Neutral">Neutral</span><span class="chip" data-res="Inconclusive">Inconclusive</span></div>
+    <div class="chip-group"><span class="chip active" data-res="All">All results</span><span class="chip" data-res="Positive">Positive</span><span class="chip" data-res="Neutral">Neutral</span></div>
     <input id="search-input" type="text" placeholder="Search experiments…" style="margin-left:auto;">
   </div>
 
@@ -122,16 +122,6 @@
           <td class="col-metric">Booking rate + attendance rate</td>
           <td class="col-summary">Sending the SMS expansion alone was slightly positive versus holdout, but again not enough to warrant continued iteration on its own — paused in favor of a supe…</td>
           <td class="col-date">2026-06-23</td>
-        </tr>
-        <tr data-cat="Patients" data-res="Inconclusive"
-            data-search="pat_hoursdriver | mid-month holdout — active patients patients pat_hoursdriver_midmonthholdout_active patients if patients at risk of falling short on their monthly hours receive a mid-month reminder to connect with their advocate, they&#x27;ll be more likely to complete their target hours by month end than patients who don&#x27;t receive the reminder. directionally positive for the test group (+1.38pp) but not statistically significant — a short read on a promising idea that needs a longer or larger test to confirm." data-href="experiments/hoursdriver-mid-month-holdout-active.html"
-            data-name="PAT_HoursDriver | Mid-Month Holdout — Active Patients" data-enddate="2026-06-19">
-          <td class="col-name">PAT_HoursDriver | Mid-Month Holdout — Active Patients<span class="campaign">PAT_HoursDriver_MidMonthHoldout_Active Patients</span></td>
-          <td><span class="cat-chip cat-patients">Patients</span></td>
-          <td><span class="tag inconclusive">Inconclusive</span></td>
-          <td class="col-metric">Active patients / hours completion</td>
-          <td class="col-summary">Directionally positive for the test group (+1.38pp) but not statistically significant — a short read on a promising idea that needs a longer or larger test to c…</td>
-          <td class="col-date">2026-06-19</td>
         </tr>
         <tr data-cat="Patients" data-res="Positive"
             data-search="pat inactive hours driver | a/b/holdout patients pat_hoursdriver_holdout_inactive patients if inactive patients receive gentle reminders, it will encourage them to schedule a check-in with their advocate and re-engage. emotionally-toned copy drove 44% more conversions than the plain/normal-tone variant (33% higher than holdout), at 92% confidence. volume was lower than ideal, so treat as a strong early signal rather than a settled result — but it flips the earlier assumption that inactive patients simply don&#x27;t respond to messaging." data-href="experiments/inactive-hours-driver-ab-holdout.html"
@@ -262,6 +252,16 @@
           <td class="col-metric">CTR</td>
           <td class="col-summary">Variant B (personas) produced a statistically significant +29.5% increase in CTR over Variant A (tasks) — suggesting playful copy can outperform straightforward…</td>
           <td class="col-date">2026-05-26</td>
+        </tr>
+        <tr data-cat="Patients" data-res="Positive"
+            data-search="mpat_nurture campaign | advocate contact card patients mpat_nurturecampaign adding the advocate contact card after a patient meets with them for the first time will increase engagement and conversion (time submitted). the experiment ran for ~13 weeks and variant b (with advocate contact card) outperformed the control, resulting in a 16.2% lift. control 29.7% vs. treatment 34.5%." data-href="experiments/nurture-advocate-contact-card.html"
+            data-name="MPAT_Nurture Campaign | Advocate Contact Card" data-enddate="2026-05-21">
+          <td class="col-name">MPAT_Nurture Campaign | Advocate Contact Card<span class="campaign">MPAT_NurtureCampaign</span></td>
+          <td><span class="cat-chip cat-patients">Patients</span></td>
+          <td><span class="tag positive">Positive</span></td>
+          <td class="col-metric">Time submitted CVR</td>
+          <td class="col-summary">The experiment ran for ~13 weeks and Variant B (with advocate contact card) outperformed the control, resulting in a 16.2% lift. Control 29.7% vs. Treatment 34.…</td>
+          <td class="col-date">2026-05-21</td>
         </tr>
         <tr data-cat="Appointment" data-res="Positive"
             data-search="confirmation sms reschedule appointment pat_callconfirmationflowsms by providing a reschedule option in the confirmation message, we might avoid pure cancellations without a reschedule. adding a reschedule option lifted attendance +4-4.5% across both the follow-up call confirmation and the sms1 confirmation touchpoints — likely by capturing patients who would otherwise have just cancelled outright." data-href="experiments/confirmation-sms-reschedule.html"

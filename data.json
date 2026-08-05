@@ -1,5 +1,5 @@
 {
-  "last_synced": "July 31, 2026",
+  "last_synced": "August 5, 2026",
   "source_db": "https://app.notion.com/p/3589601d59a98000bf9cded9b625f4b4",
   "results_doc": "https://app.notion.com/p/3949601d59a98087af33e49b0d57f2d8",
   "experiments": [
@@ -213,59 +213,6 @@
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-160/new-or-physician-intro-3hr-reminder",
       "notion_url": "https://app.notion.com/p/35e9601d59a98037bd50f9ade6994aa0",
       "notion_page_id": "35e9601d59a98037bd50f9ade6994aa0",
-      "needs_review": false
-    },
-    {
-      "slug": "hoursdriver-mid-month-holdout-active",
-      "name": "PAT_HoursDriver | Mid-Month Holdout — Active Patients",
-      "category": "Patients",
-      "campaign": "PAT_HoursDriver_MidMonthHoldout_Active Patients",
-      "result": "Inconclusive",
-      "start_date": "2026-06-17",
-      "end_date": "2026-06-19",
-      "hypothesis": "If patients at risk of falling short on their monthly hours receive a mid-month reminder to connect with their advocate, they'll be more likely to complete their target hours by month end than patients who don't receive the reminder.",
-      "target_impact": "",
-      "primary_metric": "Active patients / hours completion",
-      "impact_summary": "Directionally positive for the test group (+1.38pp) but not statistically significant — a short read on a promising idea that needs a longer or larger test to confirm.",
-      "experiment_summary": "Following month-end and month-start holdout tests with positive directional lift in conversion, this evaluates whether a mid-month reminder can further increase monthly hour completion among patients who may be at risk of falling behind.",
-      "experiment_type": "Holdout",
-      "experiment_method": "",
-      "secondary_metrics": "",
-      "experiment_event": "",
-      "experiment_id": "",
-      "cio_link": "",
-      "hex_link": "",
-      "figma_link": "",
-      "variant_a_label": "Holdout",
-      "variant_b_label": "Mid-month reminder",
-      "creative_copy": [],
-      "additional_notes": [],
-      "metrics": [
-        {
-          "label": "Conversion rate",
-          "control_name": "Holdout",
-          "control_value": "85.66%",
-          "control_raw": "1,290 / 1,506",
-          "test_name": "Mid-month reminder",
-          "test_value": "87.04%",
-          "test_raw": "1,222 / 1,404",
-          "lift": "+1.38pp",
-          "sig": "z=1.08, p≈0.28 (no)"
-        }
-      ],
-      "what_worked": [
-        "Directionally positive — consistent with the earlier month-start holdout finding."
-      ],
-      "what_didnt": [
-        "Sample/duration wasn't enough to reach significance (p≈0.28)."
-      ],
-      "follow_up": [
-        "Re-run with a larger sample or longer window before drawing conclusions."
-      ],
-      "owner_team": "Patient Engagement",
-      "linear_ticket": "https://linear.app/findsolace/issue/LIFE-286/test-or-pat-hoursdriver-midmonthholdout-active-patients",
-      "notion_url": "https://app.notion.com/p/3819601d59a9817898adee87047c700d",
-      "notion_page_id": "3819601d59a9817898adee87047c700d",
       "needs_review": false
     },
     {
@@ -1653,6 +1600,72 @@
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-313/test-or-pat-physintrocallrescheduled-or-super-test",
       "notion_url": "https://app.notion.com/p/3849601d59a981f0a551e7b36c76649a",
       "notion_page_id": "3849601d59a981f0a551e7b36c76649a",
+      "needs_review": false
+    },
+    {
+      "slug": "nurture-advocate-contact-card",
+      "name": "MPAT_Nurture Campaign | Advocate Contact Card",
+      "category": "Patients",
+      "campaign": "MPAT_NurtureCampaign",
+      "result": "Positive",
+      "start_date": "2026-02-13",
+      "end_date": "2026-05-21",
+      "hypothesis": "Adding the Advocate contact card after a patient meets with them for the first time will increase engagement and conversion (time submitted).",
+      "target_impact": "Increase patient hours by including contact card to easily access.",
+      "primary_metric": "Time submitted CVR",
+      "impact_summary": "The experiment ran for ~13 weeks and Variant B (with advocate contact card) outperformed the control, resulting in a 16.2% lift. Control 29.7% vs. Treatment 34.5%.",
+      "experiment_summary": "An A/B test launched in SMS #1 of the Nurture Campaign to test whether adding an advocate contact card increased engagement with patients who completed their first advocate call.",
+      "experiment_type": "A/B Test",
+      "experiment_method": "CIO A/B Test",
+      "secondary_metrics": "n/a",
+      "experiment_event": "TIME_SPAN_SUBMITTED",
+      "experiment_id": "",
+      "cio_link": "https://fly.customer.io/workspaces/129866/journeys/campaigns/643",
+      "hex_link": "",
+      "figma_link": "",
+      "variant_a_label": "SMS 1a (Control — no card)",
+      "variant_b_label": "SMS 1b (Test — with contact card)",
+      "creative_copy": [
+        {
+          "label": "SMS 1a (Control)",
+          "text": "Hi {{customer.first_name|default:\"there\"|titlecase}}, your advocate {{event.advocate_first_name|titlecase}} is already working on your care plan. You can call or text anytime with questions or updates: {{customer.advocate.phone_proxy_formatted}}"
+        },
+        {
+          "label": "SMS 1b (Test)",
+          "text": "Hi {{customer.first_name|default:\"there\"|titlecase}}, your advocate {{event.advocate_first_name|titlecase}} is already working on your care plan. You can call or text anytime with questions or updates: {{customer.advocate.phone_proxy_formatted}}. We are also attaching their contact card below so you can easily save {{event.advocate_first_name|titlecase}}'s contact information to your phone."
+        }
+      ],
+      "additional_notes": [
+        {
+          "author": "",
+          "date": "August 5, 2026",
+          "note": "This experiment completed in Linear back in May 2026 but was never synced to Notion or this dashboard until now — found while auditing the Linear→Notion sync skill against live Linear data. Two result screenshots are attached to the Linear ticket (LIFE-210) directly; Linear's asset links expire so they aren't embedded here."
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Time submitted CVR",
+          "control_name": "SMS 1a (Control)",
+          "control_value": "29.7%",
+          "control_raw": "",
+          "test_name": "SMS 1b (Contact card)",
+          "test_value": "34.5%",
+          "test_raw": "",
+          "lift": "+16.2% relative",
+          "sig": "Positive"
+        }
+      ],
+      "what_worked": [
+        "Adding the advocate contact card to the post-intro-call SMS lifted conversion +16.2% over a ~13-week run."
+      ],
+      "what_didnt": [],
+      "follow_up": [
+        "Test the same contact-card addition in other campaigns."
+      ],
+      "owner_team": "Patient Engagement",
+      "linear_ticket": "https://linear.app/findsolace/issue/LIFE-210/test-mpat-nurture-campaign-advocate-contact-card",
+      "notion_url": "https://app.notion.com/p/3b39601d59a9816fb214c715e95b06cd",
+      "notion_page_id": "3b39601d59a9816fb214c715e95b06cd",
       "needs_review": false
     }
   ]
