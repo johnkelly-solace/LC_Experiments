@@ -1,5 +1,5 @@
 {
-  "last_synced": "August 5, 2026",
+  "last_synced": "August 7, 2026",
   "source_db": "https://app.notion.com/p/3589601d59a98000bf9cded9b625f4b4",
   "results_doc": "https://app.notion.com/p/3949601d59a98087af33e49b0d57f2d8",
   "experiments": [
@@ -1666,6 +1666,68 @@
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-210/test-mpat-nurture-campaign-advocate-contact-card",
       "notion_url": "https://app.notion.com/p/3b39601d59a9816fb214c715e95b06cd",
       "notion_page_id": "3b39601d59a9816fb214c715e95b06cd",
+      "needs_review": false
+    },
+    {
+      "slug": "abandoncart-warmleads-vs-education",
+      "name": "PAT_AbandonCartUnverified | Warm Leads vs. Education End Points",
+      "category": "Early Lifecycle",
+      "campaign": "PAT_AbandonCartUnverified",
+      "result": "Positive",
+      "start_date": "2026-07-14",
+      "end_date": "2026-08-05",
+      "hypothesis": "Prospects from PAT_AbandonCartUnverified who drain into the new EDU flywheel campaign (PAT_EducationContentFlywheel) will re-engage at higher rates (human clicks) than prospects who enter the old drip campaign (PAT_WarmLeads).",
+      "target_impact": "+15% increase to reactivations (human clicks).",
+      "primary_metric": "CTR: Human Clicks (primary); CVR: Eligibility Check (secondary)",
+      "impact_summary": "Moving unverified prospects into the education flywheel campaign more than tripled human click engagement (+245.6%, stat sig) vs. legacy warm leads. Downstream CVR events trended positive across the board but hadn't reached significance when the test closed. Rerouting all abandon-cart prospects into the education flywheel going forward.",
+      "experiment_summary": "Splits traffic from PAT_AbandonCartUnverified 50/50 between the legacy Warm Leads drip and the new Education Content Flywheel campaign, to see which re-engages unverified prospects more effectively. Third experiment in this campaign family, following the Cadence & Timing test and the full-series Super Test.",
+      "experiment_type": "A/B",
+      "experiment_method": "Random Cohort Branch",
+      "secondary_metrics": "CVR: Eligibility Check",
+      "experiment_event": "EXPERIMENT_FIRED",
+      "experiment_id": "14",
+      "cio_link": "https://fly.customer.io/workspaces/129866/journeys/campaigns/598/overview/workflow/actions",
+      "hex_link": "",
+      "figma_link": "",
+      "variant_a_label": "CTRL — Warm Leads",
+      "variant_b_label": "TEST — Education Flywheel",
+      "creative_copy": [],
+      "additional_notes": [
+        {
+          "author": "",
+          "date": "August 5, 2026",
+          "note": "Closed early rather than waiting for CVR to reach significance — legacy Warm Leads prospects are being rerouted into the education flywheel regardless, which would have nulled the test's control group anyway."
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Human clicks (CTR)",
+          "control_name": "CTRL — Warm Leads",
+          "control_value": "0.22%",
+          "control_raw": "",
+          "test_name": "TEST — Education Flywheel",
+          "test_value": "0.74%",
+          "test_raw": "",
+          "lift": "+245.6% relative",
+          "sig": "Stat sig"
+        }
+      ],
+      "what_worked": [
+        "Routing unverified prospects to the education flywheel instead of legacy warm leads more than tripled human click engagement (+245.6%, stat sig).",
+        "Every downstream CVR event measured trended positive in the same direction — funnel re-entry +11.2%, eligibility check +1.1%, CHW intro call booked +14.6%, patient attended call +17.7% — even though none individually reached significance yet.",
+        "Third win in a row for this same campaign family (Cadence & Timing → Super Test → this test) — reinforces that PAT_AbandonCartUnverified responds well to sustained iteration."
+      ],
+      "what_didnt": [
+        "None of the downstream CVR metrics reached statistical significance before the test closed."
+      ],
+      "follow_up": [
+        "Reroute all abandon-cart prospects into the education flywheel campaign instead of warm leads, given the consistent directional lift plus the stat-sig engagement win.",
+        "Worth checking whether this interacts with the redesigned Super Test series already rolled out on this same campaign."
+      ],
+      "owner_team": "Early Lifecycle",
+      "linear_ticket": "https://linear.app/findsolace/issue/LIFE-374/test-pat-abandoncartunverified-warm-leads-vs-education-end-points",
+      "notion_url": "https://app.notion.com/p/39d9601d59a9816785e9c4c37e75d846",
+      "notion_page_id": "39d9601d59a9816785e9c4c37e75d846",
       "needs_review": false
     }
   ]
