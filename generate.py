@@ -372,7 +372,7 @@ def build_detail(e, prev_e, next_e):
       <div>
         <h1 class="detail-title">{esc(e['name'])}</h1>
         <div class="detail-meta">
-          <span><strong>Owner team:</strong> {esc(e.get('owner_team','—'))}</span>
+          <span><strong>Owner:</strong> {esc(e.get('owner_team','—'))}</span>
           <span><strong>Ran:</strong> {fmt_date(e.get('start_date'))} → {fmt_date(e.get('end_date'))}</span>
           <span><strong>Primary metric:</strong> {esc(e.get('primary_metric',''))}</span>
         </div>

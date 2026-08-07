@@ -50,7 +50,7 @@
       "follow_up": [
         "Paused in favor of a consolidated “super test” that bundles multiple winback improvements together."
       ],
-      "owner_team": "Appointment Lifecycle",
+      "owner_team": "Chris",
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-201/test-or-pat-physnotmatchedwnb-enhancements",
       "notion_url": "https://app.notion.com/p/3669601d59a98051b2b1f6569b3d570f",
       "notion_page_id": "3669601d59a98051b2b1f6569b3d570f",
@@ -104,7 +104,7 @@
       "follow_up": [
         "Rolled into the same consolidated super test as the email variant."
       ],
-      "owner_team": "Appointment Lifecycle",
+      "owner_team": "Chris",
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-201/test-or-pat-physnotmatchedwnb-enhancements",
       "notion_url": "https://app.notion.com/p/3669601d59a9804e81faf693cf6a8413",
       "notion_page_id": "3669601d59a9804e81faf693cf6a8413",
@@ -164,7 +164,7 @@
       "follow_up": [
         "Retest individual touchpoints after the appointment “super test” wraps."
       ],
-      "owner_team": "Appointment Lifecycle",
+      "owner_team": "Chris",
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-160/new-or-physician-intro-3hr-reminder",
       "notion_url": "https://app.notion.com/p/35f9601d59a980cfab40fb74f271ba45",
       "notion_page_id": "35f9601d59a980cfab40fb74f271ba45",
@@ -212,7 +212,7 @@
       "follow_up": [
         "Retest individual touchpoints after the appointment “super test” wraps."
       ],
-      "owner_team": "Appointment Lifecycle",
+      "owner_team": "Chris",
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-160/new-or-physician-intro-3hr-reminder",
       "notion_url": "https://app.notion.com/p/35e9601d59a98037bd50f9ade6994aa0",
       "notion_page_id": "35e9601d59a98037bd50f9ade6994aa0",
@@ -288,7 +288,7 @@
       "follow_up": [
         "Re-confirm the emotional-copy effect at larger scale before rolling out broadly."
       ],
-      "owner_team": "Patient Engagement",
+      "owner_team": "Brooke",
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-300/test-or-pat-inactive-hours-driver-or-abholdout",
       "notion_url": "https://app.notion.com/p/3829601d59a98179a027d623ef004c50",
       "notion_page_id": "3829601d59a98179a027d623ef004c50",
@@ -349,7 +349,7 @@
         "Continue testing with a larger sample size and/or longer duration to increase statistical power.",
         "Test alternative copy, timing, or audience segments to find where reminders have the most impact."
       ],
-      "owner_team": "Patient Engagement",
+      "owner_team": "Jess",
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-244/test-or-pat-hoursdriver-or-month-start-holdout-active",
       "notion_url": "https://app.notion.com/p/3809601d59a981c2a466cb95b6161945",
       "notion_page_id": "3809601d59a981c2a466cb95b6161945",
@@ -409,7 +409,7 @@
         "Adopt these winback strategies across other flows (cancellation / unmatched / etc.)",
         "Run more nuanced testing on top of this new, higher baseline."
       ],
-      "owner_team": "Appointment Lifecycle",
+      "owner_team": "Chris",
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-231/test-or-mpat-physintrocallnoshowwnb-or-improved-winback-flow",
       "notion_url": "https://app.notion.com/p/36d9601d59a981e397ece92ccc0a430e",
       "notion_page_id": "36d9601d59a981e397ece92ccc0a430e",
@@ -469,7 +469,7 @@
       "follow_up": [
         "Revisit with an improved visual treatment before retesting."
       ],
-      "owner_team": "Appointment Lifecycle",
+      "owner_team": "Chris",
       "linear_ticket": "",
       "notion_url": "https://app.notion.com/p/37d9601d59a980deac38f07037e138c3",
       "notion_page_id": "37d9601d59a980deac38f07037e138c3",
@@ -566,7 +566,7 @@
         "Shift testing focus to subject line / preview header optimization — open rate is the next lever.",
         "Test copy, CTA, and creative variation now that timing is set."
       ],
-      "owner_team": "Early Lifecycle",
+      "owner_team": "Leah",
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-159/test-or-pat-abandoncartunverified-or-cadence-and-timing",
       "notion_url": "https://app.notion.com/p/3679601d59a98118b075c5226a9dffb0",
       "notion_page_id": "3679601d59a98118b075c5226a9dffb0",
@@ -654,7 +654,7 @@
         "Run iteration tests in other unverified prospect campaigns to confirm at 95% confidence.",
         "Evaluate secondary CVR metrics (funnel re-entry, eligibility check starts) once available in HEX."
       ],
-      "owner_team": "Early Lifecycle",
+      "owner_team": "Leah",
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-162/test-or-cpat-offwaitlist-or-speed-vs-free",
       "notion_url": "https://app.notion.com/p/3679601d59a981b481bfeb5bc84db018",
       "notion_page_id": "3679601d59a981b481bfeb5bc84db018",
@@ -708,7 +708,7 @@
       "follow_up": [
         "Combine learnings with the month-start holdout test to standardize a recurring active-patient nudge."
       ],
-      "owner_team": "Patient Engagement",
+      "owner_team": "Jess",
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-214/test-or-pat-hoursdriver-or-may-holdout-active-patients",
       "notion_url": "https://app.notion.com/p/3689601d59a9813cb7b4ddaa38fb7a51",
       "notion_page_id": "3689601d59a9813cb7b4ddaa38fb7a51",
@@ -773,7 +773,7 @@
       "follow_up": [
         "Revisit as a potential engagement driver rather than a pure conversion play."
       ],
-      "owner_team": "Patient Engagement",
+      "owner_team": "Jess",
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-193/test-or-driving-patient-hours-or-14d-no-message",
       "notion_url": "https://app.notion.com/p/3659601d59a9805cabaaec7d7006a46e",
       "notion_page_id": "3659601d59a9805cabaaec7d7006a46e",
@@ -849,7 +849,7 @@
       "follow_up": [
         "Extend the “what's next” framing to other mid-series touchpoints across lifecycle stages."
       ],
-      "owner_team": "Early Lifecycle",
+      "owner_team": "Leah",
       "linear_ticket": "N/A",
       "notion_url": "https://app.notion.com/p/35d9601d59a980fab1dbc7ce568deda8",
       "notion_page_id": "35d9601d59a980fab1dbc7ce568deda8",
@@ -901,7 +901,7 @@
       "follow_up": [
         "Don't treat this as proof inactive patients can't be moved — see the later Inactive Hours Driver A/B/Holdout test, where emotional copy did move this audience."
       ],
-      "owner_team": "Patient Engagement",
+      "owner_team": "Jess",
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-215/test-or-pat-hoursdriver-or-may-holdout-inactive-patients",
       "notion_url": "https://app.notion.com/p/3729601d59a98169861ee2dca9ee8df5",
       "notion_page_id": "3729601d59a98169861ee2dca9ee8df5",
@@ -960,7 +960,7 @@
         "Roll out Variant B (personas) to 100% of this audience.",
         "Develop additional playful copy variants to keep testing with commercial audiences."
       ],
-      "owner_team": "Early Lifecycle",
+      "owner_team": "Leah",
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-164/test-or-cpat-offwaitlist-or-tasks-vs-personas-advocate-edu",
       "notion_url": "https://app.notion.com/p/3679601d59a9815d8b86f7bc816b18e2",
       "notion_page_id": "3679601d59a9815d8b86f7bc816b18e2",
@@ -1029,7 +1029,7 @@
       "follow_up": [
         "Closed out both tests and banked the change; moved on to the next appointment-flow test."
       ],
-      "owner_team": "Appointment Lifecycle",
+      "owner_team": "Chris",
       "linear_ticket": "",
       "notion_url": "https://app.notion.com/p/35e9601d59a98044accfe660407b909d",
       "notion_page_id": "35e9601d59a98044accfe660407b909d",
@@ -1096,7 +1096,7 @@
       "follow_up": [
         "Closed out the ticket and banked the performance boost; rolled “window” language into other agnostic booking touchpoints."
       ],
-      "owner_team": "Appointment Lifecycle",
+      "owner_team": "Chris",
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-120/update-or-pat-physreadycheck-update-to-copy",
       "notion_url": "https://app.notion.com/p/3589601d59a98003beacff49350967a8",
       "notion_page_id": "3589601d59a98003beacff49350967a8",
@@ -1148,7 +1148,7 @@
       "follow_up": [
         "Audit other flows for remaining text-link CTAs and convert them to buttons."
       ],
-      "owner_team": "Early Lifecycle",
+      "owner_team": "Leah",
       "linear_ticket": "N/A",
       "notion_url": "https://app.notion.com/p/35d9601d59a9800996acc6d9ad3466de",
       "notion_page_id": "35d9601d59a9800996acc6d9ad3466de",
@@ -1220,7 +1220,7 @@
         "Run a proper engagement-tier test (high/medium/low) to see if the effect concentrates in any one group.",
         "Update the Notion database Result/Impact Summary fields for this experiment — currently blank despite a strong, well-documented result on the page itself."
       ],
-      "owner_team": "Advocate Lifecycle",
+      "owner_team": "Mackenzie",
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-302/test-or-advocate-june-toggle-campaign",
       "notion_url": "https://app.notion.com/p/3829601d59a9810dbddef80365e645b0",
       "notion_page_id": "3829601d59a9810dbddef80365e645b0",
@@ -1356,7 +1356,7 @@
         "Keep optimizing click-to-conversion rather than open rate, since post-open engagement is the main driver of the lift.",
         "Apply the same creative/messaging framework to other upper-funnel abandonment journeys to see if it generalizes."
       ],
-      "owner_team": "Early Lifecycle",
+      "owner_team": "Leah",
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-283/test-or-pat-abandoncartunverifiedor-super-test",
       "notion_url": "https://app.notion.com/p/3809601d59a9818f926feaa05ef72be7",
       "notion_page_id": "3809601d59a9818f926feaa05ef72be7",
@@ -1430,7 +1430,7 @@
         "Push the test branch to 100% and finish the appointment ecosystem cleanup.",
         "Move on to match-rate improvement concepts next."
       ],
-      "owner_team": "Appointment Lifecycle",
+      "owner_team": "Chris",
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-296/test-or-pat-physintrocallbooked-super-test",
       "notion_url": "https://app.notion.com/p/3829601d59a981fda837d131ad16e394",
       "notion_page_id": "3829601d59a981fda837d131ad16e394",
@@ -1555,7 +1555,7 @@
         "Rework SMS1 copy/CTA via an A/B test against the current control.",
         "Add subject-line and content (video/education) A/B tests to keep optimizing engagement."
       ],
-      "owner_team": "Early Lifecycle",
+      "owner_team": "Leah",
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-284/test-or-pat-abandoncartverifiedor-super-test",
       "notion_url": "https://app.notion.com/p/3809601d59a98191abccc519f5582e45",
       "notion_page_id": "3809601d59a98191abccc519f5582e45",
@@ -1618,7 +1618,7 @@
         "Roll forward with the improved flow (better experience, no downside) and move on to match-rate testing.",
         "Continue optimizing for the second time through the reschedule ecosystem."
       ],
-      "owner_team": "Appointment Lifecycle",
+      "owner_team": "Chris",
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-313/test-or-pat-physintrocallrescheduled-or-super-test",
       "notion_url": "https://app.notion.com/p/3849601d59a981f0a551e7b36c76649a",
       "notion_page_id": "3849601d59a981f0a551e7b36c76649a",
@@ -1685,7 +1685,7 @@
       "follow_up": [
         "Test the same contact-card addition in other campaigns."
       ],
-      "owner_team": "Patient Engagement",
+      "owner_team": "Jess",
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-210/test-mpat-nurture-campaign-advocate-contact-card",
       "notion_url": "https://app.notion.com/p/3b39601d59a9816fb214c715e95b06cd",
       "notion_page_id": "3b39601d59a9816fb214c715e95b06cd",
@@ -1748,7 +1748,7 @@
         "Reroute all abandon-cart prospects into the education flywheel campaign instead of warm leads, given the consistent directional lift plus the stat-sig engagement win.",
         "Worth checking whether this interacts with the redesigned Super Test series already rolled out on this same campaign."
       ],
-      "owner_team": "Early Lifecycle",
+      "owner_team": "Leah",
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-374/test-pat-abandoncartunverified-warm-leads-vs-education-end-points",
       "notion_url": "https://app.notion.com/p/39d9601d59a9816785e9c4c37e75d846",
       "notion_page_id": "39d9601d59a9816785e9c4c37e75d846",
