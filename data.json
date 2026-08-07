@@ -55,8 +55,7 @@
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-201/test-or-pat-physnotmatchedwnb-enhancements",
       "notion_url": "https://app.notion.com/p/3669601d59a98051b2b1f6569b3d570f",
       "notion_page_id": "3669601d59a98051b2b1f6569b3d570f",
-      "needs_review": false,
-      "reached_significance": false
+      "needs_review": false
     },
     {
       "slug": "dq-not-matched-winback-sms",
@@ -110,8 +109,7 @@
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-201/test-or-pat-physnotmatchedwnb-enhancements",
       "notion_url": "https://app.notion.com/p/3669601d59a9804e81faf693cf6a8413",
       "notion_page_id": "3669601d59a9804e81faf693cf6a8413",
-      "needs_review": false,
-      "reached_significance": false
+      "needs_review": false
     },
     {
       "slug": "physician-intro-4hr-reminder",
@@ -171,8 +169,7 @@
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-160/new-or-physician-intro-3hr-reminder",
       "notion_url": "https://app.notion.com/p/35f9601d59a980cfab40fb74f271ba45",
       "notion_page_id": "35f9601d59a980cfab40fb74f271ba45",
-      "needs_review": false,
-      "reached_significance": false
+      "needs_review": false
     },
     {
       "slug": "physician-intro-3hr-reminder",
@@ -219,8 +216,7 @@
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-160/new-or-physician-intro-3hr-reminder",
       "notion_url": "https://app.notion.com/p/35e9601d59a98037bd50f9ade6994aa0",
       "notion_page_id": "35e9601d59a98037bd50f9ade6994aa0",
-      "needs_review": false,
-      "reached_significance": false
+      "needs_review": false
     },
     {
       "slug": "inactive-hours-driver-ab-holdout",
@@ -298,8 +294,7 @@
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-300/test-or-pat-inactive-hours-driver-or-abholdout",
       "notion_url": "https://app.notion.com/p/3829601d59a98179a027d623ef004c50",
       "notion_page_id": "3829601d59a98179a027d623ef004c50",
-      "needs_review": false,
-      "reached_significance": false
+      "needs_review": false
     },
     {
       "slug": "hoursdriver-month-start-holdout-active",
@@ -360,8 +355,7 @@
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-244/test-or-pat-hoursdriver-or-month-start-holdout-active",
       "notion_url": "https://app.notion.com/p/3809601d59a981c2a466cb95b6161945",
       "notion_page_id": "3809601d59a981c2a466cb95b6161945",
-      "needs_review": false,
-      "reached_significance": false
+      "needs_review": false
     },
     {
       "slug": "improved-winback-flow",
@@ -421,8 +415,7 @@
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-231/test-or-mpat-physintrocallnoshowwnb-or-improved-winback-flow",
       "notion_url": "https://app.notion.com/p/36d9601d59a981e397ece92ccc0a430e",
       "notion_page_id": "36d9601d59a981e397ece92ccc0a430e",
-      "needs_review": false,
-      "reached_significance": true
+      "needs_review": false
     },
     {
       "slug": "progress-bar-commercial-reminders",
@@ -482,8 +475,7 @@
       "linear_ticket": "",
       "notion_url": "https://app.notion.com/p/37d9601d59a980deac38f07037e138c3",
       "notion_page_id": "37d9601d59a980deac38f07037e138c3",
-      "needs_review": false,
-      "reached_significance": false
+      "needs_review": false
     },
     {
       "slug": "abandon-cart-cadence-timing",
@@ -583,8 +575,7 @@
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-159/test-or-pat-abandoncartunverified-or-cadence-and-timing",
       "notion_url": "https://app.notion.com/p/3679601d59a98118b075c5226a9dffb0",
       "notion_page_id": "3679601d59a98118b075c5226a9dffb0",
-      "needs_review": false,
-      "reached_significance": true
+      "needs_review": false
     },
     {
       "slug": "offwaitlist-speed-vs-free",
@@ -673,8 +664,7 @@
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-162/test-or-cpat-offwaitlist-or-speed-vs-free",
       "notion_url": "https://app.notion.com/p/3679601d59a981b481bfeb5bc84db018",
       "notion_page_id": "3679601d59a981b481bfeb5bc84db018",
-      "needs_review": false,
-      "reached_significance": false
+      "needs_review": false
     },
     {
       "slug": "hoursdriver-may-holdout-active",
@@ -728,8 +718,7 @@
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-214/test-or-pat-hoursdriver-or-may-holdout-active-patients",
       "notion_url": "https://app.notion.com/p/3689601d59a9813cb7b4ddaa38fb7a51",
       "notion_page_id": "3689601d59a9813cb7b4ddaa38fb7a51",
-      "needs_review": false,
-      "reached_significance": false
+      "needs_review": false
     },
     {
       "slug": "hoursdriver-14d-no-message",
@@ -795,8 +784,7 @@
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-193/test-or-driving-patient-hours-or-14d-no-message",
       "notion_url": "https://app.notion.com/p/3659601d59a9805cabaaec7d7006a46e",
       "notion_page_id": "3659601d59a9805cabaaec7d7006a46e",
-      "needs_review": false,
-      "reached_significance": false
+      "needs_review": false
     },
     {
       "slug": "edu-whats-next-vs-still-struggling",
@@ -874,8 +862,7 @@
       "linear_ticket": "N/A",
       "notion_url": "https://app.notion.com/p/35d9601d59a980fab1dbc7ce568deda8",
       "notion_page_id": "35d9601d59a980fab1dbc7ce568deda8",
-      "needs_review": false,
-      "reached_significance": true
+      "needs_review": false
     },
     {
       "slug": "hoursdriver-may-holdout-inactive",
@@ -927,8 +914,7 @@
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-215/test-or-pat-hoursdriver-or-may-holdout-inactive-patients",
       "notion_url": "https://app.notion.com/p/3729601d59a98169861ee2dca9ee8df5",
       "notion_page_id": "3729601d59a98169861ee2dca9ee8df5",
-      "needs_review": false,
-      "reached_significance": false
+      "needs_review": false
     },
     {
       "slug": "offwaitlist-tasks-vs-personas",
@@ -987,8 +973,7 @@
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-164/test-or-cpat-offwaitlist-or-tasks-vs-personas-advocate-edu",
       "notion_url": "https://app.notion.com/p/3679601d59a9815d8b86f7bc816b18e2",
       "notion_page_id": "3679601d59a9815d8b86f7bc816b18e2",
-      "needs_review": false,
-      "reached_significance": true
+      "needs_review": false
     },
     {
       "slug": "confirmation-sms-reschedule",
@@ -1058,8 +1043,7 @@
       "linear_ticket": "",
       "notion_url": "https://app.notion.com/p/35e9601d59a98044accfe660407b909d",
       "notion_page_id": "35e9601d59a98044accfe660407b909d",
-      "needs_review": false,
-      "reached_significance": true
+      "needs_review": false
     },
     {
       "slug": "dq-sms-window-copy",
@@ -1126,8 +1110,7 @@
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-120/update-or-pat-physreadycheck-update-to-copy",
       "notion_url": "https://app.notion.com/p/3589601d59a98003beacff49350967a8",
       "notion_page_id": "3589601d59a98003beacff49350967a8",
-      "needs_review": false,
-      "reached_significance": true
+      "needs_review": false
     },
     {
       "slug": "text-vs-button-cta",
@@ -1179,8 +1162,7 @@
       "linear_ticket": "N/A",
       "notion_url": "https://app.notion.com/p/35d9601d59a9800996acc6d9ad3466de",
       "notion_page_id": "35d9601d59a9800996acc6d9ad3466de",
-      "needs_review": false,
-      "reached_significance": true
+      "needs_review": false
     },
     {
       "slug": "advocate-june-toggle-campaign",
@@ -1253,8 +1235,7 @@
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-302/test-or-advocate-june-toggle-campaign",
       "notion_url": "https://app.notion.com/p/3829601d59a9810dbddef80365e645b0",
       "notion_page_id": "3829601d59a9810dbddef80365e645b0",
-      "needs_review": false,
-      "reached_significance": true
+      "needs_review": false
     },
     {
       "slug": "abandon-cart-super-test",
@@ -1396,8 +1377,7 @@
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-283/test-or-pat-abandoncartunverifiedor-super-test",
       "notion_url": "https://app.notion.com/p/3809601d59a9818f926feaa05ef72be7",
       "notion_page_id": "3809601d59a9818f926feaa05ef72be7",
-      "needs_review": false,
-      "reached_significance": true
+      "needs_review": false
     },
     {
       "slug": "physintrocallbooked-super-test",
@@ -1472,8 +1452,7 @@
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-296/test-or-pat-physintrocallbooked-super-test",
       "notion_url": "https://app.notion.com/p/3829601d59a981fda837d131ad16e394",
       "notion_page_id": "3829601d59a981fda837d131ad16e394",
-      "needs_review": false,
-      "reached_significance": true
+      "needs_review": false
     },
     {
       "slug": "abandon-cart-verified-super-test",
@@ -1603,8 +1582,7 @@
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-284/test-or-pat-abandoncartverifiedor-super-test",
       "notion_url": "https://app.notion.com/p/3809601d59a98191abccc519f5582e45",
       "notion_page_id": "3809601d59a98191abccc519f5582e45",
-      "needs_review": false,
-      "reached_significance": true
+      "needs_review": false
     },
     {
       "slug": "physintrocallrescheduled-super-test",
@@ -1667,8 +1645,7 @@
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-313/test-or-pat-physintrocallrescheduled-or-super-test",
       "notion_url": "https://app.notion.com/p/3849601d59a981f0a551e7b36c76649a",
       "notion_page_id": "3849601d59a981f0a551e7b36c76649a",
-      "needs_review": false,
-      "reached_significance": false
+      "needs_review": false
     },
     {
       "slug": "nurture-advocate-contact-card",
@@ -1735,8 +1712,7 @@
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-210/test-mpat-nurture-campaign-advocate-contact-card",
       "notion_url": "https://app.notion.com/p/3b39601d59a9816fb214c715e95b06cd",
       "notion_page_id": "3b39601d59a9816fb214c715e95b06cd",
-      "needs_review": false,
-      "reached_significance": false
+      "needs_review": false
     },
     {
       "slug": "abandoncart-warmleads-vs-education",
@@ -1799,8 +1775,7 @@
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-374/test-pat-abandoncartunverified-warm-leads-vs-education-end-points",
       "notion_url": "https://app.notion.com/p/39d9601d59a9816785e9c4c37e75d846",
       "notion_page_id": "39d9601d59a9816785e9c4c37e75d846",
-      "needs_review": false,
-      "reached_significance": true
+      "needs_review": false
     }
   ]
 }
