@@ -223,7 +223,7 @@
       "name": "PAT Inactive Hours Driver | A/B/Holdout",
       "category": "Patients",
       "campaign": "PAT_HoursDriver_Holdout_Inactive Patients",
-      "result": "Positive",
+      "result": "Negative",
       "start_date": "2026-06-18",
       "end_date": "2026-06-18",
       "hypothesis": "If inactive patients receive gentle reminders, it will encourage them to schedule a check-in with their advocate and re-engage.",
@@ -294,14 +294,15 @@
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-300/test-or-pat-inactive-hours-driver-or-abholdout",
       "notion_url": "https://app.notion.com/p/3829601d59a98179a027d623ef004c50",
       "notion_page_id": "3829601d59a98179a027d623ef004c50",
-      "needs_review": false
+      "needs_review": true,
+      "review_note": "Marked Negative under the significance standard — the emotional-copy variant showed a real +44% directional lift at 92% confidence, close enough to the bar that a larger follow-up test could flip this. Worth a second look before treating it as a dead end."
     },
     {
       "slug": "hoursdriver-month-start-holdout-active",
       "name": "PAT_HoursDriver | Month Start Holdout — Active",
       "category": "Patients",
       "campaign": "PAT_HoursDriver",
-      "result": "Positive",
+      "result": "Negative",
       "start_date": "2026-06-03",
       "end_date": "2026-06-15",
       "hypothesis": "If patients receive a beginning-of-month reminder, they'll complete more patient hours during the month than those who don't receive the reminder.",
@@ -355,7 +356,8 @@
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-244/test-or-pat-hoursdriver-or-month-start-holdout-active",
       "notion_url": "https://app.notion.com/p/3809601d59a981c2a466cb95b6161945",
       "notion_page_id": "3809601d59a981c2a466cb95b6161945",
-      "needs_review": false
+      "needs_review": true,
+      "review_note": "Marked Negative under the significance standard — trended +7.4% positive across a real sample but never reached 95% confidence. Worth a larger/longer re-run rather than writing off start-of-month reminders as a lever."
     },
     {
       "slug": "improved-winback-flow",
@@ -671,7 +673,7 @@
       "name": "PAT_HoursDriver | May Holdout — Active Patients",
       "category": "Patients",
       "campaign": "PAT_HoursDriver",
-      "result": "Positive",
+      "result": "Negative",
       "start_date": "2026-05-22",
       "end_date": "2026-06-02",
       "hypothesis": "Sending a month-end email to low-engagement active patients will increase appointment bookings and re-engagement.",
@@ -718,7 +720,8 @@
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-214/test-or-pat-hoursdriver-or-may-holdout-active-patients",
       "notion_url": "https://app.notion.com/p/3689601d59a9813cb7b4ddaa38fb7a51",
       "notion_page_id": "3689601d59a9813cb7b4ddaa38fb7a51",
-      "needs_review": false
+      "needs_review": true,
+      "review_note": "Marked Negative under the significance standard — directionally positive (+6.1%) but small sample, never reached significance. Worth re-testing at scale before concluding messaging doesn't help this segment."
     },
     {
       "slug": "hoursdriver-14d-no-message",
@@ -1652,7 +1655,7 @@
       "name": "MPAT_Nurture Campaign | Advocate Contact Card",
       "category": "Patients",
       "campaign": "MPAT_NurtureCampaign",
-      "result": "Positive",
+      "result": "Negative",
       "start_date": "2026-02-13",
       "end_date": "2026-05-21",
       "hypothesis": "Adding the Advocate contact card after a patient meets with them for the first time will increase engagement and conversion (time submitted).",
@@ -1712,7 +1715,8 @@
       "linear_ticket": "https://linear.app/findsolace/issue/LIFE-210/test-mpat-nurture-campaign-advocate-contact-card",
       "notion_url": "https://app.notion.com/p/3b39601d59a9816fb214c715e95b06cd",
       "notion_page_id": "3b39601d59a9816fb214c715e95b06cd",
-      "needs_review": false
+      "needs_review": true,
+      "review_note": "Marked Negative under the significance standard — the +16.2% lift here was never actually tested for statistical significance in the first place (no confidence data exists anywhere in the source). Worth re-running with significance tracked from the start, rather than assuming it's a real loss."
     },
     {
       "slug": "abandoncart-warmleads-vs-education",
