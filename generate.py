@@ -13,8 +13,23 @@ import json
 import html
 import os
 import re
+import hashlib
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
+
+
+def file_hash(relpath):
+    """Short content hash used as a cache-busting query param — changes
+    automatically whenever the file's actual content changes, so browsers
+    can never serve a stale cached copy after a real edit."""
+    path = os.path.join(ROOT, relpath)
+    with open(path, "rb") as f:
+        return hashlib.sha256(f.read()).hexdigest()[:10]
+
+
+CSS_VER = file_hash("assets/style.css")
+APP_JS_VER = file_hash("assets/app.js")
+SHOTS_JS_VER = file_hash("assets/screenshots.js")
 
 with open(os.path.join(ROOT, "data.json"), encoding="utf-8") as f:
     DATA = json.load(f)
@@ -265,7 +280,7 @@ def build_index():
 <html lang="en">
 <head>
 <title>Lifecycle Experiment Results</title>
-{HEAD.format(css_path="assets/style.css")}
+{HEAD.format(css_path=f"assets/style.css?v={CSS_VER}")}
 </head>
 <body>
 <div class="topbar">
@@ -317,7 +332,7 @@ def build_index():
 
 <footer class="site-footer">Click any row to open the full experiment report · Generated from the Lifecycle Experiments Notion database · Re-run generate.py after editing data.json</footer>
 
-<script src="assets/app.js"></script>
+<script src="assets/app.js?v={APP_JS_VER}"></script>
 </body>
 </html>
 """
@@ -356,7 +371,7 @@ def build_detail(e, prev_e, next_e):
 <html lang="en">
 <head>
 <title>{esc(e['name'])} — Lifecycle Experiment Results</title>
-{HEAD.format(css_path="../assets/style.css")}
+{HEAD.format(css_path=f"../assets/style.css?v={CSS_VER}")}
 </head>
 <body>
 <div class="topbar">
@@ -449,7 +464,7 @@ def build_detail(e, prev_e, next_e):
   </div>
 </div>
 
-<script src="../assets/screenshots.js"></script>
+<script src="../assets/screenshots.js?v={SHOTS_JS_VER}"></script>
 <script>
   ScreenshotUI.init({{
     slug: {json.dumps(e['slug'])},
