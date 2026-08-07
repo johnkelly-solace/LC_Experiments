@@ -147,7 +147,17 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 
 @media (max-width: 900px) {
-  .stat-strip { grid-template-columns: repeat(2, 1fr); }
+  .stat-strip { grid-template-columns: repeat(6, 1fr); }
+  .stat-cell { padding: 10px 8px; }
+  .stat-num { font-size: 18px; }
+  .stat-label { font-size: 9px; letter-spacing: 0.03em; }
+  .stat-sublabel { display: none; }
+}
+
+@media (max-width: 560px) {
+  .stat-cell { padding: 8px 5px; }
+  .stat-num { font-size: 15px; }
+  .stat-label { font-size: 8px; }
 }
 
 /* ---------- Filters ---------- */
