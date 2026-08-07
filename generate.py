@@ -76,11 +76,13 @@ def fmt_date(d):
 
 def render_metric_row(m):
     lift = m.get("lift", "")
-    direction = "flat"
-    if lift.startswith("+"):
+    sig_reached = bool(m.get("sig_reached"))
+    if sig_reached and lift.startswith("+"):
         direction = "up"
-    elif lift.startswith("-"):
+    elif sig_reached and lift.startswith("-"):
         direction = "down"
+    else:
+        direction = "flat"
     arrow = {"up": "▲", "down": "▼", "flat": "◆"}[direction]
     control_raw = f'<span class="mraw">{esc(m.get("control_raw",""))}</span>' if m.get("control_raw") else ""
     test_raw = f'<span class="mraw">{esc(m.get("test_raw",""))}</span>' if m.get("test_raw") else ""

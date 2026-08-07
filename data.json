@@ -38,7 +38,8 @@
           "test_value": "12.54%",
           "test_raw": "283 / 2,256",
           "lift": "+4.7% relative",
-          "sig": "Not stat sig"
+          "sig": "Not stat sig",
+          "sig_reached": false
         }
       ],
       "what_worked": [
@@ -92,7 +93,8 @@
           "test_value": "8.29%",
           "test_raw": "136 / 1,641",
           "lift": "+3.3% relative",
-          "sig": "Not stat sig"
+          "sig": "Not stat sig",
+          "sig_reached": false
         }
       ],
       "what_worked": [
@@ -152,7 +154,8 @@
           "test_value": "59.24%",
           "test_raw": "699 / 1,180",
           "lift": "+3.8% relative",
-          "sig": "Flat by test end"
+          "sig": "Flat by test end",
+          "sig_reached": false
         }
       ],
       "what_worked": [
@@ -254,7 +257,8 @@
           "test_value": "8.89%",
           "test_raw": "37 / 416",
           "lift": "-8.1% relative",
-          "sig": "z=0.38, p≈0.70 (no)"
+          "sig": "z=0.38, p≈0.70 (no)",
+          "sig_reached": false
         },
         {
           "label": "Conversion rate",
@@ -265,7 +269,8 @@
           "test_value": "12.81%",
           "test_raw": "51 / 398",
           "lift": "+32.5% relative",
-          "sig": "z=1.40, p≈0.16 (no)"
+          "sig": "z=1.40, p≈0.16 (no)",
+          "sig_reached": false
         },
         {
           "label": "Emotional vs. Normal copy",
@@ -276,7 +281,8 @@
           "test_value": "12.81%",
           "test_raw": "51 / 398",
           "lift": "+44.1% relative",
-          "sig": "z=1.80, p≈0.072 (marginal, 90%)"
+          "sig": "z=1.80, p≈0.072 (marginal, 90%)",
+          "sig_reached": false
         }
       ],
       "what_worked": [
@@ -337,7 +343,8 @@
           "test_value": "62.6%",
           "test_raw": "333 / 532",
           "lift": "+7.4% relative",
-          "sig": "Not stat sig at 95%"
+          "sig": "Not stat sig at 95%",
+          "sig_reached": false
         }
       ],
       "what_worked": [
@@ -399,7 +406,8 @@
           "test_value": "9.24%",
           "test_raw": "195 / 2,110",
           "lift": "+26.5% relative (+1.94pp)",
-          "sig": "z=2.28, p=0.023 (97.7% confidence)"
+          "sig": "z=2.28, p=0.023 (97.7% confidence)",
+          "sig_reached": true
         }
       ],
       "what_worked": [
@@ -459,7 +467,8 @@
           "test_value": "41.75%",
           "test_raw": "367 / 879",
           "lift": "+5.5% relative",
-          "sig": "Not stat sig"
+          "sig": "Not stat sig",
+          "sig_reached": false
         }
       ],
       "what_worked": [
@@ -519,7 +528,8 @@
           "test_value": "2.60%",
           "test_raw": "881 / 33,924",
           "lift": "+20.2% relative",
-          "sig": "Stat sig increase"
+          "sig": "Stat sig increase",
+          "sig_reached": true
         },
         {
           "label": "Unique clickers",
@@ -530,7 +540,8 @@
           "test_value": "4.77%",
           "test_raw": "1,619 / 33,924",
           "lift": "+18.4% relative",
-          "sig": "Stat sig increase"
+          "sig": "Stat sig increase",
+          "sig_reached": true
         },
         {
           "label": "Eligibility check CVR",
@@ -541,7 +552,8 @@
           "test_value": "3.07%",
           "test_raw": "1,076 / 35,050",
           "lift": "+4.8% relative",
-          "sig": "Not stat sig"
+          "sig": "Not stat sig",
+          "sig_reached": false
         },
         {
           "label": "Physician intake booked CVR",
@@ -552,7 +564,8 @@
           "test_value": "1.89%",
           "test_raw": "664 / 35,050",
           "lift": "+7.4% relative",
-          "sig": "Not stat sig"
+          "sig": "Not stat sig",
+          "sig_reached": false
         }
       ],
       "what_worked": [
@@ -630,7 +643,8 @@
           "test_value": "45.49%",
           "test_raw": "4,292 / 9,436",
           "lift": "+2.1% relative",
-          "sig": "Directional (>90%, not 95%)"
+          "sig": "Directional (>90%, not 95%)",
+          "sig_reached": false
         },
         {
           "label": "Eligibility check completed",
@@ -641,7 +655,8 @@
           "test_value": "0.22%",
           "test_raw": "21 / 9,436",
           "lift": "Flat",
-          "sig": "Not stat sig"
+          "sig": "Not stat sig",
+          "sig_reached": false
         }
       ],
       "what_worked": [
@@ -698,7 +713,8 @@
           "test_value": "90.7%",
           "test_raw": "225 / 248",
           "lift": "+6.1% relative",
-          "sig": "Directionally positive"
+          "sig": "Directionally positive",
+          "sig_reached": false
         }
       ],
       "what_worked": [
@@ -753,7 +769,8 @@
           "test_value": "92.5%",
           "test_raw": "99 / 107",
           "lift": "+0.6pp",
-          "sig": "Roughly flat"
+          "sig": "Roughly flat",
+          "sig_reached": false
         },
         {
           "label": "Attended call",
@@ -764,7 +781,8 @@
           "test_value": "57.0%",
           "test_raw": "61 / 107",
           "lift": "+21.8% relative",
-          "sig": "Higher significance"
+          "sig": "Higher significance",
+          "sig_reached": false
         }
       ],
       "what_worked": [
@@ -818,7 +836,8 @@
           "test_value": "28.84%",
           "test_raw": "",
           "lift": "+27.9% relative",
-          "sig": "Stat sig"
+          "sig": "Stat sig",
+          "sig_reached": true
         },
         {
           "label": "CTR",
@@ -829,7 +848,8 @@
           "test_value": "0.76%",
           "test_raw": "",
           "lift": "+229.7% relative",
-          "sig": "Stat sig"
+          "sig": "Stat sig",
+          "sig_reached": true
         },
         {
           "label": "CVR (call booked)",
@@ -840,7 +860,8 @@
           "test_value": "0.85%",
           "test_raw": "",
           "lift": "+159.7% relative",
-          "sig": "Stat sig"
+          "sig": "Stat sig",
+          "sig_reached": true
         }
       ],
       "what_worked": [
@@ -894,7 +915,8 @@
           "test_value": "78.1%",
           "test_raw": "",
           "lift": "-1.1% relative",
-          "sig": "Not stat sig, short test"
+          "sig": "Not stat sig, short test",
+          "sig_reached": false
         }
       ],
       "what_worked": [],
@@ -952,7 +974,8 @@
           "test_value": "0.7%",
           "test_raw": "",
           "lift": "+29.5% relative",
-          "sig": "Stat sig"
+          "sig": "Stat sig",
+          "sig_reached": true
         }
       ],
       "what_worked": [
@@ -1011,7 +1034,8 @@
           "test_value": "49.0%",
           "test_raw": "2,134 / 4,356",
           "lift": "+4.5% relative",
-          "sig": "95% confidence"
+          "sig": "95% confidence",
+          "sig_reached": true
         },
         {
           "label": "SMS1 call confirmation",
@@ -1022,7 +1046,8 @@
           "test_value": "56.2%",
           "test_raw": "4,848 / 8,624",
           "lift": "+3.9% relative",
-          "sig": "99% confidence"
+          "sig": "99% confidence",
+          "sig_reached": true
         }
       ],
       "what_worked": [
@@ -1089,7 +1114,8 @@
           "test_value": "+5% to +19%",
           "test_raw": "",
           "lift": "+6% headline",
-          "sig": "Stat sig"
+          "sig": "Stat sig",
+          "sig_reached": true
         }
       ],
       "what_worked": [
@@ -1141,7 +1167,8 @@
           "test_value": "2.1%",
           "test_raw": "",
           "lift": "+42.6% relative",
-          "sig": "Stat sig"
+          "sig": "Stat sig",
+          "sig_reached": true
         }
       ],
       "what_worked": [
@@ -1199,7 +1226,8 @@
           "test_value": "23.44%",
           "test_raw": "206 / 879",
           "lift": "+235% relative (+16.4pp)",
-          "sig": "p < 0.0000000001"
+          "sig": "p < 0.0000000001",
+          "sig_reached": true
         },
         {
           "label": "Unpause rate — June 25 read",
@@ -1210,7 +1238,8 @@
           "test_value": "33.83%",
           "test_raw": "451 / 1,333",
           "lift": "+120% relative (+18.5pp)",
-          "sig": "p < 0.0000000001"
+          "sig": "p < 0.0000000001",
+          "sig_reached": true
         }
       ],
       "what_worked": [
@@ -1271,7 +1300,8 @@
           "test_value": "7.82%",
           "test_raw": "2,419 / 30,917",
           "lift": "+23.9% relative",
-          "sig": "Stat sig increase"
+          "sig": "Stat sig increase",
+          "sig_reached": true
         },
         {
           "label": "CVR: Completed Eligibility Check",
@@ -1282,7 +1312,8 @@
           "test_value": "4.49%",
           "test_raw": "1,388 / 30,917",
           "lift": "+19.4% relative",
-          "sig": "Stat sig increase"
+          "sig": "Stat sig increase",
+          "sig_reached": true
         },
         {
           "label": "CVR: Physician Intake Booked",
@@ -1293,7 +1324,8 @@
           "test_value": "2.48%",
           "test_raw": "766 / 30,917",
           "lift": "+23.4% relative",
-          "sig": "Stat sig increase"
+          "sig": "Stat sig increase",
+          "sig_reached": true
         },
         {
           "label": "Clicks (total, all touchpoints)",
@@ -1304,7 +1336,8 @@
           "test_value": "1.64%",
           "test_raw": "1,682 / 95,252",
           "lift": "+28.8% relative",
-          "sig": "Stat sig increase"
+          "sig": "Stat sig increase",
+          "sig_reached": true
         },
         {
           "label": "Click-to-open rate (CTO)",
@@ -1315,7 +1348,8 @@
           "test_value": "6.24%",
           "test_raw": "",
           "lift": "+27.6% relative",
-          "sig": "Stat sig increase"
+          "sig": "Stat sig increase",
+          "sig_reached": true
         },
         {
           "label": "Opens (total, all touchpoints)",
@@ -1326,7 +1360,8 @@
           "test_value": "26.65%",
           "test_raw": "29,775 / 95,252",
           "lift": "+0.95% relative",
-          "sig": "Not stat sig (flat)"
+          "sig": "Not stat sig (flat)",
+          "sig_reached": false
         },
         {
           "label": "Unsubscribes (total, all touchpoints)",
@@ -1337,7 +1372,8 @@
           "test_value": "0.14%",
           "test_raw": "134 / 95,252",
           "lift": "-7.5% relative",
-          "sig": "Not stat sig (directionally lower)"
+          "sig": "Not stat sig (directionally lower)",
+          "sig_reached": false
         }
       ],
       "what_worked": [
@@ -1407,7 +1443,8 @@
           "test_value": "47.95%",
           "test_raw": "2,741 / 5,718",
           "lift": "-0.35% relative",
-          "sig": "z=0.18, p≈0.86 (not sig — flat)"
+          "sig": "z=0.18, p≈0.86 (not sig — flat)",
+          "sig_reached": false
         },
         {
           "label": "No-post reschedule rate",
@@ -1418,7 +1455,8 @@
           "test_value": "12.44%",
           "test_raw": "444 / 3,568",
           "lift": "+41.8% relative (+3.68pp)",
-          "sig": "z=5.05, p<0.0001 (stat sig)"
+          "sig": "z=5.05, p<0.0001 (stat sig)",
+          "sig_reached": true
         }
       ],
       "what_worked": [
@@ -1481,7 +1519,8 @@
           "test_value": "11.11%",
           "test_raw": "2,629 / 23,674",
           "lift": "+34.6% relative",
-          "sig": "✅ Stat sig increase"
+          "sig": "✅ Stat sig increase",
+          "sig_reached": true
         },
         {
           "label": "CVR: PATIENT_ATTENDED_CALL",
@@ -1492,7 +1531,8 @@
           "test_value": "5.07%",
           "test_raw": "1,201 / 23,674",
           "lift": "+39.5% relative",
-          "sig": "✅ Stat sig increase"
+          "sig": "✅ Stat sig increase",
+          "sig_reached": true
         },
         {
           "label": "Open rate (all touchpoints)",
@@ -1503,7 +1543,8 @@
           "test_value": "36.15%",
           "test_raw": "27,338 / 75,631",
           "lift": "+7.3% relative",
-          "sig": "✅ Stat sig increase"
+          "sig": "✅ Stat sig increase",
+          "sig_reached": true
         },
         {
           "label": "Click rate (all touchpoints)",
@@ -1514,7 +1555,8 @@
           "test_value": "2.13%",
           "test_raw": "1,612 / 75,631",
           "lift": "+29.6% relative",
-          "sig": "✅ Stat sig increase"
+          "sig": "✅ Stat sig increase",
+          "sig_reached": true
         },
         {
           "label": "Click-to-open rate (CTO)",
@@ -1525,7 +1567,8 @@
           "test_value": "5.90%",
           "test_raw": "",
           "lift": "+20.8% relative",
-          "sig": "✅ Stat sig increase"
+          "sig": "✅ Stat sig increase",
+          "sig_reached": true
         },
         {
           "label": "Unsubscribe rate (all touchpoints)",
@@ -1536,7 +1579,8 @@
           "test_value": "0.20%",
           "test_raw": "151 / 75,631",
           "lift": "+23.9% relative",
-          "sig": "⚠️ Stat sig increase — undesirable direction, small in absolute terms"
+          "sig": "⚠️ Stat sig increase — undesirable direction, small in absolute terms",
+          "sig_reached": true
         }
       ],
       "what_worked": [
@@ -1606,7 +1650,8 @@
           "test_value": "41.54%",
           "test_raw": "584 / 1,406",
           "lift": "+1.05% relative",
-          "sig": "Flat — not a meaningful difference"
+          "sig": "Flat — not a meaningful difference",
+          "sig_reached": false
         }
       ],
       "what_worked": [
@@ -1678,7 +1723,8 @@
           "test_value": "34.5%",
           "test_raw": "",
           "lift": "+16.2% relative",
-          "sig": "Positive"
+          "sig": "Positive",
+          "sig_reached": false
         }
       ],
       "what_worked": [
@@ -1737,7 +1783,8 @@
           "test_value": "0.74%",
           "test_raw": "",
           "lift": "+245.6% relative",
-          "sig": "Stat sig"
+          "sig": "Stat sig",
+          "sig_reached": true
         }
       ],
       "what_worked": [
