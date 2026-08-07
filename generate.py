@@ -214,6 +214,12 @@ def render_screenshot_section(e):
 def render_needs_review_banner(e):
     if not e.get("needs_review"):
         return ""
+    note = e.get("review_note")
+    if note:
+        return f"""
+    <div class="needs-review-banner">
+      <strong>Flagged for follow-up</strong> — {esc(note)}
+    </div>"""
     return """
     <div class="needs-review-banner">
       <strong>Needs review</strong> — this experiment was pulled in automatically from Notion (name, hypothesis, result, impact summary). The Experiment Details, metrics breakdown, and learnings below haven't had a human/AI pass yet — treat this page as a placeholder until someone fills those in.
@@ -248,7 +254,7 @@ def build_index():
         <tr data-cat="{esc(e['category'])}" data-res="{esc(e['result'])}"
             data-search="{esc(search_blob)}" data-href="experiments/{e['slug']}.html"
             data-name="{esc(e['name'])}" data-enddate="{esc(e.get('end_date',''))}">
-          <td class="col-name">{esc(e['name'])}{' <span class=\"review-dot\" title=\"Needs review — synced from Notion, not yet fully authored\"></span>' if e.get('needs_review') else ''}<span class="campaign">{esc(e['campaign'])}</span></td>
+          <td class="col-name">{esc(e['name'])}{' <span class=\"review-dot\" title=\"Flagged — see the page for why\"></span>' if e.get('needs_review') else ''}<span class="campaign">{esc(e['campaign'])}</span></td>
           <td><span class="{cat_class(e['category'])}">{esc(e['category'])}</span></td>
           <td>{render_tag(e['result'])}</td>
           <td class="col-metric">{esc(e['primary_metric'])}</td>
