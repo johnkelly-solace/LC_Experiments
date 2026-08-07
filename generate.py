@@ -234,6 +234,7 @@ def build_index():
     neg = sum(1 for e in EXPERIMENTS if e["result"] == "Negative")
     cats_present = sorted(set(e["category"] for e in EXPERIMENTS))
     positive_rate = round((pos / total) * 100) if total else 0
+    learning_rate = round(((pos + neg) / total) * 100) if total else 0
 
     cat_chips = '<span class="chip active" data-cat="All">All categories</span>' + "".join(
         f'<span class="chip cat-{slugify(c)}" data-cat="{esc(c)}">{esc(c)}</span>' for c in CATEGORIES if c in cats_present
@@ -285,6 +286,7 @@ def build_index():
     <div class="stat-cell"><div class="stat-num pos">{pos}</div><div class="stat-label">Positive results</div></div>
     <div class="stat-cell"><div class="stat-num neg">{neg}</div><div class="stat-label">Negative results</div></div>
     <div class="stat-cell"><div class="stat-num">{positive_rate}%</div><div class="stat-label">Positive rate</div></div>
+    <div class="stat-cell"><div class="stat-num">{learning_rate}%</div><div class="stat-label">Learning rate</div></div>
   </div>
 
   <div class="filters">
