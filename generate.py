@@ -247,9 +247,11 @@ def build_index():
     total = len(EXPERIMENTS)
     pos = sum(1 for e in EXPERIMENTS if e["result"] == "Positive")
     neg = sum(1 for e in EXPERIMENTS if e["result"] == "Negative")
+    neutral = sum(1 for e in EXPERIMENTS if e["result"] in ("Neutral", "Mixed", "Inconclusive"))
+    learned = sum(1 for e in EXPERIMENTS if e.get("reached_significance"))
     cats_present = sorted(set(e["category"] for e in EXPERIMENTS))
     win_rate = round((pos / total) * 100) if total else 0
-    learning_rate = round(((pos + neg) / total) * 100) if total else 0
+    learning_rate = round((learned / total) * 100) if total else 0
 
     cat_chips = '<span class="chip active" data-cat="All">All categories</span>' + "".join(
         f'<span class="chip cat-{slugify(c)}" data-cat="{esc(c)}">{esc(c)}</span>' for c in CATEGORIES if c in cats_present
@@ -300,6 +302,7 @@ def build_index():
     <div class="stat-cell"><div class="stat-num">{total}</div><div class="stat-label">Completed experiments</div></div>
     <div class="stat-cell"><div class="stat-num pos">{pos}</div><div class="stat-label">Positive results</div></div>
     <div class="stat-cell"><div class="stat-num neg">{neg}</div><div class="stat-label">Negative results</div></div>
+    <div class="stat-cell"><div class="stat-num">{neutral}</div><div class="stat-label">Neutral / mixed / inconclusive</div></div>
     <div class="stat-cell"><div class="stat-num">{win_rate}%</div><div class="stat-label">Win rate</div></div>
     <div class="stat-cell"><div class="stat-num">{learning_rate}%</div><div class="stat-label">Learning rate</div></div>
   </div>
