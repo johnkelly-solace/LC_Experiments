@@ -1,5 +1,5 @@
 {
-  "last_synced": "August 7, 2026",
+  "last_synced": "August 12, 2026",
   "source_db": "https://app.notion.com/p/3589601d59a98000bf9cded9b625f4b4",
   "results_doc": "https://app.notion.com/p/3949601d59a98087af33e49b0d57f2d8",
   "experiments": [
@@ -1801,6 +1801,106 @@
       "notion_page_id": "39d9601d59a9816785e9c4c37e75d846",
       "needs_review": false,
       "reached_significance": true
+    },
+    {
+      "slug": "physintrocallbooked-call-expectations",
+      "name": "PAT_PhysIntroCallBooked | Call Expectations",
+      "category": "Appointment",
+      "campaign": "PAT_PhysIntroCallBooked",
+      "result": "Inconclusive",
+      "start_date": "2026-07-23",
+      "end_date": "2026-08-10",
+      "hypothesis": "By better setting expectations, we can improve the match rates during our appointments.",
+      "target_impact": "Improve match rate by 3% and hold show rates steady.",
+      "primary_metric": "Match rate",
+      "impact_summary": "Inconclusive results across both send-times and contexts. The A/B test setup limited the ability to isolate results and is a meaningful contributor to why this was mixed/inconclusive rather than a clean win or loss. Reverting to baseline content (A) and reconfiguring the testing structure (event-based instead of A/B) to get cleaner reads going forward.",
+      "experiment_summary": "Improves the visualization/display and content around what to expect in the physician intro call, testing across two touchpoints (a same-day 3-hour reminder and a non-same-day 1-day reminder) simultaneously.",
+      "experiment_type": "A/B Test",
+      "experiment_method": "CIO A/B Test",
+      "secondary_metrics": "Show rate; No-show rate",
+      "experiment_event": "",
+      "experiment_id": "",
+      "cio_link": "https://fly.customer.io/workspaces/129866/journeys/automations/563/overview/workflow/actions",
+      "hex_link": "",
+      "figma_link": "",
+      "variant_a_label": "A — Current experience",
+      "variant_b_label": "B — Updated experience",
+      "creative_copy": [],
+      "additional_notes": [
+        {
+          "author": "",
+          "date": "",
+          "note": "Testing in appointment reminders will be primarily event-based moving forward, replacing the A/B CIO format used here."
+        }
+      ],
+      "metrics": [
+        {
+          "label": "1-Day flow: Open Rate",
+          "control_name": "A — Current experience",
+          "control_value": "Baseline",
+          "control_raw": "",
+          "test_name": "B — Updated experience",
+          "test_value": "-7.49% relative",
+          "test_raw": "",
+          "lift": "-7.49% relative",
+          "sig": "Stat sig decrease"
+        },
+        {
+          "label": "3-Hour flow: Open Rate",
+          "control_name": "A — Current experience",
+          "control_value": "Baseline",
+          "control_raw": "",
+          "test_name": "B — Updated experience",
+          "test_value": "-21.9% relative",
+          "test_raw": "",
+          "lift": "-21.9% relative",
+          "sig": "Stat sig decrease"
+        },
+        {
+          "label": "1-Day flow: Attended ADV Call (CVR)",
+          "control_name": "A — Current experience",
+          "control_value": "Baseline",
+          "control_raw": "",
+          "test_name": "B — Updated experience",
+          "test_value": "+3% relative",
+          "test_raw": "",
+          "lift": "+3% relative",
+          "sig": "Not stat sig"
+        },
+        {
+          "label": "3-Hour flow: Attended ADV Call (CVR)",
+          "control_name": "A — Current experience",
+          "control_value": "Baseline",
+          "control_raw": "",
+          "test_name": "B — Updated experience",
+          "test_value": "-4.04% relative",
+          "test_raw": "",
+          "lift": "-4.04% relative",
+          "sig": "Not stat sig (directional, small sample)"
+        }
+      ],
+      "what_worked": [
+        "Prominent reschedule CTA (button vs. inline text) likely drove higher reschedule rates in both flows for B — not necessarily bad, since cancellations were also lower.",
+        "1-Day flow: CVR held flat/slightly improved despite a big click drop, suggesting the content itself (not just clicks) may have driven the effect.",
+        "Re-ran the analysis on human-filtered opens/clicks specifically to rule out bot contamination — confirmed the engagement gaps were real human behavior, not noise."
+      ],
+      "what_didnt": [
+        "3-Hour flow: educational content correlated with higher no-show and lower attended-call rates — the opposite direction from the 1-Day flow.",
+        "Non-clickable content blocks plus the A/B (not event-based) test structure left the team unable to directly attribute the 1-Day flow's CVR to the content itself.",
+        "Unequal clickable surface area between variants (A had 2 click targets, B had 1) made CTR/CTO comparisons apples-to-oranges.",
+        "An open-rate gap between variants, despite identical subject line/preview text, was never conclusively resolved — possibly a rendering/tracking-pixel artifact."
+      ],
+      "follow_up": [
+        "Revert to baseline content (A) rather than ship B.",
+        "Move appointment-reminder testing to an event-based format instead of the CIO A/B format, to get cleaner reads.",
+        "Balance clickable content evenly across future variants to isolate content/design effects from raw click-opportunity differences."
+      ],
+      "owner_team": "Chris",
+      "linear_ticket": "https://linear.app/findsolace/issue/LIFE-421/test-pat-physintrocallbooked-call-expectations",
+      "notion_url": "https://app.notion.com/p/3a79601d59a9818d8383db17f614a0ee",
+      "notion_page_id": "3a79601d59a9818d8383db17f614a0ee",
+      "needs_review": false,
+      "reached_significance": false
     }
   ]
 }

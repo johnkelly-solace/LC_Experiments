@@ -19,24 +19,24 @@
       <a href="https://app.notion.com/p/3949601d59a98087af33e49b0d57f2d8" target="_blank" rel="noopener">Notion writeup ↗</a>
     </div>
   </div>
-  <div class="wrap sync-note">Last synced August 7, 2026 · 25 completed experiments</div>
+  <div class="wrap sync-note">Last synced August 12, 2026 · 26 completed experiments</div>
 </div>
 
 <div class="wrap">
   <div class="stat-strip">
-    <div class="stat-cell"><div class="stat-num">25</div><div class="stat-label">Completed experiments</div></div>
+    <div class="stat-cell"><div class="stat-num">26</div><div class="stat-label">Completed experiments</div></div>
     <div class="stat-cell"><div class="stat-num pos">16</div><div class="stat-label">Positive results</div></div>
     <div class="stat-cell"><div class="stat-num neg">0</div><div class="stat-label">Negative results</div></div>
-    <div class="stat-cell"><div class="stat-num">9</div><div class="stat-label">Neutral / mixed / inconclusive</div></div>
-    <div class="stat-cell"><div class="stat-num">64%</div><div class="stat-label">Win rate</div></div>
-    <div class="stat-cell"><div class="stat-num">48%</div><div class="stat-label">Learning rate</div></div>
+    <div class="stat-cell"><div class="stat-num">10</div><div class="stat-label">Neutral / mixed / inconclusive</div></div>
+    <div class="stat-cell"><div class="stat-num">62%</div><div class="stat-label">Win rate</div></div>
+    <div class="stat-cell"><div class="stat-num">46%</div><div class="stat-label">Learning rate</div></div>
   </div>
 
   <div class="filters">
     <label>Category</label>
     <div class="chip-group"><span class="chip active" data-cat="All">All categories</span><span class="chip cat-early-lifecycle" data-cat="Early Lifecycle">Early Lifecycle</span><span class="chip cat-appointment" data-cat="Appointment">Appointment</span><span class="chip cat-patients" data-cat="Patients">Patients</span><span class="chip cat-advocate" data-cat="Advocate">Advocate</span></div>
     <label style="margin-left:14px;">Result</label>
-    <div class="chip-group"><span class="chip active" data-res="All">All results</span><span class="chip" data-res="Positive">Positive</span><span class="chip" data-res="Neutral">Neutral</span></div>
+    <div class="chip-group"><span class="chip active" data-res="All">All results</span><span class="chip" data-res="Positive">Positive</span><span class="chip" data-res="Neutral">Neutral</span><span class="chip" data-res="Inconclusive">Inconclusive</span></div>
     <input id="search-input" type="text" placeholder="Search experiments…" style="margin-left:auto;">
   </div>
 
@@ -54,6 +54,16 @@
       </thead>
       <tbody id="exp-tbody">
         
+        <tr data-cat="Appointment" data-res="Inconclusive"
+            data-search="pat_physintrocallbooked | call expectations appointment pat_physintrocallbooked by better setting expectations, we can improve the match rates during our appointments. inconclusive results across both send-times and contexts. the a/b test setup limited the ability to isolate results and is a meaningful contributor to why this was mixed/inconclusive rather than a clean win or loss. reverting to baseline content (a) and reconfiguring the testing structure (event-based instead of a/b) to get cleaner reads going forward." data-href="experiments/physintrocallbooked-call-expectations.html"
+            data-name="PAT_PhysIntroCallBooked | Call Expectations" data-enddate="2026-08-10">
+          <td class="col-name">PAT_PhysIntroCallBooked | Call Expectations<span class="campaign">PAT_PhysIntroCallBooked</span></td>
+          <td><span class="cat-chip cat-appointment">Appointment</span></td>
+          <td><span class="tag inconclusive">Inconclusive</span></td>
+          <td class="col-metric">Match rate</td>
+          <td class="col-summary">Inconclusive results across both send-times and contexts. The A/B test setup limited the ability to isolate results and is a meaningful contributor to why this …</td>
+          <td class="col-date">2026-08-10</td>
+        </tr>
         <tr data-cat="Early Lifecycle" data-res="Positive"
             data-search="pat_abandoncartunverified | warm leads vs. education end points early lifecycle pat_abandoncartunverified prospects from pat_abandoncartunverified who drain into the new edu flywheel campaign (pat_educationcontentflywheel) will re-engage at higher rates (human clicks) than prospects who enter the old drip campaign (pat_warmleads). moving unverified prospects into the education flywheel campaign more than tripled human click engagement (+245.6%, stat sig) vs. legacy warm leads. downstream cvr events trended positive across the board but hadn&#x27;t reached significance when the test closed. rerouting all abandon-cart prospects into the education flywheel going forward." data-href="experiments/abandoncart-warmleads-vs-education.html"
             data-name="PAT_AbandonCartUnverified | Warm Leads vs. Education End Points" data-enddate="2026-08-05">
