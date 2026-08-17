@@ -1,5 +1,5 @@
 {
-  "last_synced": "August 12, 2026",
+  "last_synced": "August 17, 2026",
   "source_db": "https://app.notion.com/p/3589601d59a98000bf9cded9b625f4b4",
   "results_doc": "https://app.notion.com/p/3949601d59a98087af33e49b0d57f2d8",
   "experiments": [
@@ -1901,6 +1901,112 @@
       "notion_page_id": "3a79601d59a9818d8383db17f614a0ee",
       "needs_review": false,
       "reached_significance": false
+    },
+    {
+      "slug": "funnelfiller-holdout",
+      "name": "PAT_FunnelFiller_08132026 | Holdout",
+      "category": "Early Lifecycle",
+      "campaign": "PAT_FunnelFiller_08132026",
+      "result": "Positive",
+      "start_date": "2026-08-14",
+      "end_date": "2026-08-17",
+      "hypothesis": "Sending the campaign will create lift to CVR (bookings and eChecks) in the contacted group compared to the control (holdout) group.",
+      "target_impact": "+10-15% SS",
+      "primary_metric": "CVR (bookings and eChecks)",
+      "impact_summary": "The holdout test showed the Funnel Filler campaign drives CVR lift. Across all segments, there was a stat-sig increase of +81.9% in eligibility checks and +128.7% in booked calls versus the control group. Gains held across segments, with unverified (+123% e-checks & +115% bookings) and verified (+137% bookings). The campaign had good engagement (18–24% email opens, >40% SMS CTR). Based on these results, the campaign will be rolled out to the remaining 206,721 holdout users on 8/17.",
+      "experiment_summary": "Holdout test on the Funnel Filler campaign, checking whether sending it drives CVR lift (bookings and eligibility checks) compared to a holdout group that doesn't receive it at all, across Unverified, Verified, and Waitlisted prospect segments.",
+      "experiment_type": "Holdout",
+      "experiment_method": "CIO Holdout",
+      "secondary_metrics": "Funnel returns",
+      "experiment_event": "EXPERIMENT_FIRED",
+      "experiment_id": "22",
+      "cio_link": "https://fly.customer.io/workspaces/129866/journeys/automations/876/overview?channels=email-twilio-webhook-slack-in_app-inbox",
+      "hex_link": "https://hc.hex.tech/solace-health/app/Lifecycle-Campaign-Attribution-Dashboard-0332iEihSu9EhnSo0CEaR7/latest",
+      "figma_link": "",
+      "variant_a_label": "A — Recipients (test)",
+      "variant_b_label": "B — Holdout (control)",
+      "creative_copy": [],
+      "additional_notes": [
+        {
+          "author": "",
+          "date": "August 17, 2026",
+          "note": "Rolling out the campaign to the remaining 206,721 holdout users the same day results were finalized, given how decisive the lift was."
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Total: Eligibility Check CVR",
+          "control_name": "B — Holdout",
+          "control_value": "0.29%",
+          "control_raw": "605 / 206,721",
+          "test_name": "A — Recipients",
+          "test_value": "0.53%",
+          "test_raw": "1,099 / 206,386",
+          "lift": "+81.9% relative",
+          "sig": "Stat sig"
+        },
+        {
+          "label": "Total: Phys Intro Call Booked CVR",
+          "control_name": "B — Holdout",
+          "control_value": "0.05%",
+          "control_raw": "99 / 206,721",
+          "test_name": "A — Recipients",
+          "test_value": "0.11%",
+          "test_raw": "226 / 206,386",
+          "lift": "+128.7% relative",
+          "sig": "Stat sig"
+        },
+        {
+          "label": "Unverified: Eligibility Check CVR",
+          "control_name": "B — Holdout",
+          "control_value": "0.24%",
+          "control_raw": "318 / 131,294",
+          "test_name": "A — Recipients",
+          "test_value": "0.54%",
+          "test_raw": "709 / 130,992",
+          "lift": "+123.5% relative",
+          "sig": "Stat sig"
+        },
+        {
+          "label": "Verified: Phys Intro Call Booked CVR",
+          "control_name": "B — Holdout",
+          "control_value": "0.10%",
+          "control_raw": "62 / 65,191",
+          "test_name": "A — Recipients",
+          "test_value": "0.23%",
+          "test_raw": "147 / 65,071",
+          "lift": "+137.5% relative",
+          "sig": "Stat sig"
+        },
+        {
+          "label": "Waitlist: Funnel Return Entry CVR",
+          "control_name": "B — Holdout",
+          "control_value": "0.02%",
+          "control_raw": "2 / 10,236",
+          "test_name": "A — Recipients",
+          "test_value": "0.24%",
+          "test_raw": "25 / 10,323",
+          "lift": "+1,139.5% relative",
+          "sig": "Stat sig (secondary)"
+        }
+      ],
+      "what_worked": [
+        "Sending the campaign drove stat-sig CVR lift across every measured segment — Total (+81.9% eligibility checks, +128.7% bookings), Unverified (+123.5% e-checks, +115.2% bookings), Verified (+137.5% bookings).",
+        "Waitlist segment saw a huge directional jump in funnel-return CVR (+1,139.5%, stat sig even on a small base), suggesting this campaign is especially good at pulling lapsed waitlisted prospects back in.",
+        "Engagement was solid across the board — 18-24% email opens, 40%+ SMS CTR — supporting the CVR story rather than contradicting it."
+      ],
+      "what_didnt": [
+        "Waitlist's e-check (+46.9%) and booking (+32.2%) lifts were directionally positive but not stat sig — can't be used with certainty despite the strong funnel-return number."
+      ],
+      "follow_up": [
+        "Deploy the campaign to the remaining 206,721 holdout users on 8/17 — already actioned same-day given how decisive the result was."
+      ],
+      "owner_team": "Leah",
+      "linear_ticket": "https://linear.app/findsolace/issue/LIFE-505/test-pat-funnelfiller-08132026-holdout",
+      "notion_url": "https://app.notion.com/p/3bc9601d59a98124a418cf3e7a55a394",
+      "notion_page_id": "3bc9601d59a98124a418cf3e7a55a394",
+      "needs_review": false,
+      "reached_significance": true
     }
   ]
 }
